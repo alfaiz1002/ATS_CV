@@ -71,6 +71,10 @@ CV ATS ini menggabungkan seluruh keahlian Anda di bidang **Cyber Security (Web A
 - **Pemeriksaan:** Mempertajam deskripsi proyek dan riwayat pengajaran di laboratorium dengan menyerap bukti dokumen resmi buku modul praktikum **CSE-410 Digital Forensics** setebal **101 Halaman** yang dibuat secara berkolaborasi langsung bersama Dosen Pembina Security Laboratory (Seculab) untuk kurikulum S1 Telkom University.
 - **Hasil:** Menyematkan fakta spesifik 12 modul laboratorium (Chain of Custody SHA-256, YARA Rules, Email Metadata, Android ADB & SQLite `contacts2.db`/`calllog.db`, Server Log EVTX/Linux Chainsaw/Sigma, Plaso Super-Timeline, Wireshark/Zeek Network Forensics) pada section *Work Experience (Teaching Assistant)* dan *Key Projects & Achievements*.
 
+### 11. Penegasan Status Fresh Graduate (Sarjana Teknik Komputer / Bachelor of Computer Engineering)
+- **Pemeriksaan:** Memperbarui sebutan status pendidikan dari *"Mahasiswa S1 Teknik Komputer"* menjadi *"Sarjana Teknik Komputer (S.T.)"* (ID) dan *"Bachelor of Computer Engineering Graduate"* (EN) pada bagian *Professional Summary*, *Hero Description*, *TTS Audio Summary*, dan *Terminal Interactive*.
+- **Hasil:** Memastikan recruiter mendeteksi kualifikasi kandidat sebagai *Fresh Graduate* yang telah menyelesaikan sidang/yudisium dan siap bekerja penuh waktu (*ready for full-time employment*), bukan lagi mahasiswa aktif.
+
 ---
 
 ## 🌟 Keunggulan Struktur Gabungan Full-Stack Security

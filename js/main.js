@@ -259,18 +259,26 @@ document.addEventListener('DOMContentLoaded', () => {
 // 4. ACTION DOWNLOAD CV (DIRECT PDF FILE LINK & DROPDOWN HANDLER)
 window.toggleCvDropdown = function(event) {
   if (event) event.stopPropagation();
-  const dropdown = document.getElementById('cv-dropdown-menu');
-  if (dropdown) {
-    dropdown.classList.toggle('show');
+  const wrapper = event ? event.currentTarget.closest('.cv-dropdown-wrapper') : null;
+  if (wrapper) {
+    const dropdown = wrapper.querySelector('.cv-dropdown-menu');
+    if (dropdown) {
+      document.querySelectorAll('.cv-dropdown-menu').forEach(d => {
+        if (d !== dropdown) d.classList.remove('show');
+      });
+      dropdown.classList.toggle('show');
+    }
+  } else {
+    const dropdown = document.getElementById('cv-dropdown-menu');
+    if (dropdown) dropdown.classList.toggle('show');
   }
 };
 
 document.addEventListener('click', (e) => {
-  const dropdown = document.getElementById('cv-dropdown-menu');
-  if (dropdown && dropdown.classList.contains('show')) {
-    if (!e.target.closest('.cv-dropdown-wrapper')) {
-      dropdown.classList.remove('show');
-    }
+  if (!e.target.closest('.cv-dropdown-wrapper')) {
+    document.querySelectorAll('.cv-dropdown-menu').forEach(d => {
+      d.classList.remove('show');
+    });
   }
 });
 

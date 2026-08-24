@@ -39,7 +39,7 @@
   <span style="color: var(--accent-cyan);">sudo</span>         - Cek hak akses administratif`,
 
       whoami: `Alfaiz Rayhan Putra Adji
-Mahasiswa S1 Teknik Komputer @ Telkom University
+Sarjana Teknik Komputer (S.T.) @ Telkom University
 Kompetensi Ganda: Blue Team Remediation (OWASP Top 10) &amp; Digital Forensics Investigation (DFIR).
 Mantan Intern Forensik Digital @ Ditres Siber Polda Metro Jaya.`,
 
@@ -113,7 +113,7 @@ GitHub   : github.com/alfaiz1002`,
   <span style="color: var(--accent-cyan);">sudo</span>         - Check admin privilege access`,
 
       whoami: `Alfaiz Rayhan Putra Adji
-B.S. Computer Engineering Student @ Telkom University
+Bachelor of Computer Engineering @ Telkom University
 Dual Competencies: Blue Team Remediation (OWASP Top 10) &amp; Digital Forensics Investigation (DFIR).
 Former Digital Forensics Intern @ Ditres Siber Metro Police.`,
 
