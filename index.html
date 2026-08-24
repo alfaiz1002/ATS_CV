@@ -1,0 +1,1107 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alfaiz Rayhan | Spesialis Keamanan Siber & Forensik Digital</title>
+
+  <!-- SEO & Open Graph Meta Tags -->
+  <meta name="description"
+    content="Portofolio Alfaiz Rayhan Putra Adji - Spesialis Keamanan Siber, Web Application Security (OWASP Top 10), dan Forensik Digital (DFIR). Mantan Intern Forensik Digital Ditres Siber Polda Metro Jaya.">
+  <meta name="keywords"
+    content="Alfaiz Rayhan, Cyber Security, Forensik Digital, DFIR, OWASP Top 10, Penetration Testing, Ditres Siber, Telkom University, Web AppSec">
+  <meta name="author" content="Alfaiz Rayhan Putra Adji">
+
+  <meta property="og:title" content="Alfaiz Rayhan | Spesialis Keamanan Siber & Forensik Digital">
+  <meta property="og:description"
+    content="Memiliki kompetensi ganda di bidang Web Application Security (OWASP Top 10) dan Investigasi Forensik Digital (DFIR). Eks-Intern Ditres Siber Polda Metro Jaya.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://alfaiz1002.github.io/">
+  <meta property="og:image" content="images/profile_formal.jpg">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Alfaiz Rayhan | Spesialis Keamanan Siber & DFIR">
+  <meta name="twitter:description"
+    content="Spesialisasi dalam Blue Team Remediation (OWASP Top 10) dan Investigasi Forensik Digital (DFIR).">
+
+  <!-- Cyber Shield Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23059669'><path d='M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z'/></svg>">
+
+  <!-- Google Fonts & Modular Stylesheet -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- SCROLL PROGRESS BAR -->
+  <div class="scroll-progress-bar" id="scroll-bar"></div>
+
+  <!-- CUSTOM CYBER PRECISION CURSOR -->
+  <div id="custom-cursor"></div>
+  <div id="cursor-dot"></div>
+
+  <!-- PARTIKEL LATAR BELAKANG CYBER -->
+  <canvas id="cyber-canvas"></canvas>
+
+  <!-- AMBIENT DUAL-TONE CYBER GLOW & VIGNETTE OPTICS (LEVEL DEWA) -->
+  <div class="ambient-glow-1"></div>
+  <div class="ambient-glow-2"></div>
+  <div class="vignette-overlay"></div>
+
+  <!-- NAVBAR HEADER -->
+  <nav>
+    <div class="container nav-container">
+      <ul class="nav-links">
+        <li><a href="#about" data-i18n="navAbout">Tentang</a></li>
+        <li><a href="#seclab" data-i18n="navSecLab">Security Lab</a></li>
+        <li><a href="#experience" data-i18n="navExperience">Pengalaman</a></li>
+        <li><a href="#projects" data-i18n="navProjects">Proyek</a></li>
+        <li><a href="#terminal" data-i18n="navTerminal">Terminal</a></li>
+        <li><a href="#certifications" data-i18n="navCerts">Sertifikasi</a></li>
+        <li><a href="#contact" data-i18n="navContact">Kontak</a></li>
+      </ul>
+
+      <div class="nav-controls">
+        <!-- 6-LANGUAGE SWITCHER DROPDOWN -->
+        <select id="lang-select" onchange="setLanguage(this.value)" class="lang-select" aria-label="Select Language">
+          <option value="id">🇮🇩 ID</option>
+          <option value="en">🇬🇧 EN</option>
+          <option value="ja">🇯🇵 JP</option>
+          <option value="ko">🇰🇷 KR</option>
+          <option value="es">🇪🇸 ES</option>
+          <option value="fr">🇫🇷 FR</option>
+        </select>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- HERO SECTION DENGAN FOTO FORMAL -->
+    <header class="hero" id="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <div>
+            <div class="hero-badge">
+              <span class="pulse-dot"></span> <span data-i18n="heroBadge">Terbuka untuk Posisi Cyber Security &amp;
+                DFIR</span>
+            </div>
+            <div class="hero-greeting" data-i18n="heroGreeting">👋 Halo, Saya Alfaiz Rayhan</div>
+            <h1 class="hero-title" data-i18n="heroTitle">
+              Spesialis Keamanan Siber &amp; <span>Investigasi Forensik Digital</span>
+            </h1>
+            <div class="typing-container">
+              &gt;&nbsp;<span id="typing-text"></span>
+            </div>
+            <p class="hero-desc" data-i18n="heroDesc">
+              Mahasiswa Teknik Komputer Telkom University dengan pengalaman praktis di bidang Web Application Security
+              (OWASP Top 10) dan Forensik Digital (DFIR). Mantan Intern Forensik Digital di Direktorat Tindak Pidana
+              Siber (Ditres Siber) Polda Metro Jaya, serta Asisten Praktikum &amp; Pembina Riset di Security Laboratory
+              (Seculab) Telkom University dan Anggota Resmi Asosiasi Forensik Digital Indonesia (AFDI).
+            </p>
+            <div class="hero-buttons">
+              <div class="cv-dropdown-wrapper">
+                <button onclick="window.toggleCvDropdown(event)" class="btn-cta"
+                  style="padding: 12px 24px; font-size: 0.95rem; cursor: pointer;">
+                  <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                    <polyline points="7 10 12 15 17 10" />
+                    <line x1="12" y1="15" x2="12" y2="3" />
+                  </svg>
+                  <span data-i18n="btnDownloadCV">Unduh CV (PDF) ▾</span>
+                </button>
+                <div id="cv-dropdown-menu" class="cv-dropdown-menu">
+                  <a href="CV_ATS_Alfaiz_Rayhan_Putra_Adji_CyberSecurity.pdf" target="_blank" class="cv-dropdown-item">
+                    🇮🇩 Versi Bahasa Indonesia (PDF)
+                  </a>
+                  <a href="Resume_ATS_Alfaiz_Rayhan_Putra_Adji_CyberSecurity_DFIR.pdf" target="_blank" class="cv-dropdown-item">
+                    🇬🇧 English Version (PDF)
+                  </a>
+                </div>
+              </div>
+              <button onclick="openModal('hrd-modal')" class="btn-hrd-quickview" style="background: rgba(16, 185, 129, 0.15); border: 1.5px solid var(--accent-emerald); color: #ffffff; padding: 12px 22px; font-size: 0.9rem; border-radius: 8px; font-weight: 600; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; transition: all 0.25s ease; box-shadow: 0 4px 18px rgba(16, 185, 129, 0.3);">
+                <span class="pulse-dot" style="background: var(--accent-emerald);"></span>
+                <span data-i18n="btnSummary30Sec">🎯 Ringkasan 30 Detik</span>
+              </button>
+              <a href="#projects" class="btn-secondary" style="padding: 12px 22px; font-size: 0.9rem;">
+                <span data-i18n="btnViewProjects">Lihat Proyek Keamanan</span>
+              </a>
+              <a href="#terminal" class="btn-secondary font-mono">
+                <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="4 17 10 11 4 5" />
+                  <line x1="12" y1="19" x2="20" y2="19" />
+                </svg>
+                <span data-i18n="btnOpenTerminal">Buka Terminal Interaktif</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- BINGKAI FOTO FORMAL HERO -->
+          <div class="hero-photo-wrapper">
+            <div class="formal-avatar-frame">
+              <div class="target-corner top-left"></div>
+              <div class="target-corner top-right"></div>
+              <div class="target-corner bottom-left"></div>
+              <div class="target-corner bottom-right"></div>
+              <img id="hero-avatar-img" src="images/profile_formal.jpg" alt="Foto Profil Formal Alfaiz Rayhan"
+                class="avatar-img" onerror="this.onerror=null; this.src='profile_formal.jpg';">
+              <div class="avatar-overlay-badge">
+                <div>
+                  <strong>Alfaiz Rayhan P. A.</strong>
+                  <span id="hero-avatar-role" style="font-size: 0.75rem; color: var(--text-muted);"
+                    data-i18n="heroAvatarRoleFormal">Teknik Komputer Telkom University</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- COMMAND-CENTER FLOATING STATS HUD (LEVEL DEWA 2026) -->
+        <div class="stats-bar">
+          <div class="stat-item">
+            <div class="hud-badge-icon"
+              style="background: rgba(255, 255, 255, 0.95); border-color: rgba(6, 182, 212, 0.5); padding: 6px 12px;">
+              <img src="images/logo_owasp.png" alt="OWASP Logo" style="height: 26px; width: auto; object-fit: contain;">
+            </div>
+            <div class="stat-number" data-i18n="statOwaspNum">13+ Fitur</div>
+            <div class="stat-label" data-i18n="statOwaspLabel">Web Security OWASP</div>
+          </div>
+
+          <div class="stat-item">
+            <div class="hud-badge-icon"
+              style="background: rgba(10, 15, 26, 0.85); border-color: rgba(56, 189, 248, 0.45); padding: 4px 10px;">
+              <img src="images/logo_seculab.png" alt="Seculab Logo"
+                style="height: 48px; width: auto; filter: drop-shadow(0 4px 14px rgba(56, 189, 248, 0.6));">
+            </div>
+            <div class="stat-number" data-i18n="statSecLabNum">Seculab</div>
+            <div class="stat-label" data-i18n="statSecLabLabel">Asisten &amp; Pembina Riset</div>
+          </div>
+
+          <div class="stat-item">
+            <div class="hud-badge-icon"
+              style="background: rgba(10, 15, 26, 0.85); border-color: rgba(6, 182, 212, 0.45); padding: 4px 10px;">
+              <img src="images/logo_siber_polri.png" alt="Siber POLRI Shield"
+                style="height: 52px; width: auto; filter: drop-shadow(0 4px 14px rgba(6, 182, 212, 0.6));">
+            </div>
+            <div class="stat-number" data-i18n="statSiberNum">Ditres Siber</div>
+            <div class="stat-label" data-i18n="statSiberLabel">Magang Polda Metro Jaya</div>
+          </div>
+
+          <div class="stat-item">
+            <div class="hud-badge-icon"
+              style="background: rgba(255, 255, 255, 0.95); border-color: rgba(16, 185, 129, 0.5); padding: 6px 12px;">
+              <img src="images/logo_afdi.png" alt="AFDI Logo" style="height: 24px; width: auto; object-fit: contain;">
+            </div>
+            <div class="stat-number" data-i18n="statAfdiNum">AFDI</div>
+            <div class="stat-label" data-i18n="statAfdiLabel">Anggota Resmi Terdaftar</div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- SECTION 01: TENTANG & KOMPETENSI UTAMA (BENTO GRID) -->
+    <section id="about">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-title">
+            <span class="section-num" data-i18n="sec1Num">01.</span> <span data-i18n="sec1Title">Kompetensi Utama</span>
+          </div>
+          <p class="section-subtitle" data-i18n="sec1Sub">Keahlian ganda dalam pertahanan preventif dan investigasi
+            pasca-insiden</p>
+        </div>
+
+        <div class="bento-grid">
+          <div class="glass-card bento-featured" data-category="appsec">
+            <div class="dossier-stamp">🛡️ PREVENTIVE DEFENSE // OWASP_TOP10</div>
+            <div class="card-icon">
+              <!-- Icon Perisai -->
+              <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              </svg>
+            </div>
+            <h3 class="card-title" data-i18n="card1Title">Blue Team &amp; Web Application Security</h3>
+            <p class="card-text" data-i18n="card1Text">
+              Fokus pada arsitektur pertahanan terhadap kerentanan OWASP Top 10. Berpengalaman menerapkan Web
+              Application
+              Firewall (WAF), middleware keamanan kustom, Autentikasi Multi-Faktor (vektor RFC OTP), deteksi anomali
+              rate-limit, dan sistem peringatan ancaman otomatis real-time.
+            </p>
+            <div class="badge-list">
+              <span class="tech-tag">OWASP Top 10</span>
+              <span class="tech-tag">WAF Middleware</span>
+              <span class="tech-tag">OTP Authentication</span>
+              <span class="tech-tag">Bcrypt / SHA-512</span>
+              <span class="tech-tag">HTTP Headers</span>
+              <span class="tech-tag">ISO 27001 Audit Logs</span>
+            </div>
+            <button class="btn-modal-trigger" onclick="openModal('appsec-modal')">
+              <span data-i18n="card1Btn">Baca Detail Implementasi Keamanan &rarr;</span>
+            </button>
+          </div>
+
+          <div class="glass-card bento-side" data-category="dfir">
+            <div
+              style="display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 14px; flex-wrap: wrap;">
+              <div class="dossier-stamp"
+                style="color: var(--accent-cyan); border-color: rgba(6, 182, 212, 0.3); background: rgba(6, 182, 212, 0.08); margin-bottom: 0;">
+                🔍 CHAIN OF CUSTODY VERIFIED ✓ // DITRES_SIBER</div>
+              <img src="images/logo_siber_polri.png" alt="Logo Siber POLRI" class="siber-polri-bento-badge"
+                style="height: 58px; filter: drop-shadow(0 4px 15px rgba(6, 182, 212, 0.4)); flex-shrink: 0;">
+            </div>
+            <div class="card-icon"
+              style="background: rgba(16, 185, 129, 0.1); border-color: rgba(16, 185, 129, 0.2); color: var(--accent-emerald);">
+              <!-- Icon Kaca Pembesar -->
+              <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8" />
+                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+              </svg>
+            </div>
+            <h3 class="card-title" data-i18n="card2Title">Digital Forensics &amp; Incident Response (DFIR)</h3>
+            <p class="card-text" data-i18n="card2Text">
+              Pengalaman akuisisi dan triase forensik praktis di Ditres Siber Polda Metro Jaya. Mahir dalam preservasi
+              bukti digital, analisis artefak Windows Registry, forensik seluler, pemeriksaan riwayat peramban, analisis
+              basis data, dan penyusunan laporan Chain of Custody standar hukum.
+            </p>
+            <div class="badge-list">
+              <span class="tech-tag">FTK Imager</span>
+              <span class="tech-tag">Autopsy</span>
+              <span class="tech-tag">OSForensics</span>
+              <span class="tech-tag">Magnet ACQUIRE</span>
+              <span class="tech-tag">Registry Explorer</span>
+              <span class="tech-tag">Chain of Custody</span>
+            </div>
+            <button class="btn-modal-trigger" onclick="openModal('dfir-modal')">
+              <span data-i18n="card2Btn">Baca Detail Triase Forensik &rarr;</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 02: SHOWCASE KHUSUS SECURITY LABORATORY (SECLAB) -->
+    <section id="seclab">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-title">
+            <span class="section-num" data-i18n="sec2Num">02.</span> <span data-i18n="sec2Title">Security Laboratory
+              (Seculab) &amp; Kepemimpinan Riset</span>
+          </div>
+          <p class="section-subtitle" data-i18n="sec2Sub">Kepemimpinan riset akademik &amp; pengajaran praktikum di
+            Telkom
+            University</p>
+        </div>
+
+        <!-- LEVEL DEWA SOC RADAR THREAT WIDGET -->
+        <div class="soc-radar-container">
+          <div class="radar-header">
+            <div class="radar-status-dot"></div>
+            <span class="radar-title">LIVE SOC THREAT MONITOR &amp; DFIR TELEMETRY</span>
+            <span class="radar-ping-counter">LATENCY: <span id="radar-ms">24ms</span> | NODES: 8/8 ONLINE</span>
+          </div>
+          <div class="radar-subtitle-note" data-i18n="radarNote">
+            💡 <i>Simulasi Visual Dashboard SOC — Arahkan kursor &amp; KLIK titik hijau untuk meluncur langsung ke
+              detail bagian.</i>
+          </div>
+          <div class="radar-body">
+            <div class="radar-sweep"></div>
+            <div class="radar-circle circle-1"></div>
+            <div class="radar-circle circle-2"></div>
+            <div class="radar-circle circle-3"></div>
+            <div class="radar-axis axis-x"></div>
+            <div class="radar-axis axis-y"></div>
+            <!-- Radar Threat Nodes (Clickable Interactive Navigation) -->
+            <div class="radar-node node-1" onclick="navigateToNode('experience', 'Ditres Siber Polda Metro Jaya')"
+              title="Klik: Meluncur ke Ditres Siber Polda Metro Jaya"
+              data-label="Ditres Siber Polda Metro Jaya (DFIR Triage)"></div>
+            <div class="radar-node node-2" onclick="navigateToNode('seclab', 'Seculab Telkom University')"
+              title="Klik: Meluncur ke Seculab Telkom University" data-label="Seculab Telkom Univ (Research Division)">
+            </div>
+            <div class="radar-node node-3" onclick="openModal('appsec-modal')"
+              title="Klik: Buka Detail WAF &amp; OWASP Shield"
+              data-label="WAF &amp; OWASP Defensive Shield (Pineus Tilu)"></div>
+            <div class="radar-node node-4" onclick="navigateToNode('certifications', 'AFDI Official Registry')"
+              title="Klik: Meluncur ke Sertifikasi AFDI" data-label="AFDI Official Forensic Registry"></div>
+          </div>
+        </div>
+
+        <div class="seclab-card">
+          <div class="seclab-grid">
+            <!-- BINGKAI FOTO JAKET LAB SECURITY -->
+            <div class="seclab-photo-frame">
+              <div class="target-corner top-left"></div>
+              <div class="target-corner top-right"></div>
+              <div class="target-corner bottom-left"></div>
+              <div class="target-corner bottom-right"></div>
+              <img src="images/profile_lab.jpg" alt="Foto Alfaiz Rayhan Jaket Lab Security" class="avatar-img"
+                onerror="this.onerror=null; this.src='profile_lab.jpg';">
+              <div class="avatar-overlay-badge" style="border-color: rgba(168, 85, 247, 0.4);">
+                <div>
+                  <strong>Alfaiz Rayhan P. A.</strong>
+                  <span style="font-size: 0.75rem; color: var(--text-muted);" data-i18n="seclabBadgeSub">Asisten Lab
+                    &amp; Pembina Riset</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- DESKRIPSI DAN PENJELASAN SECLAB -->
+            <div>
+              <div
+                style="display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 12px; flex-wrap: wrap;">
+                <span class="seclab-tag" style="margin-bottom: 0;" data-i18n="seclabTag">SECURITY LABORATORY TELKOM
+                  UNIVERSITY</span>
+                <img src="images/logo_seculab.png" alt="Logo Seculab Telkom University"
+                  style="height: 52px; width: auto; filter: drop-shadow(0 4px 14px rgba(56, 189, 248, 0.4)); flex-shrink: 0;">
+              </div>
+              <h3 class="seclab-title" data-i18n="seclabTitle">Profil &amp; Peran di Security Laboratory</h3>
+              <div class="seclab-subtitle" data-i18n="seclabSub">Asisten Praktikum &amp; Pembina Riset | Divisi Digital
+                Forensics</div>
+              <p class="seclab-desc" data-i18n="seclabDesc1">
+                Security Laboratory (Seculab) adalah laboratorium riset dan praktikum unggulan di bawah Departemen
+                Teknik
+                Komputer Telkom University. Laboratorium ini berfokus pada riset Keamanan Sistem Operasi, Network
+                Defense,
+                Penetration Testing, dan Forensik Digital (DFIR).
+              </p>
+              <p class="seclab-desc" data-i18n="seclabDesc2">
+                Selama menjabat sebagai Asisten Praktikum dan Pembina Riset, saya bertanggung jawab membimbing serta
+                merumuskan judul riset yang sesuai dengan skill set masing-masing anggota adik tingkat di Divisi Riset
+                Forensik Digital, mengampu praktikum Keamanan Sistem, serta menyusun modul praktikum utama laboratorium.
+              </p>
+
+              <div class="seclab-highlights">
+                <div class="h-item">
+                  <strong data-i18n="hMentor">👨‍🏫 Mentor Praktikum</strong>
+                  <span data-i18n="hMentorSub">Mengampu Praktikum Keamanan Sistem &amp; OS</span>
+                </div>
+                <div class="h-item">
+                  <strong data-i18n="hAdvisor">🎯 Pembina Riset</strong>
+                  <span data-i18n="hAdvisorSub">Merumuskan &amp; memetakan topik riset adik tingkat</span>
+                </div>
+                <div class="h-item">
+                  <strong data-i18n="hSpeaker">🎙️ Speaker Study Group</strong>
+                  <span data-i18n="hSpeakerSub">Pemateri Sesi DFIR &amp; Evidence Handling</span>
+                </div>
+                <div class="h-item">
+                  <strong data-i18n="hAuthor">📘 Penulis Modul Utama</strong>
+                  <span data-i18n="hAuthorSub">Menyusun 4 Modul Praktikum &amp; Prosedur DFIR</span>
+                </div>
+                <div class="h-item">
+                  <strong data-i18n="hSupervisor">📊 Supervisor Riset Forensik</strong>
+                  <span data-i18n="hSupervisorSub">Membimbing komparasi tools Windows Registry</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 03: PENGALAMAN KERJA & ORGANISASI -->
+    <section id="experience">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-title">
+            <span class="section-num" data-i18n="sec3Num">03.</span> <span data-i18n="sec3Title">Pengalaman Kerja &amp;
+              Kepemimpinan</span>
+          </div>
+          <p class="section-subtitle" data-i18n="sec3Sub">Pengalaman institusional di kepolisian &amp; laboratorium
+            akademik</p>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item" data-category="dfir">
+            <div class="timeline-dot"></div>
+            <div class="timeline-header-flex"
+              style="display: flex; align-items: center; justify-content: space-between; gap: 20px; margin-bottom: 12px; flex-wrap: wrap;">
+              <div>
+                <div class="timeline-role" data-i18n="exp1Role">Digital Forensics Intern</div>
+                <div class="timeline-company" data-i18n="exp1Company">Direktorat Tindak Pidana Siber (Ditres Siber),
+                  Polda Metro Jaya</div>
+              </div>
+              <div class="timeline-siber-shield-box"
+                style="background: rgba(6, 9, 17, 0.7); border: 1px solid rgba(6, 182, 212, 0.3); padding: 8px 14px; border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.6); flex-shrink: 0;">
+                <img src="images/logo_siber_polri.png" alt="Logo Reserse Siber POLRI"
+                  style="height: 92px; filter: drop-shadow(0 6px 18px rgba(6, 182, 212, 0.4));">
+              </div>
+            </div>
+            <div class="timeline-date" data-i18n="exp1Date">30 Juni 2025 – 9 Agustus 2025 | Jakarta, Indonesia</div>
+            <ul class="timeline-bullets">
+              <li data-i18n="exp1Bullet1">Menerima bimbingan langsung dari penyidik senior dan ahli forensik digital
+                dalam
+                metodologi penyidikan kepolisian.</li>
+              <li data-i18n="exp1Bullet2">Melakukan akuisisi dan preservasi bukti digital sesuai standar ketat Chain of
+                Custody forensik.</li>
+              <li data-i18n="exp1Bullet3">Menganalisis Windows Registry, basis data SQL, sistem berkas, media
+                penyimpanan
+                digital, dan perangkat seluler di bawah pengawasan ahli.</li>
+              <li data-i18n="exp1Bullet4">Mengoperasikan FTK Imager, Magnet ACQUIRE, Autopsy, Andriller, Registry
+                Explorer, SQLite Database Browser, dan OSForensics.</li>
+              <li data-i18n="exp1Bullet5">Menyusun laporan hasil analisis forensik digital sesuai standar dokumentasi
+                penyidikan kepolisian.</li>
+            </ul>
+          </div>
+
+          <div class="timeline-item" data-category="seculab">
+            <div class="timeline-dot"></div>
+            <div class="timeline-header-flex"
+              style="display: flex; align-items: center; justify-content: space-between; gap: 20px; margin-bottom: 12px; flex-wrap: wrap;">
+              <div>
+                <div class="timeline-role" data-i18n="exp2Role">Teaching Assistant &amp; Pembina Riset</div>
+                <div class="timeline-company" data-i18n="exp2Company">Security Laboratory - Telkom University</div>
+              </div>
+              <div class="timeline-seculab-logo-box"
+                style="background: rgba(10, 15, 26, 0.85); border: 1px solid rgba(56, 189, 248, 0.35); padding: 8px 14px; border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.6); flex-shrink: 0;">
+                <img src="images/logo_seculab.png" alt="Logo Seculab Telkom University"
+                  style="height: 75px; width: auto; filter: drop-shadow(0 6px 18px rgba(56, 189, 248, 0.45));">
+              </div>
+            </div>
+            <div class="timeline-date" data-i18n="exp2Date">Semester 7 – Semester 8 | Bandung, Indonesia</div>
+            <ul class="timeline-bullets">
+              <li data-i18n="exp2Bullet1">Mengampu kegiatan praktikum laboratorium Keamanan Sistem dan Sistem Operasi
+                untuk mahasiswa S1.</li>
+              <li data-i18n="exp2Bullet2">Bertindak sebagai Pembina Riset bagi adik tingkat di Divisi Riset Forensik
+                Digital, merumuskan judul riset yang disesuaikan dengan kemampuan teknis individu.</li>
+              <li data-i18n="exp2Bullet3">Membimbing dan mengajari mahasiswa dalam eksekusi riset, termasuk membimbing
+                studi komparasi tiga tools analisis Windows Registry.</li>
+              <li data-i18n="exp2Bullet4">Menyusun dan merancang modul praktikum Forensik Digital yang mencakup teori
+                dasar, lingkungan target, serta panduan langkah demi langkah.</li>
+            </ul>
+          </div>
+
+          <div class="timeline-item" data-category="business">
+            <div class="timeline-dot"
+              style="background: var(--accent-emerald); box-shadow: 0 0 12px var(--accent-emerald);"></div>
+            <div class="timeline-header-flex"
+              style="display: flex; align-items: center; justify-content: space-between; gap: 20px; margin-bottom: 12px; flex-wrap: wrap;">
+              <div>
+                <div class="timeline-role" data-i18n="expLakesideRole">Core Team &amp; Financial-Inventory Officer</div>
+                <div class="timeline-company" data-i18n="expLakesideCompany">Lakeside Fit+ (CAATIS Telkom University)</div>
+              </div>
+              <div class="timeline-lakeside-logo-box"
+                style="background: rgba(255, 255, 255, 0.96); border: 1px solid rgba(16, 185, 129, 0.4); padding: 6px 14px; border-radius: 12px; display: flex; align-items: center; gap: 10px; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35); flex-shrink: 0;">
+                <img src="images/logo_lakeside.png" alt="Logo Lakeside Fit+" style="height: 48px; width: auto; object-fit: contain;">
+                <div style="height: 32px; width: 1px; background: rgba(0, 0, 0, 0.18);"></div>
+                <img src="images/logo_caatis.png" alt="Logo CAATIS Telkom University" style="height: 24px; width: auto; object-fit: contain;">
+              </div>
+            </div>
+            <div class="timeline-date" data-i18n="expLakesideDate">26 Februari 2024 – 11 Oktober 2024 | Bandung, Indonesia</div>
+            <ul class="timeline-bullets">
+              <li data-i18n="expLakesideBullet1">Mengelola pencatatan keuangan operasional harian mencakup rekapitulasi pendapatan, pengeluaran kas, serta pembukuan usaha CAATIS Telkom.</li>
+              <li data-i18n="expLakesideBullet2">Melakukan pengawasan dan audit inventaris stok bahan baku harian (buah-buahan, gula, dan suplai) untuk meminimalisir risiko kerugian (loss prevention).</li>
+              <li data-i18n="expLakesideBullet3">Mengoordinasikan operasional harian outlet dan pelayanan pelanggan untuk menjamin efisiensi alur kerja produk minuman kesehatan.</li>
+            </ul>
+          </div>
+
+          <div class="timeline-item" data-category="seculab">
+            <div class="timeline-dot"
+              style="background: var(--accent-purple); box-shadow: 0 0 12px var(--accent-purple);"></div>
+            <div class="timeline-header-flex"
+              style="display: flex; align-items: center; justify-content: space-between; gap: 20px; margin-bottom: 12px; flex-wrap: wrap;">
+              <div>
+                <div class="timeline-role" data-i18n="exp3Role">PJ Divisi Esports (FIFA Tournament Lead)</div>
+                <div class="timeline-company" data-i18n="exp3Company">Centurion - Himpunan Mahasiswa Teknik Komputer
+                  (HMTK) Telkom University</div>
+              </div>
+              <div style="display: flex; align-items: center; gap: 14px; flex-wrap: wrap;">
+                <div class="timeline-logo-box"
+                  style="background: rgba(168, 85, 247, 0.08); border: 1px solid rgba(168, 85, 247, 0.35); padding: 6px 12px; border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.5); flex-shrink: 0; display: flex; align-items: center; justify-content: center;">
+                  <img src="images/logo_centurion.png" alt="Logo Centurion HMTK"
+                    style="height: 60px; width: auto; border-radius: 8px; filter: drop-shadow(0 4px 12px rgba(168, 85, 247, 0.5));">
+                </div>
+                <div class="timeline-badge-box"
+                  style="background: rgba(168, 85, 247, 0.12); border: 1px solid rgba(168, 85, 247, 0.35); padding: 6px 14px; border-radius: 10px; font-family: var(--font-mono); font-size: 0.8rem; color: var(--accent-purple); font-weight: bold; flex-shrink: 0;">
+                  🎮 TOURNAMENT LEAD
+                </div>
+              </div>
+            </div>
+            <div class="timeline-date" data-i18n="exp3Date">2024 | Telkom University, Bandung</div>
+            <ul class="timeline-bullets">
+              <li data-i18n="exp3Bullet1">Memimpin operasional divisi turnamen Esports FIFA secara end-to-end, mencakup
+                perancangan struktur bagan tanding (bracket), penjadwalan, dan sistem polling partisipasi.</li>
+              <li data-i18n="exp3Bullet2">Merumuskan buku panduan regulasi kompetisi, standar fair-play, dan protokol
+                penanganan sengketa teknis guna menjaga integritas kompetisi.</li>
+              <li data-i18n="exp3Bullet3">Mengoordinasikan puluhan peserta dan memastikan seluruh rangkaian pertandingan
+                berjalan tepat waktu, tertib, dan 100% bebas hambatan teknis.</li>
+            </ul>
+          </div>
+
+          <div class="timeline-item" data-category="seculab">
+            <div class="timeline-dot" style="background: var(--accent-cyan); box-shadow: 0 0 12px var(--accent-cyan);">
+            </div>
+            <div class="timeline-header-flex"
+              style="display: flex; align-items: center; justify-content: space-between; gap: 20px; margin-bottom: 12px; flex-wrap: wrap;">
+              <div>
+                <div class="timeline-role" data-i18n="exp4Role">Divisi Sponsorship &amp; Moderator Edukasi</div>
+                <div class="timeline-company" data-i18n="exp4Company">Connection - Himpunan Mahasiswa Teknik Komputer
+                  (HMTK) Telkom University</div>
+              </div>
+              <div style="display: flex; align-items: center; gap: 14px; flex-wrap: wrap;">
+                <div class="timeline-logo-box"
+                  style="background: rgba(6, 182, 212, 0.08); border: 1px solid rgba(6, 182, 212, 0.35); padding: 6px 12px; border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.5); flex-shrink: 0; display: flex; align-items: center; justify-content: center;">
+                  <img src="images/logo_connection.png" alt="Logo Connection HMTK"
+                    style="height: 60px; width: auto; border-radius: 50%; filter: drop-shadow(0 4px 12px rgba(6, 182, 212, 0.5));">
+                </div>
+                <div class="timeline-badge-box"
+                  style="background: rgba(6, 182, 212, 0.12); border: 1px solid rgba(6, 182, 212, 0.35); padding: 6px 14px; border-radius: 10px; font-family: var(--font-mono); font-size: 0.8rem; color: var(--accent-cyan); font-weight: bold; flex-shrink: 0;">
+                  🤝 OUTREACH &amp; MENTOR
+                </div>
+              </div>
+            </div>
+            <div class="timeline-date" data-i18n="exp4Date">2023 | Telkom University, Bandung</div>
+            <ul class="timeline-bullets">
+              <li data-i18n="exp4Bullet1">Melakukan eksplorasi kemitraan, perancangan proposal, dan outreach sponsor
+                eksternal untuk kegiatan tahunan prodi.</li>
+              <li data-i18n="exp4Bullet2">Berperan aktif sebagai koordinator lintas divisi yang adaptif dalam mendukung
+                kelancaran operasional dan logistik acara.</li>
+              <li data-i18n="exp4Bullet3">Bertindak sebagai Moderator &amp; Mentor Sesi Edukasi Interaktif bagi siswa
+                kelas 3 SD, memfasilitasi pembelajaran logika komputasi dasar dan pengenalan kreasi gim.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 04: PROYEK KEAMANAN UNGGULAN (BENTO GRID & FILTER) -->
+    <section id="projects">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-title">
+            <span class="section-num" data-i18n="sec4Num">04.</span> <span data-i18n="sec4Title">Proyek Keamanan
+              Unggulan</span>
+          </div>
+          <p class="section-subtitle" data-i18n="sec4Sub">Hasil karya rekayasa keamanan &amp; pengembangan modul
+            forensik
+          </p>
+        </div>
+
+        <!-- TABBED OPERATIONS FILTER BAR -->
+        <div class="operations-filter-bar">
+          <button class="filter-tab-btn active" data-filter="all" onclick="filterOperations('all')">🌐 Semua Operasi</button>
+          <button class="filter-tab-btn" data-filter="appsec" onclick="filterOperations('appsec')">🛡️ OWASP AppSec</button>
+          <button class="filter-tab-btn" data-filter="seculab" onclick="filterOperations('seculab')">🥼 Seculab Leadership</button>
+        </div>
+
+        <div class="bento-grid">
+          <div class="glass-card bento-featured" data-category="appsec">
+            <div class="dossier-stamp">🛡️ PREVENTIVE DEFENSE // OWASP_TOP10</div>
+            <h3 class="card-title" data-i18n="proj1Title">Arsitektur Keamanan Website Reservasi Pineus Tilu - OWASP Top
+              10 (Tugas Akhir / Capstone Design)
+            </h3>
+            <p class="card-text" style="margin-bottom: 16px;" data-i18n="proj1Text">
+              Merancang dan menerapkan 13+ fitur keamanan backend mencakup Autentikasi Multi-Faktor (vektor RFC OTP),
+              WAF,
+              Deteksi Anomali Rate (&gt;50 req/menit), Keamanan Password Dua-Lapis dengan deteksi kebocoran k-Anonymity,
+              serta validasi webhook pembayaran Midtrans SHA-512. Mengintegrasikan notifikasi insiden kritis ke Telegram
+              Bot.
+            </p>
+            <div class="badge-list">
+              <span class="tech-tag">OWASP Top 10</span>
+              <span class="tech-tag">RFC 6238 TOTP</span>
+              <span class="tech-tag">SHA-512 Webhook</span>
+              <span class="tech-tag">Telegram Bot Alerts</span>
+              <span class="tech-tag">Rate Anomaly WAF</span>
+            </div>
+            <button class="btn-modal-trigger" onclick="openModal('pineus-modal')">
+              <span data-i18n="proj1Btn">Inspeksi Detail Arsitektur &rarr;</span>
+            </button>
+          </div>
+
+          <div class="glass-card bento-side" data-category="seculab">
+            <h3 class="card-title" data-i18n="proj2Title">Pengembangan Modul Praktikum Laboratorium Forensik Digital
+            </h3>
+            <p class="card-text" style="margin-bottom: 16px;" data-i18n="proj2Text">
+              Menyusun modul pembelajaran utama praktikum Forensik Digital mahasiswa S1 Telkom University. Merancang
+              panduan analisis artefak langkah demi langkah untuk lingkungan Windows/Linux, ekstraksi artefak registry,
+              triase memori, dan teknik investigasi basis data.
+            </p>
+            <div class="badge-list">
+              <span class="tech-tag">Kurikulum Lab</span>
+              <span class="tech-tag">Prosedur Artefak</span>
+              <span class="tech-tag">Windows Registry</span>
+              <span class="tech-tag">Dokumentasi Tools</span>
+            </div>
+            <button class="btn-modal-trigger" onclick="openModal('module-modal')">
+              <span data-i18n="proj2Btn">Inspeksi Konten Kurikulum &rarr;</span>
+            </button>
+          </div>
+
+          <div class="glass-card bento-side" data-category="seculab" style="grid-column: 1 / -1;">
+            <h3 class="card-title" data-i18n="proj3Title">Webinar &amp; Workshop Hands-on: Digital Forensics
+              Fundamentals</h3>
+            <p class="card-text" style="margin-bottom: 16px;" data-i18n="proj3Text">
+              Menjadi Speaker &amp; Workshop Lead Seculab Study Group Week 2. Membahas metodologi NIST (Identify &rarr;
+              Isolate &rarr; Preserve &rarr; Analyze), analisis data mentah Hex (HxD), verifikasi integritas bukti hash
+              (HashCalc MD5/SHA-256), serta ekstraksi metadata berkas digital (ExifTool).
+            </p>
+            <div class="badge-list">
+              <span class="tech-tag">Seculab Study Group</span>
+              <span class="tech-tag">NIST Standard</span>
+              <span class="tech-tag">HxD Hex Analysis</span>
+              <span class="tech-tag">HashCalc SHA-256</span>
+              <span class="tech-tag">ExifTool Metadata</span>
+              <span class="tech-tag">Evidence Handling</span>
+            </div>
+            <button class="btn-modal-trigger" onclick="openModal('studygroup-modal')">
+              <span data-i18n="proj3Btn">Inspeksi Silabus &amp; Hands-on &rarr;</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 05: TERMINAL INTERAKTIF TRIASE -->
+    <section id="terminal">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-title">
+            <span class="section-num" data-i18n="sec5Num">05.</span> <span data-i18n="sec5Title">Terminal Interaktif
+              Triase</span>
+          </div>
+          <p class="section-subtitle" data-i18n="sec5Sub">Ketik perintah untuk memeriksa keahlian, latar belakang, dan
+            parameter sistem</p>
+        </div>
+
+        <div class="terminal-container">
+          <div class="terminal-header">
+            <div class="terminal-dots">
+              <span class="t-dot t-red"></span>
+              <span class="t-dot t-yellow"></span>
+              <span class="t-dot t-green"></span>
+            </div>
+            <div class="terminal-title">alfaiz@sec-ops:~ (bash)</div>
+            <div></div>
+          </div>
+
+          <!-- TOMBOL PINTASAN OTOMATIS KASUS HRD / REKRUTER -->
+          <div class="terminal-actions">
+            <button class="t-btn demo-btn" onclick="startAutoDemo()">▶️ Auto-Demo Triase</button>
+            <button class="t-btn" onclick="execQuickCmd('whoami')">👤 whoami</button>
+            <button class="t-btn" onclick="execQuickCmd('skills')">🛡️ skills</button>
+            <button class="t-btn" onclick="execQuickCmd('seculab')">🥼 seculab</button>
+            <button class="t-btn" onclick="execQuickCmd('organisasi')">🏛️ organisasi</button>
+            <button class="t-btn" onclick="execQuickCmd('sertifikasi')">🏆 sertifikasi</button>
+            <button class="t-btn" onclick="execQuickCmd('kontak')">📧 kontak</button>
+            <button class="t-btn" onclick="execQuickCmd('clear')">🧹 clear</button>
+          </div>
+
+          <div class="terminal-body" id="terminal-body">
+            <div class="terminal-output" id="terminal-output" data-i18n="tWelcome">Selamat datang di Shell Keamanan
+              Interaktif Alfaiz Rayhan. Ketik 'help' untuk melihat daftar perintah yang tersedia.</div>
+
+            <div class="terminal-prompt-line">
+              <span class="t-prompt">alfaiz@sec-ops:~$</span>
+              <input type="text" id="terminal-input" class="terminal-input"
+                placeholder="Ketik perintah (contoh: help, skills, seclab)..." autocomplete="off" spellcheck="false">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 06: SERTIFIKASI & KEANGGOTAAN -->
+    <section id="certifications">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-title">
+            <span class="section-num" data-i18n="sec6Num">06.</span> <span data-i18n="sec6Title">Sertifikasi &amp;
+              Keanggotaan Profesi</span>
+          </div>
+          <p class="section-subtitle" data-i18n="sec6Sub">Kredensial industri dan keanggotaan asosiasi resmi</p>
+        </div>
+
+        <!-- AFDI FEATURED HONOR WALL BANNER (LEVEL DEWA) -->
+        <div class="afdi-honor-banner"
+          onclick="openCertModal('images/cert_afdi.png', 'AFDI Certificate of Membership', event)">
+          <div class="afdi-honor-logo-box"
+            style="background: rgba(255, 255, 255, 0.95); padding: 8px 12px; border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; box-shadow: 0 4px 15px rgba(0,0,0,0.4);">
+            <img src="images/logo_afdi.png" alt="Logo AFDI Asosiasi Forensik Digital Indonesia"
+              style="height: 38px; width: auto; object-fit: contain;">
+          </div>
+          <div>
+            <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+              <div class="cert-name" style="color: var(--accent-emerald); font-size: 1.1rem;" data-i18n="afdiTitle">
+                Asosiasi Forensik Digital Indonesia (AFDI)</div>
+              <div class="cert-verify-tag">✓ REGISTRY VALIDATED</div>
+            </div>
+            <div class="cert-issuer" style="font-size: 0.9rem; margin-top: 4px;" data-i18n="afdiSub">Anggota Resmi
+              Terdaftar Aktif (Mei 2026 – Sekarang)</div>
+            <div class="cert-id-badge"
+              style="background: rgba(16, 185, 129, 0.15); border-color: rgba(16, 185, 129, 0.4); color: var(--accent-emerald);">
+              ID No: 20264-601-3</div>
+            <br>
+            <button class="btn-preview-cert"
+              onclick="openCertModal('images/cert_afdi.png', 'AFDI Certificate of Membership', event)">
+              🔍 Prinjau Sertifikat AFDI
+            </button>
+          </div>
+          <div class="afdi-honor-right">
+            <img src="images/cert_afdi.png" alt="Sertifikat AFDI Alfaiz Rayhan" class="afdi-cert-preview"
+              onclick="openCertModal('images/cert_afdi.png', 'AFDI Certificate of Membership', event)">
+          </div>
+        </div>
+
+        <div class="cert-grid">
+          <div class="cert-card"
+            onclick="openCertModal('images/cert_bluecape.png', 'Blue Cape Security - DFIR Foundations and Techniques', event)">
+            <div class="cert-card-header">
+              <div class="cert-icon">
+                <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="8" r="7" />
+                  <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88" />
+                </svg>
+              </div>
+              <div>
+                <div class="cert-name">DFIR Foundations &amp; Techniques</div>
+                <div class="cert-issuer">Blue Cape Security (2026)</div>
+                <div style="display: flex; gap: 6px; align-items: center; margin-top: 4px;">
+                  <div class="cert-id-badge">ID: 10082026</div>
+                  <div class="cert-verify-tag">✓ VERIFIED</div>
+                </div>
+              </div>
+            </div>
+            <img src="images/cert_bluecape.png" alt="Sertifikat Blue Cape Security DFIR" class="cert-img-preview">
+          </div>
+
+          <div class="cert-card"
+            onclick="openCertModal('images/cert_cisco.png', 'Cisco Networking Academy - Introduction to Cybersecurity', event)">
+            <div class="cert-card-header">
+              <div class="cert-icon">
+                <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="8" r="7" />
+                  <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88" />
+                </svg>
+              </div>
+              <div>
+                <div class="cert-name">Introduction to Cybersecurity</div>
+                <div class="cert-issuer">Cisco Networking Academy (2026)</div>
+                <div style="display: flex; gap: 6px; align-items: center; margin-top: 4px;">
+                  <div class="cert-id-badge">Issued: Jun 07, 2026</div>
+                  <div class="cert-verify-tag">✓ VERIFIED</div>
+                </div>
+              </div>
+            </div>
+            <img src="images/cert_cisco.png" alt="Sertifikat Cisco Cybersecurity" class="cert-img-preview">
+          </div>
+
+          <div class="cert-card"
+            onclick="openCertModal('images/cert_infosec.png', 'Cyber Academy - Introduction to Information Security', event)">
+            <div class="cert-card-header">
+              <div class="cert-icon">
+                <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="8" r="7" />
+                  <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88" />
+                </svg>
+              </div>
+              <div>
+                <div class="cert-name">Introduction to Information Security</div>
+                <div class="cert-issuer">Cyber Academy (2026)</div>
+                <div style="display: flex; gap: 6px; align-items: center; margin-top: 4px;">
+                  <div class="cert-id-badge">ID: PKMI01106261185</div>
+                  <div class="cert-verify-tag">✓ VERIFIED</div>
+                </div>
+              </div>
+            </div>
+            <img src="images/cert_infosec.png" alt="Sertifikat Cyber Academy InfoSec" class="cert-img-preview">
+          </div>
+
+          <div class="cert-card"
+            onclick="openCertModal('images/cert_crypto.png', 'Cyber Academy - Classical Cryptography for Beginner', event)">
+            <div class="cert-card-header">
+              <div class="cert-icon">
+                <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="8" r="7" />
+                  <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88" />
+                </svg>
+              </div>
+              <div>
+                <div class="cert-name">Classical Cryptography for Beginner</div>
+                <div class="cert-issuer">Cyber Academy (2026)</div>
+                <div style="display: flex; gap: 6px; align-items: center; margin-top: 4px;">
+                  <div class="cert-id-badge">ID: CCFB01106261187</div>
+                  <div class="cert-verify-tag">✓ VERIFIED</div>
+                </div>
+              </div>
+            </div>
+            <img src="images/cert_crypto.png" alt="Sertifikat Cyber Academy Cryptography" class="cert-img-preview">
+          </div>
+
+          <div class="cert-card"
+            onclick="openCertModal('images/cert_osftc.png', 'PassMark Software - OSForensics Triage Certification (OSFTC)', event)">
+            <div class="cert-card-header">
+              <div class="cert-icon">
+                <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="8" r="7" />
+                  <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88" />
+                </svg>
+              </div>
+              <div>
+                <div class="cert-name">OSForensics Triage Certification</div>
+                <div class="cert-issuer">PassMark Software (2025)</div>
+                <div style="display: flex; gap: 6px; align-items: center; margin-top: 4px;">
+                  <div class="cert-id-badge">ID: 142860-5</div>
+                  <div class="cert-verify-tag">✓ VERIFIED</div>
+                </div>
+              </div>
+            </div>
+            <img src="images/cert_osftc.png" alt="Sertifikat PassMark OSForensics Triage" class="cert-img-preview">
+          </div>
+
+          <div class="cert-card"
+            onclick="openCertModal('images/cert_sbt.png', 'Security Blue Team - Introduction to Digital Forensics', event)">
+            <div class="cert-card-header">
+              <div class="cert-icon">
+                <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="8" r="7" />
+                  <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88" />
+                </svg>
+              </div>
+              <div>
+                <div class="cert-name">Introduction to Digital Forensics</div>
+                <div class="cert-issuer">Security Blue Team (2025)</div>
+                <div style="display: flex; gap: 6px; align-items: center; margin-top: 4px;">
+                  <div class="cert-id-badge">ID: 380727805</div>
+                  <div class="cert-verify-tag">✓ VERIFIED</div>
+                </div>
+              </div>
+            </div>
+            <img src="images/cert_sbt.png" alt="Sertifikat Security Blue Team Digital Forensics"
+              class="cert-img-preview">
+          </div>
+
+          <div class="cert-card"
+            onclick="openCertModal('images/cert_seculab_lo.jpg', 'Telkom University & Seculab - Sertifikat Penghargaan Liaison Officer Security Laboratory Study Group 2025', event)">
+            <div class="cert-card-header">
+              <div class="cert-icon">
+                <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="8" r="7" />
+                  <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88" />
+                </svg>
+              </div>
+              <div>
+                <div class="cert-name">Liaison Officer - Seculab Study Group</div>
+                <div class="cert-issuer">Telkom University &amp; Seculab (2025)</div>
+                <div style="display: flex; gap: 6px; align-items: center; margin-top: 4px;">
+                  <div class="cert-id-badge">ID: 013/SERTIF-SECULAB/UNITEL/XII/2025</div>
+                  <div class="cert-verify-tag">✓ VERIFIED</div>
+                </div>
+              </div>
+            </div>
+            <img src="images/cert_seculab_lo.jpg" alt="Sertifikat Penghargaan Liaison Officer Seculab 2025"
+              class="cert-img-preview">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEDICATED HIGH-CONVERSION OFFICIAL CV DOSSIER BANNER (BESPOKE LEVEL DEWA) -->
+    <section id="cv-dossier-banner" style="padding: 40px 0 20px;">
+      <div class="container">
+        <div class="cv-dossier-card bespoke-dossier-card">
+          <div class="dossier-header-bar">
+            <div class="dossier-tags">
+              <span class="dossier-stamp">OFFICIAL DOSSIER // ATS-OPTIMIZED 2026</span>
+              <span class="dossier-security-tag">VERIFIED CREDENTIALS</span>
+            </div>
+            <div class="dossier-hash-tag">HASH: SHA-256 (VERIFIED ✓)</div>
+          </div>
+
+          <div class="dossier-grid-inner">
+            <div class="dossier-content">
+              <h2 class="dossier-title" data-i18n="dossierTitle">Unduh Berkas Resume Resmi &amp; CV Lengkap (PDF)</h2>
+              <p class="dossier-desc" data-i18n="dossierDesc">
+                Dokumen CV resmi format PDF yang dioptimalkan untuk sistem ATS (Applicant Tracking System), mencakup
+                riwayat magang Ditres Siber Polda Metro Jaya, kepemimpinan riset Seculab, serta lampiran verifikasi
+                sertifikasi.
+              </p>
+              <div class="dossier-proof-grid">
+                <div class="proof-card">
+                  <span class="proof-icon">🛡️</span>
+                  <span>Web AppSec &amp; OWASP Top 10 Case Studies</span>
+                </div>
+                <div class="proof-card">
+                  <span class="proof-icon">👮</span>
+                  <span>Ditres Siber Polda Metro Jaya Triage Reports</span>
+                </div>
+                <div class="proof-card">
+                  <span class="proof-icon">🎓</span>
+                  <span>Telkom Univ Seculab Research Modules</span>
+                </div>
+                <div class="proof-card">
+                  <span class="proof-icon">🤝</span>
+                  <span>AFDI Official Registry ID: 142860-5</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="dossier-action-box">
+              <div class="file-meta-box">
+                <div class="file-icon-wrap">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent-emerald)"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                    <polyline points="14 2 14 8 20 8"></polyline>
+                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                  </svg>
+                </div>
+                <div class="file-info">
+                  <strong>CV_Alfaiz_Rayhan.pdf</strong>
+                  <span>Format ATS • PDF • 1.2 MB</span>
+                </div>
+              </div>
+              <button onclick="downloadCV()" class="btn-cta btn-dossier-clean">
+                <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                  <polyline points="7 10 12 15 17 10" />
+                  <line x1="12" y1="15" x2="12" y2="3" />
+                </svg>
+                <span data-i18n="btnDownloadCV">Unduh CV (PDF)</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 07: KONTAK & FOOTER -->
+    <section id="contact">
+      <div class="container">
+        <div class="contact-wrapper">
+          <h2 class="contact-title" data-i18n="sec7Title">Mari Terhubung &amp; Berkolaborasi</h2>
+          <p class="contact-desc" data-i18n="sec7Sub">
+            Tertarik berdiskusi mengenai asesmen Keamanan Siber, investigasi DFIR, atau peluang karier? Jangan ragu
+            untuk
+            menghubungi saya langsung.
+          </p>
+
+          <div class="social-links">
+            <a href="mailto:alfaiz1002@gmail.com" class="btn-cta" style="padding: 12px 24px;"
+              onclick="copyContactText('alfaiz1002@gmail.com', 'Email', event)">
+              <!-- Icon Email -->
+              <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+              alfaiz1002@gmail.com
+            </a>
+
+            <a href="https://wa.me/628128429768" target="_blank" rel="noopener" class="btn-secondary" style="padding: 12px 24px;"
+              onclick="copyContactText('08128429768', 'Nomor WhatsApp/HP', event)">
+              <!-- Icon Phone / WhatsApp -->
+              <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+              </svg>
+              +62 812-8429-768 (WhatsApp)
+            </a>
+
+            <a href="https://www.linkedin.com/in/alfaiz-rayhan/" target="_blank" rel="noopener" class="btn-secondary">
+              <!-- Icon LinkedIn -->
+              <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.25V10.9H6.46M7.86 6.7a1.63 1.63 0 1 0 1.63 1.63A1.63 1.63 0 0 0 7.86 6.7z" />
+              </svg>
+              Profil LinkedIn
+            </a>
+
+            <a href="https://github.com/alfaiz1002" target="_blank" rel="noopener" class="btn-secondary">
+              <!-- Icon GitHub -->
+              <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z" />
+              </svg>
+              Repositori GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OVERLAY MODAL DETAIL -->
+    <div id="modal-container" class="modal-overlay" onclick="closeModalOnOverlay(event)">
+      <div class="modal-content">
+        <button class="modal-close" onclick="closeModal()">&times;</button>
+        <div id="modal-body-content"></div>
+      </div>
+    </div>
+  </main>
+
+  <!-- LIVE SECURITY HUD TICKER BAR (LEVEL DEWA) -->
+  <div class="hud-ticker-wrapper">
+    <div class="hud-ticker-track">
+      <div class="hud-item"><span>🟢 WAF MIDDLEWARE:</span> <span class="highlight">ACTIVE</span></div>
+      <div class="hud-item"><span>🛡️ OWASP TOP 10 DEFENSE:</span> <span class="highlight">OPERATIONAL</span></div>
+      <div class="hud-item"><span>🟢 OTP RFC ENGINE:</span> <span class="highlight">100% MATCH</span></div>
+      <div class="hud-item"><span>📜 ISO 27001 AUDIT RETENTION:</span> <span class="highlight">ENFORCED (>90
+          DAYS)</span></div>
+      <div class="hud-item"><span>👮 DITRES SIBER POLDA METRO JAYA INTERN:</span> <span
+          class="highlight">VERIFIED</span></div>
+      <div class="hud-item"><span>🎓 TELKOM UNIVERSITY SECLAB RESEARCH LEAD:</span> <span
+          class="highlight">ACTIVE</span></div>
+      <div class="hud-item"><span>🤝 AFDI REGISTERED MEMBER:</span> <span class="highlight">OFFICIAL</span></div>
+
+      <!-- DUPLICATE TRACK FOR SEAMLESS INFINITE LOOP -->
+      <div class="hud-item"><span>🟢 WAF MIDDLEWARE:</span> <span class="highlight">ACTIVE</span></div>
+      <div class="hud-item"><span>🛡️ OWASP TOP 10 DEFENSE:</span> <span class="highlight">OPERATIONAL</span></div>
+      <div class="hud-item"><span>🟢 OTP RFC ENGINE:</span> <span class="highlight">100% MATCH</span></div>
+      <div class="hud-item"><span>📜 ISO 27001 AUDIT RETENTION:</span> <span class="highlight">ENFORCED (>90
+          DAYS)</span></div>
+      <div class="hud-item"><span>👮 DITRES SIBER POLDA METRO JAYA INTERN:</span> <span
+          class="highlight">VERIFIED</span></div>
+      <div class="hud-item"><span>🎓 TELKOM UNIVERSITY SECLAB RESEARCH LEAD:</span> <span
+          class="highlight">ACTIVE</span></div>
+      <div class="hud-item"><span>🤝 AFDI REGISTERED MEMBER:</span> <span class="highlight">OFFICIAL</span></div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container" data-i18n="footerText">
+      &copy; 2026 Alfaiz Rayhan Putra Adji. Hak Cipta Dilindungi. Dirancang untuk Operasi Keamanan Siber &amp; Forensik
+      Digital.
+    </div>
+  </footer>
+
+  <!-- SLEEK CYBER SCANNER TRANSITION OVERLAY -->
+  <div id="cyber-warp-overlay" class="cyber-warp-overlay" aria-hidden="true">
+    <div class="cyber-warp-scanline"></div>
+  </div>
+
+  <!-- FLOATING KEYBOARD SHORTCUT HINT WIDGET (DESKTOP) -->
+  <div id="keyboard-nav-hint" class="keyboard-nav-hint">
+    <span class="key-icon">⌨️</span>
+    <span class="key-text"><kbd>Space</kbd> / <kbd>Enter</kbd> / <kbd>↓</kbd> Pindah Section</span>
+  </div>
+
+  <!-- FLOATING MOBILE QUICK NAV BAR (HP) -->
+  <div id="mobile-quick-nav" class="mobile-quick-nav">
+    <button onclick="window.navigateSection(-1)" class="mobile-nav-btn" aria-label="Section Sebelumnya">◄ Prev</button>
+    <span id="mobile-section-indicator" class="mobile-section-indicator">01 / 07</span>
+    <button onclick="window.navigateSection(1)" class="mobile-nav-btn" aria-label="Section Selanjutnya">Next ►</button>
+  </div>
+
+  <!-- SCRIPT MODULAR INTERAKTIF -->
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/terminal.js"></script>
+</body>
+
+</html>
