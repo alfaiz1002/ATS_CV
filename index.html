@@ -94,7 +94,7 @@
     <header class="hero" id="hero">
       <div class="container">
         <div class="hero-grid">
-          <div>
+          <div class="hero-header-text">
             <div class="hero-badge">
               <span class="pulse-dot"></span> <span data-i18n="heroBadge">Terbuka untuk Posisi Cyber Security &amp;
                 DFIR</span>
@@ -103,6 +103,28 @@
             <h1 class="hero-title" data-i18n="heroTitle">
               Spesialis Keamanan Siber &amp; <span>Investigasi Forensik Digital</span>
             </h1>
+          </div>
+
+          <!-- BINGKAI FOTO FORMAL HERO -->
+          <div class="hero-photo-wrapper">
+            <div class="formal-avatar-frame">
+              <div class="target-corner top-left"></div>
+              <div class="target-corner top-right"></div>
+              <div class="target-corner bottom-left"></div>
+              <div class="target-corner bottom-right"></div>
+              <img id="hero-avatar-img" src="images/profile_formal.jpg" alt="Foto Profil Formal Alfaiz Rayhan"
+                class="avatar-img" onerror="this.onerror=null; this.src='profile_formal.jpg';">
+              <div class="avatar-overlay-badge">
+                <div>
+                  <strong>Alfaiz Rayhan P. A.</strong>
+                  <span id="hero-avatar-role" style="font-size: 0.75rem; color: var(--text-muted);"
+                    data-i18n="heroAvatarRoleFormal">Teknik Komputer Telkom University</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-body-text">
             <div class="typing-container">
               &gt;&nbsp;<span id="typing-text"></span>
             </div>
@@ -150,25 +172,7 @@
               </a>
             </div>
           </div>
-
-          <!-- BINGKAI FOTO FORMAL HERO -->
-          <div class="hero-photo-wrapper">
-            <div class="formal-avatar-frame">
-              <div class="target-corner top-left"></div>
-              <div class="target-corner top-right"></div>
-              <div class="target-corner bottom-left"></div>
-              <div class="target-corner bottom-right"></div>
-              <img id="hero-avatar-img" src="images/profile_formal.jpg" alt="Foto Profil Formal Alfaiz Rayhan"
-                class="avatar-img" onerror="this.onerror=null; this.src='profile_formal.jpg';">
-              <div class="avatar-overlay-badge">
-                <div>
-                  <strong>Alfaiz Rayhan P. A.</strong>
-                  <span id="hero-avatar-role" style="font-size: 0.75rem; color: var(--text-muted);"
-                    data-i18n="heroAvatarRoleFormal">Teknik Komputer Telkom University</span>
-                </div>
-              </div>
-            </div>
-          </div>
+        </div>
         </div>
 
         <!-- COMMAND-CENTER FLOATING STATS HUD (LEVEL DEWA 2026) -->
@@ -343,6 +347,19 @@
 
         <div class="seclab-card">
           <div class="seclab-grid">
+            <div class="seclab-header-text">
+              <div
+                style="display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 12px; flex-wrap: wrap;">
+                <span class="seclab-tag" style="margin-bottom: 0;" data-i18n="seclabTag">SECURITY LABORATORY TELKOM
+                  UNIVERSITY</span>
+                <img src="images/logo_seculab.png" alt="Logo Seculab Telkom University"
+                  style="height: 52px; width: auto; filter: drop-shadow(0 4px 14px rgba(56, 189, 248, 0.4)); flex-shrink: 0;">
+              </div>
+              <h3 class="seclab-title" data-i18n="seclabTitle">Profil &amp; Peran di Security Laboratory</h3>
+              <div class="seclab-subtitle" data-i18n="seclabSub">Asisten Praktikum &amp; Pembina Riset | Divisi Digital
+                Forensics</div>
+            </div>
+
             <!-- BINGKAI FOTO JAKET LAB SECURITY -->
             <div class="seclab-photo-frame">
               <div class="target-corner top-left"></div>
@@ -361,17 +378,7 @@
             </div>
 
             <!-- DESKRIPSI DAN PENJELASAN SECLAB -->
-            <div>
-              <div
-                style="display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 12px; flex-wrap: wrap;">
-                <span class="seclab-tag" style="margin-bottom: 0;" data-i18n="seclabTag">SECURITY LABORATORY TELKOM
-                  UNIVERSITY</span>
-                <img src="images/logo_seculab.png" alt="Logo Seculab Telkom University"
-                  style="height: 52px; width: auto; filter: drop-shadow(0 4px 14px rgba(56, 189, 248, 0.4)); flex-shrink: 0;">
-              </div>
-              <h3 class="seclab-title" data-i18n="seclabTitle">Profil &amp; Peran di Security Laboratory</h3>
-              <div class="seclab-subtitle" data-i18n="seclabSub">Asisten Praktikum &amp; Pembina Riset | Divisi Digital
-                Forensics</div>
+            <div class="seclab-body-text">
               <p class="seclab-desc" data-i18n="seclabDesc1">
                 Security Laboratory (Seculab) adalah laboratorium riset dan praktikum unggulan di bawah Departemen
                 Teknik

@@ -211,8 +211,24 @@ nav {
 .hero-grid {
   display: grid;
   grid-template-columns: 1fr 340px;
-  gap: 48px;
+  grid-template-rows: auto auto;
+  gap: 16px 48px;
   align-items: center;
+}
+
+.hero-header-text {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.hero-photo-wrapper {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+}
+
+.hero-body-text {
+  grid-column: 1;
+  grid-row: 2;
 }
 
 .hero-badge {
@@ -622,8 +638,24 @@ section {
 .seclab-grid {
   display: grid;
   grid-template-columns: 320px 1fr;
-  gap: 36px;
+  grid-template-rows: auto auto;
+  gap: 16px 36px;
   align-items: center;
+}
+
+.seclab-header-text {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.seclab-photo-frame {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+}
+
+.seclab-body-text {
+  grid-column: 2;
+  grid-row: 2;
 }
 
 .seclab-photo-frame {
@@ -1421,13 +1453,37 @@ footer {
 
 /* Aturan Media Queries Responsif Standar & HP Optimization (Level Dewa) */
 @media (max-width: 992px) {
-  .hero-grid { grid-template-columns: 1fr; gap: 36px; }
+  .hero-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+  .hero-header-text { width: 100%; }
+  .hero-photo-wrapper { margin: 8px auto 16px; }
+  .hero-body-text { width: 100%; }
+  .typing-container { justify-content: center; }
+  .hero-desc { margin-left: auto; margin-right: auto; }
+  .hero-buttons { justify-content: center; }
+
   .bento-grid { grid-template-columns: 1fr !important; gap: 20px !important; }
   .bento-featured, .bento-side { grid-column: span 1 !important; }
-  .seclab-grid { grid-template-columns: 1fr !important; gap: 36px; }
+
+  .seclab-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .seclab-header-text { width: 100%; text-align: left; }
+  .seclab-photo-frame { margin: 8px auto 16px; }
+  .seclab-body-text { width: 100%; }
+
   .formal-avatar-frame, .seclab-photo-frame { margin: 0 auto; max-width: 320px; }
   .seclab-photo-frame { height: 380px; }
-  .hero-title { font-size: 2.4rem; }
+  .hero-title { font-size: 2.2rem; }
+
+  .keyboard-nav-hint { display: none !important; }
 }
 
 @media (max-width: 768px) {
