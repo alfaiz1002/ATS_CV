@@ -31,8 +31,9 @@
     targetRotY = mouseX * 0.35;
   });
 
+  const isMobileDevice = window.innerWidth < 768 || (window.matchMedia && window.matchMedia('(hover: none)').matches);
   const particles = [];
-  const particleCount = 65;
+  const particleCount = isMobileDevice ? 16 : 65;
   const fov = 400;
 
   for (let i = 0; i < particleCount; i++) {
@@ -64,8 +65,10 @@
   function animateParticles() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-    currentRotX += (targetRotX - currentRotX) * 0.05;
-    currentRotY += (targetRotY - currentRotY) * 0.05;
+    if (!isMobileDevice) {
+      currentRotX += (targetRotX - currentRotX) * 0.05;
+      currentRotY += (targetRotY - currentRotY) * 0.05;
+    }
 
     const cx = canvas.width / 2;
     const cy = canvas.height / 2;
@@ -93,22 +96,25 @@
         ctx.beginPath();
         ctx.arc(sx, sy, Math.max(0.5, p.radius * scale * 1.5), 0, Math.PI * 2);
         ctx.fillStyle = rot.z > 0 ? '#10b981' : '#06b6d4';
-        ctx.shadowColor = '#06b6d4';
-        ctx.shadowBlur = 8 * scale;
+        if (!isMobileDevice) {
+          ctx.shadowColor = '#06b6d4';
+          ctx.shadowBlur = 6 * scale;
+        }
         ctx.fill();
-        ctx.shadowBlur = 0;
+        if (!isMobileDevice) ctx.shadowBlur = 0;
       }
     }
 
+    const maxDist = isMobileDevice ? 90 : 130;
     for (let i = 0; i < particleCount; i++) {
       for (let j = i + 1; j < particleCount; j++) {
         const p1 = projected[i];
         const p2 = projected[j];
         const dist = Math.hypot(p1.sx - p2.sx, p1.sy - p2.sy);
 
-        if (dist < 130 && p1.scale > 0 && p2.scale > 0) {
+        if (dist < maxDist && p1.scale > 0 && p2.scale > 0) {
           const isLight = document.documentElement.getAttribute('data-theme') === 'light';
-          const alpha = (1 - dist / 130) * (isLight ? 0.4 : 0.25) * ((p1.scale + p2.scale) / 2);
+          const alpha = (1 - dist / maxDist) * (isLight ? 0.4 : 0.25) * ((p1.scale + p2.scale) / 2);
           ctx.beginPath();
           ctx.moveTo(p1.sx, p1.sy);
           ctx.lineTo(p2.sx, p2.sy);
@@ -1106,33 +1112,6 @@ window.initForensicLens = function(containerId, imgId, lensId) {
     }
   });
 
-  // Touch Swipe Gesture Detection for Mobile
-  let touchStartY = 0;
-  let touchStartX = 0;
-
-  document.addEventListener('touchstart', (e) => {
-    touchStartY = e.changedTouches[0].screenY;
-    touchStartX = e.changedTouches[0].screenX;
-  }, { passive: true });
-
-  document.addEventListener('touchend', (e) => {
-    const touchEndY = e.changedTouches[0].screenY;
-    const touchEndX = e.changedTouches[0].screenX;
-
-    const diffY = touchStartY - touchEndY;
-    const diffX = touchStartX - touchEndX;
-
-    if (Math.abs(diffY) > 60 && Math.abs(diffY) > Math.abs(diffX)) {
-      if (diffY > 0) {
-        // Swipe Up -> Next
-        window.navigateSection(1);
-      } else {
-        // Swipe Down -> Prev
-        window.navigateSection(-1);
-      }
-    }
-  }, { passive: true });
-
   // IntersectionObserver to auto-sync current section index on manual scroll
   document.addEventListener('DOMContentLoaded', () => {
     updateSectionIndicator();
@@ -1155,3 +1134,31 @@ window.initForensicLens = function(containerId, imgId, lensId) {
     });
   });
 })();
+
+// 19. MOBILE MENU TOGGLE HANDLER
+window.toggleMobileMenu = function() {
+  const navLinks = document.querySelector('.nav-links');
+  const toggleBtn = document.getElementById('mobile-menu-toggle');
+  if (navLinks) {
+    navLinks.classList.toggle('mobile-active');
+  }
+  if (toggleBtn) {
+    toggleBtn.classList.toggle('open');
+  }
+};
+
+// Auto close mobile menu when nav link is clicked
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+      const navLinks = document.querySelector('.nav-links');
+      const toggleBtn = document.getElementById('mobile-menu-toggle');
+      if (navLinks && navLinks.classList.contains('mobile-active')) {
+        navLinks.classList.remove('mobile-active');
+      }
+      if (toggleBtn && toggleBtn.classList.contains('open')) {
+        toggleBtn.classList.remove('open');
+      }
+    });
+  });
+});
