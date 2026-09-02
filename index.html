@@ -6,6 +6,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Alfaiz Rayhan | Spesialis Keamanan Siber & Forensik Digital</title>
 
+  <!-- SECURITY HARDENING META TAGS & CSP (OWASP DEFENSE-IN-DEPTH) -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://fonts.googleapis.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https:; connect-src 'self'; frame-ancestors 'none';">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="DENY">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), payment=()">
+
+  <!-- ANTI-CLICKJACKING FRAME-KILLER SCRIPT -->
+  <script>
+    if (window.top !== window.self) {
+      window.top.location = window.self.location;
+    }
+  </script>
+
   <!-- SEO & Open Graph Meta Tags -->
   <meta name="description"
     content="Portofolio Alfaiz Rayhan Putra Adji - Spesialis Keamanan Siber, Web Application Security (OWASP Top 10), dan Forensik Digital (DFIR). Mantan Intern Forensik Digital Ditres Siber Polda Metro Jaya.">
@@ -147,10 +161,10 @@
                   <span data-i18n="btnDownloadCV">Unduh CV (PDF) ▾</span>
                 </button>
                 <div id="cv-dropdown-menu" class="cv-dropdown-menu">
-                  <a href="CV_ATS_Alfaiz_Rayhan_Putra_Adji_CyberSecurity.pdf" target="_blank" class="cv-dropdown-item">
+                  <a href="CV_ATS_Alfaiz_Rayhan_Putra_Adji_CyberSecurity.pdf" target="_blank" rel="noopener noreferrer" class="cv-dropdown-item">
                     <span>🇮🇩</span> <span>Versi Bahasa Indonesia (PDF)</span>
                   </a>
-                  <a href="Resume_ATS_Alfaiz_Rayhan_Putra_Adji_CyberSecurity_DFIR.pdf" target="_blank" class="cv-dropdown-item">
+                  <a href="Resume_ATS_Alfaiz_Rayhan_Putra_Adji_CyberSecurity_DFIR.pdf" target="_blank" rel="noopener noreferrer" class="cv-dropdown-item">
                     <span>🇬🇧</span> <span>English Version (PDF)</span>
                   </a>
                 </div>
@@ -538,7 +552,7 @@
                 </div>
               </div>
             </div>
-            <div class="timeline-date" data-i18n="exp3Date">2024 | Telkom University, Bandung</div>
+            <div class="timeline-date" data-i18n="exp3Date">25 April – Mei 2025 | Telkom University, Bandung</div>
             <ul class="timeline-bullets">
               <li data-i18n="exp3Bullet1">Memimpin operasional divisi turnamen Esports FIFA secara end-to-end, mencakup
                 perancangan struktur bagan tanding (bracket), penjadwalan, dan sistem polling partisipasi.</li>
@@ -571,7 +585,7 @@
                 </div>
               </div>
             </div>
-            <div class="timeline-date" data-i18n="exp4Date">2023 | Telkom University, Bandung</div>
+            <div class="timeline-date" data-i18n="exp4Date">Desember 2023 – Oktober 2024 | Telkom University, Bandung</div>
             <ul class="timeline-bullets">
               <li data-i18n="exp4Bullet1">Melakukan eksplorasi kemitraan, perancangan proposal, dan outreach sponsor
                 eksternal untuk kegiatan tahunan prodi.</li>
@@ -765,6 +779,72 @@
         </div>
 
         <div class="cert-grid">
+          <div class="cert-card"
+            onclick="openCertModal('images/cert_cyber5w.png', 'Cyber 5W - C5W-100 Introduction to Digital Forensics', event)">
+            <div class="cert-card-header">
+              <div class="cert-icon">
+                <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="8" r="7" />
+                  <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88" />
+                </svg>
+              </div>
+              <div>
+                <div class="cert-name">C5W-100 Introduction to Digital Forensics</div>
+                <div class="cert-issuer">Cyber 5W (2026)</div>
+                <div style="display: flex; gap: 6px; align-items: center; margin-top: 4px;">
+                  <div class="cert-id-badge">ID: jdd8yjxxkt</div>
+                  <div class="cert-verify-tag">✓ VERIFIED</div>
+                </div>
+              </div>
+            </div>
+            <img src="images/cert_cyber5w.png" alt="Sertifikat Cyber 5W C5W-100 Introduction to Digital Forensics" class="cert-img-preview">
+          </div>
+
+          <div class="cert-card"
+            onclick="openCertModal('images/cert_openlearn.png', 'The Open University (OpenLearn) - Digital Forensics (M812_1)', event)">
+            <div class="cert-card-header">
+              <div class="cert-icon">
+                <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="8" r="7" />
+                  <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88" />
+                </svg>
+              </div>
+              <div>
+                <div class="cert-name">Digital Forensics</div>
+                <div class="cert-issuer">The Open University / OpenLearn (2025)</div>
+                <div style="display: flex; gap: 6px; align-items: center; margin-top: 4px;">
+                  <div class="cert-id-badge">CODE: M812_1</div>
+                  <div class="cert-verify-tag">✓ VERIFIED</div>
+                </div>
+              </div>
+            </div>
+            <img src="images/cert_openlearn.png" alt="Sertifikat OpenLearn Digital Forensics The Open University" class="cert-img-preview">
+          </div>
+
+          <div class="cert-card"
+            onclick="openCertModal('images/cert_cybrary.png', 'Cybrary - Digital Forensics Basics', event)">
+            <div class="cert-card-header">
+              <div class="cert-icon">
+                <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="8" r="7" />
+                  <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88" />
+                </svg>
+              </div>
+              <div>
+                <div class="cert-name">Digital Forensics Basics</div>
+                <div class="cert-issuer">Cybrary (2026)</div>
+                <div style="display: flex; gap: 6px; align-items: center; margin-top: 4px;">
+                  <div class="cert-id-badge">ID: CC-2c0e5d88-ff36</div>
+                  <div class="cert-verify-tag">✓ VERIFIED</div>
+                </div>
+              </div>
+            </div>
+            <img src="images/cert_cybrary.png" alt="Sertifikat Cybrary Digital Forensics Basics" class="cert-img-preview">
+          </div>
+
           <div class="cert-card"
             onclick="openCertModal('images/cert_bluecape.png', 'Blue Cape Security - DFIR Foundations and Techniques', event)">
             <div class="cert-card-header">
@@ -982,7 +1062,7 @@
               </div>
               
               <div class="dossier-download-group" style="display: flex; flex-direction: column; gap: 10px; width: 100%;">
-                <a href="CV_ATS_Alfaiz_Rayhan_Putra_Adji_CyberSecurity.pdf" target="_blank" class="btn-cta btn-dossier-clean" style="text-decoration: none;">
+                <a href="CV_ATS_Alfaiz_Rayhan_Putra_Adji_CyberSecurity.pdf" target="_blank" rel="noopener noreferrer" class="btn-cta btn-dossier-clean" style="text-decoration: none;">
                   <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                     stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
@@ -991,7 +1071,7 @@
                   </svg>
                   <span data-i18n="btnDownloadId">🇮🇩 Unduh Versi Indonesia (PDF)</span>
                 </a>
-                <a href="Resume_ATS_Alfaiz_Rayhan_Putra_Adji_CyberSecurity_DFIR.pdf" target="_blank" class="btn-cta btn-dossier-clean" style="background: rgba(16, 185, 129, 0.12); border-color: rgba(16, 185, 129, 0.4); color: #ffffff; text-decoration: none;">
+                <a href="Resume_ATS_Alfaiz_Rayhan_Putra_Adji_CyberSecurity_DFIR.pdf" target="_blank" rel="noopener noreferrer" class="btn-cta btn-dossier-clean" style="background: rgba(16, 185, 129, 0.12); border-color: rgba(16, 185, 129, 0.4); color: #ffffff; text-decoration: none;">
                   <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                     stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
@@ -1030,7 +1110,7 @@
               alfaiz1002@gmail.com
             </a>
 
-            <a href="https://wa.me/628128429768" target="_blank" rel="noopener" class="btn-secondary" style="padding: 12px 24px;"
+            <a href="https://wa.me/628128429768" target="_blank" rel="noopener noreferrer" class="btn-secondary" style="padding: 12px 24px;"
               onclick="copyContactText('08128429768', 'Nomor WhatsApp/HP', event)">
               <!-- Icon Phone / WhatsApp -->
               <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -1040,7 +1120,7 @@
               +62 812-8429-768 (WhatsApp)
             </a>
 
-            <a href="https://www.linkedin.com/in/alfaiz-rayhan/" target="_blank" rel="noopener" class="btn-secondary">
+            <a href="https://www.linkedin.com/in/alfaiz-rayhan/" target="_blank" rel="noopener noreferrer" class="btn-secondary">
               <!-- Icon LinkedIn -->
               <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
                 <path
@@ -1049,7 +1129,7 @@
               Profil LinkedIn
             </a>
 
-            <a href="https://github.com/alfaiz1002" target="_blank" rel="noopener" class="btn-secondary">
+            <a href="https://github.com/alfaiz1002" target="_blank" rel="noopener noreferrer" class="btn-secondary">
               <!-- Icon GitHub -->
               <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
                 <path

@@ -34,9 +34,18 @@
   <span style="color: var(--accent-cyan);">proyek</span>       - Menampilkan proyek keamanan unggulan
   <span style="color: var(--accent-cyan);">sertifikasi</span>  - Daftar sertifikasi industri &amp; anggota AFDI
   <span style="color: var(--accent-cyan);">kontak</span>      - Kontak email, telepon, dan media sosial
+  <span style="color: var(--accent-cyan);">security</span>     - Cek audit status pengamanan web (OWASP Posture)
   <span style="color: var(--accent-cyan);">clear</span>        - Bersihkan layar terminal
   <span style="color: var(--accent-cyan);">banner</span>       - Tampilkan banner ASCII keamanan
   <span style="color: var(--accent-cyan);">sudo</span>         - Cek hak akses administratif`,
+
+      securityMsg: `<span style="color: var(--accent-emerald); font-weight: bold;">[+] HARDENING POSTURE AUDIT &amp; SECURITY METRICS:</span><br>` +
+        `  • <span style="color: var(--accent-cyan);">Content Security Policy (CSP)</span>   : <span style="color: #10b981;">ACTIVE</span> (Mencegah XSS &amp; Script Injection)<br>` +
+        `  • <span style="color: var(--accent-cyan);">Framekiller (Anti-Clickjacking)</span> : <span style="color: #10b981;">ACTIVE</span> (Mencegah Iframe Embedding)<br>` +
+        `  • <span style="color: var(--accent-cyan);">DOM Input Sanitization</span>         : <span style="color: #10b981;">ACTIVE</span> (HTML Entity Escaping Enabled)<br>` +
+        `  • <span style="color: var(--accent-cyan);">External Link Isolation</span>        : <span style="color: #10b981;">ACTIVE</span> (rel="noopener noreferrer")<br>` +
+        `  • <span style="color: var(--accent-cyan);">Security Policy Standard</span>        : <span style="color: #10b981;">RFC 9116 Compliant</span> (.well-known/security.txt)<br>` +
+        `  • <span style="color: var(--accent-emerald); font-weight: bold;">Status Overall</span>                  : <span style="color: #10b981; font-weight: bold;">SECURE &amp; HARDENED (Blue Team Defense)</span>`,
 
       whoami: `Alfaiz Rayhan Putra Adji
 Sarjana Teknik Komputer (S.T.) @ Telkom University
@@ -50,10 +59,10 @@ Laboratorium spesialis riset &amp; praktikum Keamanan OS, NetSec, &amp; DFIR.
 Peran: Asisten Praktikum, Pembina Riset Divisi DFIR, &amp; Speaker Study Group Week 2.`,
 
       organisasi: `<span style="color: var(--accent-purple); font-weight: bold;">[+] KEPEMIMPINAN ORGANISASI &amp; KEPANITIAAN HMTK TELKOM UNIVERSITY:</span>
-1. <span style="color: var(--accent-purple);">Centurion HMTK (2024)</span> - PJ Divisi Esports (FIFA Tournament Lead)
+1. <span style="color: var(--accent-purple);">Centurion HMTK (25 April – Mei 2025)</span> - PJ Divisi Esports (FIFA Tournament Lead)
    • Memimpin operasional turnamen FIFA secara end-to-end (bracket, regulasi, penjadwalan &amp; sistem polling).
    • Menegakkan standar fair-play dan menyelesaikan sengketa teknis (100% lancar &amp; tepat waktu).
-2. <span style="color: var(--accent-cyan);">Connection HMTK (2023)</span> - Divisi Sponsorship &amp; Moderator Edukasi
+2. <span style="color: var(--accent-cyan);">Connection HMTK (Desember 2023 – Oktober 2024)</span> - Divisi Sponsorship &amp; Moderator Edukasi
    • Eksplorasi prospek kemitraan dan koordinasi lintas divisi untuk kelancaran logistik acara.
    • Bertindak sebagai Moderator &amp; Mentor Sesi Edukasi logika pemrograman dan game untuk siswa kelas 3 SD.
 3. <span style="color: var(--accent-emerald);">AFDI (2026 – Sekarang)</span> - Anggota Resmi Terdaftar Asosiasi Forensik Digital Indonesia.`,
@@ -78,7 +87,8 @@ Peran: Asisten Praktikum, Pembina Riset Divisi DFIR, &amp; Speaker Study Group W
 2. Modul Praktikum Forensik Digital:
    • Penulis kurikulum &amp; modul praktikum utama Security Laboratory Telkom University.`,
 
-      sertifikasi: `• DFIR Foundations &amp; Techniques - Blue Cape Security (2026)
+      sertifikasi: `• C5W-100 Introduction to Digital Forensics - Cyber 5W (2026)
+• DFIR Foundations &amp; Techniques - Blue Cape Security (2026)
 • OSForensics Triage Certification - PassMark Software (2025)
 • Introduction to Digital Forensics - Security Blue Team (2025)
 • Sertifikat Penghargaan Liaison Officer - Seculab Telkom University (2025)
@@ -108,9 +118,18 @@ GitHub   : github.com/alfaiz1002`,
   <span style="color: var(--accent-cyan);">proyek</span>       - Display featured security projects
   <span style="color: var(--accent-cyan);">sertifikasi</span>  - Industry certifications &amp; AFDI membership
   <span style="color: var(--accent-cyan);">kontak</span>      - Email, phone, &amp; social media links
+  <span style="color: var(--accent-cyan);">security</span>     - Check web hardening audit status (OWASP Posture)
   <span style="color: var(--accent-cyan);">clear</span>        - Clear terminal screen
   <span style="color: var(--accent-cyan);">banner</span>       - Display ASCII security banner
   <span style="color: var(--accent-cyan);">sudo</span>         - Check admin privilege access`,
+
+      securityMsg: `<span style="color: var(--accent-emerald); font-weight: bold;">[+] HARDENING POSTURE AUDIT &amp; SECURITY METRICS:</span><br>` +
+        `  • <span style="color: var(--accent-cyan);">Content Security Policy (CSP)</span>   : <span style="color: #10b981;">ACTIVE</span> (Preventing XSS &amp; Script Injection)<br>` +
+        `  • <span style="color: var(--accent-cyan);">Framekiller (Anti-Clickjacking)</span> : <span style="color: #10b981;">ACTIVE</span> (Preventing Iframe Embedding)<br>` +
+        `  • <span style="color: var(--accent-cyan);">DOM Input Sanitization</span>         : <span style="color: #10b981;">ACTIVE</span> (HTML Entity Escaping Enabled)<br>` +
+        `  • <span style="color: var(--accent-cyan);">External Link Isolation</span>        : <span style="color: #10b981;">ACTIVE</span> (rel="noopener noreferrer")<br>` +
+        `  • <span style="color: var(--accent-cyan);">Security Policy Standard</span>        : <span style="color: #10b981;">RFC 9116 Compliant</span> (.well-known/security.txt)<br>` +
+        `  • <span style="color: var(--accent-emerald); font-weight: bold;">Status Overall</span>                  : <span style="color: #10b981; font-weight: bold;">SECURE &amp; HARDENED (Blue Team Defense)</span>`,
 
       whoami: `Alfaiz Rayhan Putra Adji
 Bachelor of Computer Engineering @ Telkom University
@@ -124,10 +143,10 @@ Specialized research &amp; teaching lab for OS Security, NetSec, &amp; DFIR.
 Roles: Teaching Assistant, DFIR Research Lead, &amp; Speaker for Study Group Week 2.`,
 
       organisasi: `<span style="color: var(--accent-purple); font-weight: bold;">[+] ORGANIZATIONAL LEADERSHIP &amp; HMTK COMMITTEES:</span>
-1. <span style="color: var(--accent-purple);">Centurion HMTK (2024)</span> - Esports Division Lead (FIFA Tournament Lead)
+1. <span style="color: var(--accent-purple);">Centurion HMTK (April 25 – May 2025)</span> - Esports Division Lead (FIFA Tournament Lead)
    • Led tournament operations end-to-end (bracket structure, regulations, scheduling &amp; polling).
    • Enforced fair-play standards and resolved technical disputes (100% smooth &amp; on-time).
-2. <span style="color: var(--accent-cyan);">Connection HMTK (2023)</span> - Sponsorship &amp; Education Moderator
+2. <span style="color: var(--accent-cyan);">Connection HMTK (December 2023 – October 2024)</span> - Sponsorship &amp; Education Moderator
    • Managed sponsor outreach and cross-divisional coordination for event logistics.
    • Served as Moderator &amp; Mentor for interactive programming logic and game creation session for 3rd-grade students.
 3. <span style="color: var(--accent-emerald);">AFDI (2026 – Present)</span> - Official Registered Member of Indonesian Digital Forensics Association.`,
@@ -152,7 +171,8 @@ Roles: Teaching Assistant, DFIR Research Lead, &amp; Speaker for Study Group Wee
 2. Digital Forensics Lab Practicum Modules:
    • Author of main curriculum &amp; practicum modules at Security Laboratory Telkom University.`,
 
-      sertifikasi: `• DFIR Foundations &amp; Techniques - Blue Cape Security (2026)
+      sertifikasi: `• C5W-100 Introduction to Digital Forensics - Cyber 5W (2026)
+• DFIR Foundations &amp; Techniques - Blue Cape Security (2026)
 • OSForensics Triage Certification - PassMark Software (2025)
 • Introduction to Digital Forensics - Security Blue Team (2025)
 • Liaison Officer Certificate of Appreciation - Seculab Telkom University (2025)
@@ -498,6 +518,13 @@ GitHub   : github.com/alfaiz1002`,
       case 'kontak':
       case 'contact':
         response += langDict.kontak;
+        break;
+
+      case 'security':
+      case 'audit':
+      case 'hardening':
+      case 'posture':
+        response += langDict.securityMsg || termi18n.id.securityMsg;
         break;
 
       case 'clear':

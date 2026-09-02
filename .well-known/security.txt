@@ -1,0 +1,8 @@
+Contact: mailto:alfaiz1002@gmail.com
+Contact: https://www.linkedin.com/in/alfaiz-rayhan/
+Preferred-Languages: id, en
+Policy: https://alfaiz1002.github.io/ATS_CV/#contact
+Canonical: https://alfaiz1002.github.io/ATS_CV/.well-known/security.txt
+Expires: 2027-12-31T23:59:59.000Z
+Encryption: https://alfaiz1002.github.io/ATS_CV/#contact
+Acknowledgments: https://alfaiz1002.github.io/ATS_CV/

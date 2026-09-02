@@ -57,6 +57,8 @@ CV ATS ini menggabungkan seluruh keahlian Anda di bidang **Cyber Security (Web A
 ### 8. Lembaga Penerbit Sertifikasi Ringkas & Clean
 - **Pemeriksaan:** Memasukkan nama lembaga penerbit (*Security Blue Team, Cyber Academy, PassMark Software, Cisco*) tanpa string ID yang panjang agar tampilan CV tetap bersih dan bebas *line wrap*.
 - **Hasil:** Memperbarui daftar sertifikasi:
+  - `C5W-100 Introduction to Digital Forensics – Cyber 5W (2026)`
+  - `Digital Forensics Basics – Cybrary (2026)`
   - `Introduction to Digital Forensics – Security Blue Team (2025)`
   - `Introduction to Information Security – Cyber Academy (2026)`
   - `Classical Cryptography for Beginner – Cyber Academy (2026)`
