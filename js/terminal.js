@@ -87,7 +87,8 @@ Peran: Asisten Praktikum, Pembina Riset Divisi DFIR, &amp; Speaker Study Group W
 2. Modul Praktikum Forensik Digital:
    • Penulis kurikulum &amp; modul praktikum utama Security Laboratory Telkom University.`,
 
-      sertifikasi: `• C5W-100 Introduction to Digital Forensics - Cyber 5W (2026)
+      sertifikasi: `• IT Audit Fundamentals & Professional Standards - Codelamp Indonesia (2026)
+• C5W-100 Introduction to Digital Forensics - Cyber 5W (2026)
 • DFIR Foundations &amp; Techniques - Blue Cape Security (2026)
 • OSForensics Triage Certification - PassMark Software (2025)
 • Introduction to Digital Forensics - Security Blue Team (2025)
@@ -171,7 +172,8 @@ Roles: Teaching Assistant, DFIR Research Lead, &amp; Speaker for Study Group Wee
 2. Digital Forensics Lab Practicum Modules:
    • Author of main curriculum &amp; practicum modules at Security Laboratory Telkom University.`,
 
-      sertifikasi: `• C5W-100 Introduction to Digital Forensics - Cyber 5W (2026)
+      sertifikasi: `• IT Audit Fundamentals & Professional Standards - Codelamp Indonesia (2026)
+• C5W-100 Introduction to Digital Forensics - Cyber 5W (2026)
 • DFIR Foundations &amp; Techniques - Blue Cape Security (2026)
 • OSForensics Triage Certification - PassMark Software (2025)
 • Introduction to Digital Forensics - Security Blue Team (2025)
