@@ -228,15 +228,7 @@ window.setLanguage = function(lang) {
     }
   });
 
-  // Update CV download link dynamically based on selected language
-  document.querySelectorAll('a[href*="CV_ATS_Alfaiz_Rayhan"], a[href*="Resume_ATS_Alfaiz_Rayhan"], a[href*="cv_alfaiz_rayhan"]').forEach(link => {
-    if (lang === 'id') {
-      link.setAttribute('href', 'CV_ATS_Alfaiz_Rayhan_Putra_Adji_CyberSecurity.pdf');
-    } else {
-      link.setAttribute('href', 'Resume_ATS_Alfaiz_Rayhan_Putra_Adji_CyberSecurity_DFIR.pdf');
-    }
-  });
-
+  // Preserve explicit language PDF links (Indonesian vs English)
   // Re-start typing animation
   phraseIdx = 0;
   charIdx = 0;
