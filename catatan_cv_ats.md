@@ -4,14 +4,20 @@ Dokumen ini berisi penjelasan teknis, hasil audit rekomendasi, dan petunjuk peng
 
 ---
 
-## 🌟 Master CV ATS Gabungan (Tersedia Versi EN & ID)
+## 🌟 Master CV ATS (Full Comprehensive Master Resume)
 
 **Nama Lengkap:** **Alfaiz Rayhan Putra Adji**  
-**Berkas Utama Bahasa Inggris:** **`cv_alfaiz_rayhan.html`**  
-**Berkas Utama Bahasa Indonesia:** **`cv_alfaiz_rayhan_id.html`**  
-**Web Interactive / Portfolio:** **`index.html`** (Dilengkapi fitur *Language Switcher* ID/EN/JA/KO/ES/FR)
+**Berkas Utama ATS:**
+- **Bahasa Indonesia:** **`cv_alfaiz_rayhan_id.html`** (Lengkap sesuai Master CV & Laporan KP Ditres Siber: Ringkasan Profesional, Pengalaman Ditres Siber 9 butir teknis otentik [Safe Block, FTK Imager, Registry NTUSER/SAM/SYSTEM, ExifTool, Andriller & ADB Android], Seculab Agustus 2025 – Juni 2026, Pendidikan S1 Telkom Univ & SMAN 2 Bekasi, 12 Sertifikasi Lengkap, Proyek Tugas Akhir & Modul 101 Halaman, Keahlian Teknis & Soft Skills, serta Organisasi HMTK & AFDI).
+- **Bahasa Inggris:** **`cv_alfaiz_rayhan.html`** (Sesuai persis dengan dokumen Master CV PDF bahasa Inggris dan diperkaya data teknis Laporan KP Ditres Siber Polda Metro Jaya).
+- **CV dengan Foto & Sidebar:** **`cv_foto_alfaiz_rayhan.html`** (Dilengkapi fitur switch bahasa ID & EN dan nomor telepon terbaru `+62 812-8422-9768`).
 
-CV ATS ini menggabungkan seluruh keahlian Anda di bidang **Cyber Security (Web AppSec & OWASP Top 10)** dan **Digital Forensics (Ditres Siber Polda Metro Jaya)** ke dalam 1 dokumen presisi **2 halaman A4** yang siap digunakan untuk melamar di Perusahaan Nasional, BUMN, Instansi Pemerintah (Versi Indonesia), maupun Perusahaan Multinasional / MNC (Versi Inggris).
+**Web Interactive / Portfolio:** **`index.html`** (Dilengkapi fitur *Language Switcher* ID/EN/JA/KO/ES/FR, Modal 30 Detik, timeline lengkap 8 butir Ditres Siber, 5 butir Seculab, Organisasi HMTK & AFDI, serta data kontak terpadu).
+
+CV ATS 1 Halaman ini dirancang presisi sesuai **Standar Emas (*Gold Standard*) Industri Teknologi & MNC**:
+- **Format 1 Halaman Pas A4**: Cepat di-scan oleh recruiter dalam 6–10 detik tanpa baris gantung.
+- **Bebas Elemen Redundan**: Riwayat SMA dihilangkan (fokus S1 Teknik Komputer Telkom University), soft skills diintegrasikan ke pencapaian, dan tautan GitHub dihapus agar kontak lebih bersih (hanya LinkedIn aktif).
+- **Formula XYZ Action-Oriented**: Poin magang Ditres Siber dan Skripsi dipadatkan menjadi aksi teknis nyata berbobot tinggi.
 
 ---
 
@@ -77,6 +83,34 @@ CV ATS ini menggabungkan seluruh keahlian Anda di bidang **Cyber Security (Web A
 ### 11. Penegasan Status Fresh Graduate (Sarjana Teknik Komputer / Bachelor of Computer Engineering)
 - **Pemeriksaan:** Memperbarui sebutan status pendidikan dari *"Mahasiswa S1 Teknik Komputer"* menjadi *"Sarjana Teknik Komputer (S.T.)"* (ID) dan *"Bachelor of Computer Engineering Graduate"* (EN) pada bagian *Professional Summary*, *Hero Description*, *TTS Audio Summary*, dan *Terminal Interactive*.
 - **Hasil:** Memastikan recruiter mendeteksi kualifikasi kandidat sebagai *Fresh Graduate* yang telah menyelesaikan sidang/yudisium dan siap bekerja penuh waktu (*ready for full-time employment*), bukan lagi mahasiswa aktif.
+
+### 12. Integrasi Temuan Otentik Laporan KP Ditres Siber Polda Metro Jaya (48 Halaman)
+- **Pemeriksaan:** Memperkuat pengalaman investigasi forensik digital dengan menyerap langsung dokumen resmi laporan magang kerja praktik Ditres Siber Polda Metro Jaya.
+- **Hasil:** Menyematkan metodologi hukum dan standar penanganan barang bukti digital kepolisian:
+  - *Hardware Write Blocker Safe Block* untuk preservasi rantai bukti hukum (*Chain of Custody*).
+  - *Bit-by-bit raw imaging* menggunakan *FTK Imager*.
+  - Ekstraksi artefak *Windows Registry* (*NTUSER.DAT, SAM 2.900+ user logins, SYSTEM USBSTOR*) menggunakan *Registry Explorer*.
+  - Ekstraksi metadata file grafis/dokumen menggunakan *ExifTool*.
+  - Ekstraksi forensik perangkat mobile *Android (BFU/AFU)* menggunakan *Andriller CE* & *Android Debug Bridge (ADB)*.
+
+### 13. Penyesuaian Periode Resmi Asisten Lab & Pembina Riset SecuLAB Telkom University
+- **Pemeriksaan:** Menyelaraskan periode aktif mengajar dan membimbing riset laboratorium agar sesuai dengan data akademik resmi (Semester 7 – Semester 8 / TA 2025/2026).
+- **Hasil:** Memperbarui periode menjadi **Agustus 2025 – Juni 2026** (*August 2025 – June 2026*) secara menyeluruh di semua berkas CV ATS, CV Foto, Web Portofolio, dan Terminal CLI.
+
+### 14. Perapihan & Penyelarasan Layout Baris Kontak Header CV ATS
+- **Pemeriksaan:** Memperbaiki penjajaran baris info kontak header (*Telepon | Email | LinkedIn*) yang sebelumnya tampak kurang presisi di tengah akibat spesifikasi CSS inherited.
+- **Hasil:** Menambahkan aturan CSS `.contact-info` dengan `text-align: center !important; display: flex; justify-content: center; align-items: center;` pada media screen maupun `@media print`, menghasilkan tampilan header yang simetris dan rapi.
+
+### 15. Integrasi 3 Kredensial & Sertifikasi Baru (BTJA & Asisten Praktikum FTE)
+- **Pemeriksaan:** Menambahkan 3 sertifikat resmi terbaru:
+  1. **Centri / Security Blue Team** – *Blue Team Junior Analyst (BTJA)* (ID Kredensial: `167081331`).
+  2. **Telkom University FTE (SecuLAB)** – *Asisten Praktikum Keamanan Sistem* (Nomor SK: `SAP-917 /AKD9/TE-DEK/2026`).
+  3. **Telkom University FTE (SecuLAB)** – *Asisten Praktikum Sistem Operasi Waktu Nyata* (Nomor SK: `SAP-937 /AKD9/TE-DEK/2026`).
+- **Hasil:**
+  - Ditambahkan ke `cv_alfaiz_rayhan_id.html`, `cv_alfaiz_rayhan.html`, dan `cv_foto_alfaiz_rayhan.html`.
+  - Ditambahkan 3 kartu sertifikasi interaktif dengan modal pratinjau gambar resolusi tinggi di `index.html` Section 06.
+  - Ditambahkan ke ringkasan dossier kandidat di `js/i18n.js` dan perintah CLI `sertifikasi` di `js/terminal.js`.
+  - Diekspor ulang menjadi berkas master PDF `CV_ATS_Alfaiz_Rayhan_Putra_Adji_CyberSecurity.pdf` dan `Resume_ATS_Alfaiz_Rayhan_Putra_Adji_CyberSecurity_DFIR.pdf`, keduanya terverifikasi presisi 1 halaman A4.
 
 ---
 

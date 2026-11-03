@@ -162,10 +162,16 @@
                 </button>
                 <div id="cv-dropdown-menu" class="cv-dropdown-menu">
                   <a href="CV_ATS_Alfaiz_Rayhan_Putra_Adji_CyberSecurity.pdf" target="_blank" rel="noopener noreferrer" class="cv-dropdown-item">
-                    <span>🇮🇩</span> <span>Versi Bahasa Indonesia (PDF)</span>
+                    <span>🇮🇩</span> <span>CV ATS Indonesia (1 Halaman PDF)</span>
                   </a>
                   <a href="Resume_ATS_Alfaiz_Rayhan_Putra_Adji_CyberSecurity_DFIR.pdf" target="_blank" rel="noopener noreferrer" class="cv-dropdown-item">
-                    <span>🇬🇧</span> <span>English Version (PDF)</span>
+                    <span>🇬🇧</span> <span>Resume ATS English (1 Page PDF)</span>
+                  </a>
+                  <a href="cv_alfaiz_rayhan_id.html" target="_blank" rel="noopener noreferrer" class="cv-dropdown-item" style="border-top: 1px solid rgba(255,255,255,0.08);">
+                    <span>🌐</span> <span>Tampilan Web ATS (ID)</span>
+                  </a>
+                  <a href="cv_alfaiz_rayhan.html" target="_blank" rel="noopener noreferrer" class="cv-dropdown-item">
+                    <span>🌐</span> <span>Web ATS View (EN)</span>
                   </a>
                 </div>
               </div>
@@ -464,18 +470,15 @@
             </div>
             <div class="timeline-date" data-i18n="exp1Date">30 Juni 2025 – 9 Agustus 2025 | Jakarta, Indonesia</div>
             <ul class="timeline-bullets">
-              <li data-i18n="exp1Bullet1">Menerima bimbingan langsung dari penyidik senior dan ahli forensik digital
-                dalam
-                metodologi penyidikan kepolisian.</li>
-              <li data-i18n="exp1Bullet2">Melakukan akuisisi dan preservasi bukti digital sesuai standar ketat Chain of
-                Custody forensik.</li>
-              <li data-i18n="exp1Bullet3">Menganalisis Windows Registry, basis data SQL, sistem berkas, media
-                penyimpanan
-                digital, dan perangkat seluler di bawah pengawasan ahli.</li>
-              <li data-i18n="exp1Bullet4">Mengoperasikan FTK Imager, Magnet ACQUIRE, Autopsy, Andriller, Registry
-                Explorer, SQLite Database Browser, dan OSForensics.</li>
-              <li data-i18n="exp1Bullet5">Menyusun laporan hasil analisis forensik digital sesuai standar dokumentasi
-                penyidikan kepolisian.</li>
+              <li data-i18n="exp1Bullet1">Menerapkan metodologi penanganan barang bukti digital dan preservasi Chain of Custody yang ketat menggunakan write blocker (Safe Block) pada media SSD dan USB flashdisk guna mencegah modifikasi data dan menjamin keabsahan hukum (legal admissibility).</li>
+              <li data-i18n="exp1Bullet2">Melakukan akuisisi data fisik dan logikal bit-by-bit menggunakan FTK Imager, mengekstrak berkas inti registry Windows (NTUSER.DAT, SAM, SOFTWARE, SYSTEM), serta memverifikasi integritas citra melalui hashing kriptografi SHA-256 dan MD5.</li>
+              <li data-i18n="exp1Bullet3">Menganalisis artefak registry Windows menggunakan Registry Explorer untuk merekonstruksi jejak digital: melacak riwayat eksekusi aplikasi (UserAssist), dokumen terakhir yang diakses (RecentDocs), dan riwayat koneksi jaringan Wi-Fi (SOFTWARE).</li>
+              <li data-i18n="exp1Bullet4">Menginvestigasi data autentikasi dan akun pengguna pada hive SAM, menganalisis identitas numerik unik (RID 1001), 2.900+ kali login, waktu pembuatan akun, penggantian password terakhir, serta indikasi percobaan login gagal.</li>
+              <li data-i18n="exp1Bullet5">Melakukan forensik perangkat USB pada key SYSTEM\USBSTOR, mengidentifikasi perangkat eksternal (SanDisk 3.2 Gen1), mengekstrak nomor seri unik hardware, serta merekonstruksi linimasa pertama kali dipasang dan riwayat koneksi/pelepasan perangkat.</li>
+              <li data-i18n="exp1Bullet6">Mengoperasikan ExifTool (CLI) untuk mengekstraksi dan menganalisis metadata tersembunyi (identitas pembuat, waktu pembuatan/modifikasi, software) pada dokumen PDF dan media guna memverifikasi keaslian serta mendeteksi pemalsuan data.</li>
+              <li data-i18n="exp1Bullet7">Menjalankan forensik perangkat seluler Android dengan prosedur isolasi ketat (mode pesawat, stay-awake, USB debugging), serta mengidentifikasi kondisi batas enkripsi perangkat BFU (Before First Unlock) dan AFU (After First Unlock).</li>
+              <li data-i18n="exp1Bullet8">Mengoperasikan Andriller CE 3.6.3 dan Android Debug Bridge (ADB Platform-Tools) untuk mengekstrak properti sistem (getprop hardware/OS profiling tanpa rooting), akun komunikasi tertaut (WhatsApp, Telegram, Google), serta bukti multimedia direktori DCIM.</li>
+              <li data-i18n="exp1Bullet9">Menyusun draf Berita Acara Pemeriksaan (BAP) Teknis Forensik Digital sesuai standar operasional prosedur kepolisian dan merancang skrip File Hash Generator untuk otomasi verifikasi integritas data kriptografi.</li>
             </ul>
           </div>
 
@@ -484,8 +487,8 @@
             <div class="timeline-header-flex"
               style="display: flex; align-items: center; justify-content: space-between; gap: 20px; margin-bottom: 12px; flex-wrap: wrap;">
               <div>
-                <div class="timeline-role" data-i18n="exp2Role">Teaching Assistant &amp; Pembina Riset</div>
-                <div class="timeline-company" data-i18n="exp2Company">Security Laboratory - Telkom University</div>
+                <div class="timeline-role" data-i18n="exp2Role">Asisten Praktikum &amp; Pembina Riset</div>
+                <div class="timeline-company" data-i18n="exp2Company">Security Laboratory – Telkom University</div>
               </div>
               <div class="timeline-seculab-logo-box"
                 style="background: rgba(10, 15, 26, 0.85); border: 1px solid rgba(56, 189, 248, 0.35); padding: 8px 14px; border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.6); flex-shrink: 0;">
@@ -493,40 +496,13 @@
                   style="height: 75px; width: auto; filter: drop-shadow(0 6px 18px rgba(56, 189, 248, 0.45));">
               </div>
             </div>
-            <div class="timeline-date" data-i18n="exp2Date">Semester 7 – Semester 8 | Bandung, Indonesia</div>
+            <div class="timeline-date" data-i18n="exp2Date">Agustus 2025 – Juni 2026 | Bandung, Indonesia</div>
             <ul class="timeline-bullets">
-              <li data-i18n="exp2Bullet1">Mengampu kegiatan praktikum laboratorium Keamanan Sistem dan Sistem Operasi
-                untuk mahasiswa S1.</li>
-              <li data-i18n="exp2Bullet2">Bertindak sebagai Pembina Riset bagi adik tingkat di Divisi Riset Forensik
-                Digital, merumuskan judul riset yang disesuaikan dengan kemampuan teknis individu.</li>
-              <li data-i18n="exp2Bullet3">Membimbing dan mengajari mahasiswa dalam eksekusi riset, termasuk membimbing
-                studi komparasi tiga tools analisis Windows Registry.</li>
-              <li data-i18n="exp2Bullet4">Menyusun dan merancang modul praktikum Forensik Digital yang mencakup teori
-                dasar, lingkungan target, serta panduan langkah demi langkah.</li>
-            </ul>
-          </div>
-
-          <div class="timeline-item" data-category="business">
-            <div class="timeline-dot"
-              style="background: var(--accent-emerald); box-shadow: 0 0 12px var(--accent-emerald);"></div>
-            <div class="timeline-header-flex"
-              style="display: flex; align-items: center; justify-content: space-between; gap: 20px; margin-bottom: 12px; flex-wrap: wrap;">
-              <div>
-                <div class="timeline-role" data-i18n="expLakesideRole">Core Team &amp; Financial-Inventory Officer</div>
-                <div class="timeline-company" data-i18n="expLakesideCompany">Lakeside Fit+ (CAATIS Telkom University)</div>
-              </div>
-              <div class="timeline-lakeside-logo-box"
-                style="background: rgba(255, 255, 255, 0.96); border: 1px solid rgba(16, 185, 129, 0.4); padding: 6px 14px; border-radius: 12px; display: flex; align-items: center; gap: 10px; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35); flex-shrink: 0;">
-                <img src="images/logo_lakeside.png" alt="Logo Lakeside Fit+" style="height: 48px; width: auto; object-fit: contain;">
-                <div style="height: 32px; width: 1px; background: rgba(0, 0, 0, 0.18);"></div>
-                <img src="images/logo_caatis.png" alt="Logo CAATIS Telkom University" style="height: 24px; width: auto; object-fit: contain;">
-              </div>
-            </div>
-            <div class="timeline-date" data-i18n="expLakesideDate">26 Februari 2024 – 11 Oktober 2024 | Bandung, Indonesia</div>
-            <ul class="timeline-bullets">
-              <li data-i18n="expLakesideBullet1">Mengelola pencatatan keuangan operasional harian mencakup rekapitulasi pendapatan, pengeluaran kas, serta pembukuan usaha CAATIS Telkom.</li>
-              <li data-i18n="expLakesideBullet2">Melakukan pengawasan dan audit inventaris stok bahan baku harian (buah-buahan, gula, dan suplai) untuk meminimalisir risiko kerugian (loss prevention).</li>
-              <li data-i18n="expLakesideBullet3">Mengoordinasikan operasional harian outlet dan pelayanan pelanggan untuk menjamin efisiensi alur kerja produk minuman kesehatan.</li>
+              <li data-i18n="exp2Bullet1">Mengampu praktikum Keamanan Sistem dan Sistem Operasi untuk mahasiswa S1 Teknik Komputer.</li>
+              <li data-i18n="exp2Bullet2">Menjelaskan materi kuliah teknis dan membimbing mahasiswa melalui studi kasus praktis langsung.</li>
+              <li data-i18n="exp2Bullet3">Membantu pelaksanaan praktikum, penilaian tugas, dan evaluasi performa akademik mahasiswa.</li>
+              <li data-i18n="exp2Bullet4">Membimbing mahasiswa junior selama pelaksanaan riset, mengawasi studi komparatif tiga tools analisis Windows Registry dalam investigasi forensik digital.</li>
+              <li data-i18n="exp2Bullet5">Menulis bersama dan mengembangkan buku panduan laboratorium resmi CSE-410 Forensik Digital (101 halaman, 12 modul praktikum) berkolaborasi langsung dengan Dosen Pembina Seculab untuk kurikulum Telkom University.</li>
             </ul>
           </div>
 
@@ -593,6 +569,31 @@
                 kelancaran operasional dan logistik acara.</li>
               <li data-i18n="exp4Bullet3">Bertindak sebagai Moderator &amp; Mentor Sesi Edukasi Interaktif bagi siswa
                 kelas 3 SD, memfasilitasi pembelajaran logika komputasi dasar dan pengenalan kreasi gim.</li>
+            </ul>
+          </div>
+
+          <div class="timeline-item" data-category="afdi">
+            <div class="timeline-dot" style="background: var(--accent-emerald); box-shadow: 0 0 12px var(--accent-emerald);"></div>
+            <div class="timeline-header-flex"
+              style="display: flex; align-items: center; justify-content: space-between; gap: 20px; margin-bottom: 12px; flex-wrap: wrap;">
+              <div>
+                <div class="timeline-role" data-i18n="expAfdiRole">Official Registered Member</div>
+                <div class="timeline-company" data-i18n="expAfdiCompany">Indonesian Digital Forensics Association (AFDI)</div>
+              </div>
+              <div style="display: flex; align-items: center; gap: 14px; flex-wrap: wrap;">
+                <div class="timeline-logo-box"
+                  style="background: rgba(255, 255, 255, 0.95); border: 1px solid rgba(16, 185, 129, 0.4); padding: 6px 14px; border-radius: 12px; box-shadow: 0 6px 20px rgba(0,0,0,0.4); flex-shrink: 0; display: flex; align-items: center; justify-content: center;">
+                  <img src="images/logo_afdi.png" alt="Logo AFDI" style="height: 30px; width: auto; object-fit: contain;">
+                </div>
+                <div class="timeline-badge-box"
+                  style="background: rgba(16, 185, 129, 0.12); border: 1px solid rgba(16, 185, 129, 0.35); padding: 6px 14px; border-radius: 10px; font-family: var(--font-mono); font-size: 0.8rem; color: var(--accent-emerald); font-weight: bold; flex-shrink: 0;">
+                  🛡️ AFDI MEMBER
+                </div>
+              </div>
+            </div>
+            <div class="timeline-date" data-i18n="expAfdiDate">Mei 2026 – Sekarang | Jakarta, Indonesia</div>
+            <ul class="timeline-bullets">
+              <li data-i18n="expAfdiBullet1">Anggota aktif terdaftar yang berpartisipasi dalam seminar profesional, webinar, dan kegiatan pengembangan kompetensi di bidang Forensik Digital.</li>
             </ul>
           </div>
         </div>
@@ -779,6 +780,29 @@
         </div>
 
         <div class="cert-grid">
+          <!-- Centri / Security Blue Team - Blue Team Junior Analyst -->
+          <div class="cert-card"
+            onclick="openCertModal('images/cert_centri_blue_team.png', 'Centri / Security Blue Team - Blue Team Junior Analyst (ID: 167081331)', event)">
+            <div class="cert-card-header">
+              <div class="cert-icon">
+                <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="8" r="7" />
+                  <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88" />
+                </svg>
+              </div>
+              <div>
+                <div class="cert-name">Blue Team Junior Analyst</div>
+                <div class="cert-issuer">Centri / Security Blue Team (2026)</div>
+                <div style="display: flex; gap: 6px; align-items: center; margin-top: 4px;">
+                  <div class="cert-id-badge">ID: 167081331</div>
+                  <div class="cert-verify-tag">✓ VERIFIED</div>
+                </div>
+              </div>
+            </div>
+            <img src="images/cert_centri_blue_team.png" alt="Sertifikat Blue Team Junior Analyst Centri Security Blue Team Alfaiz Rayhan" class="cert-img-preview">
+          </div>
+
           <div class="cert-card"
             onclick="openCertModal('images/cert_cybertriage.png', 'Cyber Triage &amp; Sleuth Kit Labs - Intro to DFIR: The Divide and Conquer Process', event)">
             <div class="cert-card-header">
@@ -1066,6 +1090,54 @@
             <img src="images/cert_seculab_lo.jpg" alt="Sertifikat Penghargaan Liaison Officer Seculab 2025"
               class="cert-img-preview">
           </div>
+
+          <!-- Telkom University - Asisten Praktikum Keamanan Sistem -->
+          <div class="cert-card"
+            onclick="openCertModal('images/cert_seculab_keamanan_sistem.jpg', 'Telkom University &amp; SecuLAB - Sertifikat Asisten Praktikum Keamanan Sistem (SAP-917/AKD9/TE-DEK/2026)', event)">
+            <div class="cert-card-header">
+              <div class="cert-icon">
+                <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="8" r="7" />
+                  <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88" />
+                </svg>
+              </div>
+              <div>
+                <div class="cert-name">Asisten Praktikum Keamanan Sistem</div>
+                <div class="cert-issuer">Telkom University – SecuLAB (2026)</div>
+                <div style="display: flex; gap: 6px; align-items: center; margin-top: 4px;">
+                  <div class="cert-id-badge">ID: SAP-917/AKD9/TE-DEK/2026</div>
+                  <div class="cert-verify-tag">✓ VERIFIED</div>
+                </div>
+              </div>
+            </div>
+            <img src="images/cert_seculab_keamanan_sistem.jpg" alt="Sertifikat Asisten Praktikum Keamanan Sistem SecuLAB Telkom University Alfaiz Rayhan"
+              class="cert-img-preview">
+          </div>
+
+          <!-- Telkom University - Asisten Praktikum Sistem Operasi Waktu Nyata -->
+          <div class="cert-card"
+            onclick="openCertModal('images/cert_seculab_sistem_operasi.jpg', 'Telkom University &amp; SecuLAB - Sertifikat Asisten Praktikum Sistem Operasi Waktu Nyata (SAP-937/AKD9/TE-DEK/2026)', event)">
+            <div class="cert-card-header">
+              <div class="cert-icon">
+                <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="8" r="7" />
+                  <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88" />
+                </svg>
+              </div>
+              <div>
+                <div class="cert-name">Asisten Praktikum Sistem Operasi Waktu Nyata</div>
+                <div class="cert-issuer">Telkom University – SecuLAB (2026)</div>
+                <div style="display: flex; gap: 6px; align-items: center; margin-top: 4px;">
+                  <div class="cert-id-badge">ID: SAP-937/AKD9/TE-DEK/2026</div>
+                  <div class="cert-verify-tag">✓ VERIFIED</div>
+                </div>
+              </div>
+            </div>
+            <img src="images/cert_seculab_sistem_operasi.jpg" alt="Sertifikat Asisten Praktikum Sistem Operasi Waktu Nyata SecuLAB Telkom University Alfaiz Rayhan"
+              class="cert-img-preview">
+          </div>
         </div>
       </div>
     </section>
@@ -1122,8 +1194,8 @@
                   </svg>
                 </div>
                 <div class="file-info">
-                  <strong data-i18n="dossierMetaTitle">Berkas CV &amp; Resume ATS (PDF)</strong>
-                  <span data-i18n="dossierMetaSub">Format ATS • Tersedia Bahasa Indonesia &amp; English</span>
+                  <strong data-i18n="dossierMetaTitle">Berkas CV &amp; Resume ATS (1 Halaman / PDF)</strong>
+                  <span data-i18n="dossierMetaSub">Standar ATS 1-Halaman • Tersedia Bahasa Indonesia &amp; English</span>
                 </div>
               </div>
               
@@ -1135,7 +1207,7 @@
                     <polyline points="7 10 12 15 17 10" />
                     <line x1="12" y1="15" x2="12" y2="3" />
                   </svg>
-                  <span data-i18n="btnDownloadId">🇮🇩 Unduh Versi Indonesia (PDF)</span>
+                  <span data-i18n="btnDownloadId">🇮🇩 Unduh CV ATS Indonesia (1 Halaman PDF)</span>
                 </a>
                 <a href="Resume_ATS_Alfaiz_Rayhan_Putra_Adji_CyberSecurity_DFIR.pdf" target="_blank" rel="noopener noreferrer" class="btn-cta btn-dossier-clean" style="background: rgba(16, 185, 129, 0.12); border-color: rgba(16, 185, 129, 0.4); color: #ffffff; text-decoration: none;">
                   <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -1144,8 +1216,16 @@
                     <polyline points="7 10 12 15 17 10" />
                     <line x1="12" y1="15" x2="12" y2="3" />
                   </svg>
-                  <span data-i18n="btnDownloadEn">🇬🇧 Download English Version (PDF)</span>
+                  <span data-i18n="btnDownloadEn">🇬🇧 Download Resume ATS English (1 Page PDF)</span>
                 </a>
+                <div style="display: flex; gap: 8px; margin-top: 4px;">
+                  <a href="cv_alfaiz_rayhan_id.html" target="_blank" class="btn-secondary" style="font-size: 0.82rem; padding: 8px 12px; text-decoration: none; flex: 1; text-align: center;">
+                    🌐 Preview Web ATS (ID)
+                  </a>
+                  <a href="cv_alfaiz_rayhan.html" target="_blank" class="btn-secondary" style="font-size: 0.82rem; padding: 8px 12px; text-decoration: none; flex: 1; text-align: center;">
+                    🌐 Preview Web ATS (EN)
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -1176,14 +1256,14 @@
               alfaiz1002@gmail.com
             </a>
 
-            <a href="https://wa.me/628128429768" target="_blank" rel="noopener noreferrer" class="btn-secondary" style="padding: 12px 24px;"
-              onclick="copyContactText('08128429768', 'Nomor WhatsApp/HP', event)">
+            <a href="https://wa.me/6281284229768" target="_blank" rel="noopener noreferrer" class="btn-secondary" style="padding: 12px 24px;"
+              onclick="copyContactText('081284229768', 'Nomor WhatsApp/HP', event)">
               <!-- Icon Phone / WhatsApp -->
               <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                 stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
               </svg>
-              +62 812-8429-768 (WhatsApp)
+              +62 812-8422-9768 (WhatsApp)
             </a>
 
             <a href="https://www.linkedin.com/in/alfaiz-rayhan/" target="_blank" rel="noopener noreferrer" class="btn-secondary">

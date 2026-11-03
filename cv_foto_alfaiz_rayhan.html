@@ -1,0 +1,1198 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Curriculum Vitae Alfaiz Rayhan Putra Adji, S.T. - Lulusan Teknik Komputer | Keamanan Siber & Forensik Digital (DFIR)">
+  <meta name="author" content="Alfaiz Rayhan Putra Adji">
+  <title>CV - Alfaiz Rayhan Putra Adji, S.T.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    /* CSS Reset & Base */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --sidebar-bg: #272a30;
+      --sidebar-card: #1f2227;
+      --sidebar-text: #f1f5f9;
+      --sidebar-muted: #94a3b8;
+      --sidebar-border: #3f444e;
+      --main-bg: #ffffff;
+      --main-text: #1e293b;
+      --main-muted: #64748b;
+      --main-heading: #090d16;
+      --accent: #0f172a;
+      --timeline-dot: #1e293b;
+      --timeline-line: #cbd5e1;
+    }
+
+    html {
+      background-color: #e2e8f0;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      color: var(--main-text);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body {
+      padding: 20px 0 35px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #e2e8f0;
+    }
+
+    /* Screen Action Bar */
+    .action-bar {
+      width: 210mm;
+      max-width: 100%;
+      margin-bottom: 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #ffffff;
+      padding: 8px 16px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+      border: 1px solid #cbd5e1;
+    }
+
+    .action-title {
+      font-size: 13px;
+      font-weight: 600;
+      color: #334155;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .badge-1page {
+      background: #10b981;
+      color: #ffffff;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 2px 7px;
+      border-radius: 4px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .action-controls {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .btn-lang {
+      background: #f8fafc;
+      border: 1px solid #cbd5e1;
+      color: #334155;
+      padding: 5px 10px;
+      font-size: 12px;
+      font-weight: 600;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .btn-lang:hover {
+      background: #e2e8f0;
+    }
+
+    .btn-lang.active {
+      background: #0284c7;
+      color: #ffffff;
+      border-color: #0284c7;
+    }
+
+    .btn-print {
+      background: #0f172a;
+      color: #ffffff;
+      border: 1px solid #0f172a;
+      padding: 5px 12px;
+      font-size: 12px;
+      font-weight: 600;
+      border-radius: 6px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      transition: all 0.2s ease;
+    }
+
+    .btn-print:hover {
+      background: #1e293b;
+    }
+
+    /* CV Document Canvas (Standard A4 Fixed Dimensions: 210mm x 297mm) */
+    .cv-page {
+      width: 210mm;
+      height: 297mm;
+      max-height: 297mm;
+      background: #ffffff;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+      display: flex;
+      overflow: hidden;
+      position: relative;
+      border-radius: 2px;
+    }
+
+    /* ===================================================
+       KOLOM KIRI: SIDEBAR GELAP (~32.5% width)
+       =================================================== */
+    .cv-sidebar {
+      width: 32.5%;
+      height: 100%;
+      background-color: var(--sidebar-bg);
+      color: var(--sidebar-text);
+      padding: 22px 18px 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      border-right: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    /* Foto Profil Lingkaran */
+    .sidebar-photo-container {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 2px;
+    }
+
+    .photo-frame {
+      width: 108px;
+      height: 108px;
+      border-radius: 50%;
+      padding: 3px;
+      background: #475569;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .profile-photo {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center top;
+      display: block;
+      background-color: #1e293b;
+    }
+
+    /* Sidebar Section Headings */
+    .sb-title {
+      font-size: 11.2px;
+      font-weight: 800;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      color: #ffffff;
+      border-bottom: 1px solid var(--sidebar-border);
+      padding-bottom: 3.5px;
+      margin-bottom: 6px;
+    }
+
+    /* Tentang Saya */
+    .sb-bio {
+      font-size: 9.3px;
+      line-height: 1.38;
+      color: #cbd5e1;
+      text-align: justify;
+    }
+
+    /* Data Pribadi */
+    .sb-info-list {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .sb-info-row {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .sb-label {
+      font-size: 8.8px;
+      font-weight: 700;
+      color: var(--sidebar-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .sb-val {
+      font-size: 9.8px;
+      color: #f1f5f9;
+      font-weight: 500;
+    }
+
+    /* Keahlian Teknis di Sidebar */
+    .sb-skill-group {
+      margin-bottom: 5px;
+    }
+
+    .sb-skill-group:last-child {
+      margin-bottom: 0;
+    }
+
+    .sb-skill-cat {
+      font-size: 9.2px;
+      font-weight: 700;
+      color: #93c5fd;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 1.5px;
+    }
+
+    .sb-skill-items {
+      font-size: 9.3px;
+      color: #e2e8f0;
+      line-height: 1.32;
+    }
+
+    /* Bahasa dengan Level Bar */
+    .sb-lang-item {
+      margin-bottom: 4px;
+    }
+
+    .sb-lang-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .sb-lang-header {
+      display: flex;
+      justify-content: space-between;
+      font-size: 9.2px;
+      font-weight: 600;
+      margin-bottom: 2px;
+    }
+
+    .sb-lang-level {
+      color: var(--sidebar-muted);
+      font-size: 8.2px;
+      font-weight: 400;
+    }
+
+    .sb-bar-bg {
+      width: 100%;
+      height: 3.5px;
+      background: #3f444e;
+      border-radius: 2px;
+      overflow: hidden;
+    }
+
+    .sb-bar-fill {
+      height: 100%;
+      background: #38bdf8;
+      border-radius: 2px;
+    }
+
+    /* Afiliasi Profesi AFDI */
+    .sb-badge {
+      background: rgba(255, 255, 255, 0.07);
+      border-left: 2.5px solid #38bdf8;
+      padding: 5px 8px;
+      border-radius: 0 4px 4px 0;
+      margin-top: 2px;
+    }
+
+    .sb-badge-title {
+      font-size: 9.5px;
+      font-weight: 700;
+      color: #ffffff;
+    }
+
+    .sb-badge-sub {
+      font-size: 8.5px;
+      color: #cbd5e1;
+      margin-top: 1px;
+    }
+
+    /* ===================================================
+       KOLOM KANAN: KONTEN UTAMA PUTIH (~67.5% width)
+       =================================================== */
+    .cv-main {
+      width: 67.5%;
+      height: 100%;
+      background-color: var(--main-bg);
+      color: var(--main-text);
+      padding: 22px 24px 16px 22px;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    /* Header Section */
+    .main-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding-bottom: 10px;
+      border-bottom: 1.5px solid #000000;
+      margin-bottom: 10px;
+    }
+
+    .header-left {
+      flex: 1;
+      padding-right: 12px;
+    }
+
+    .candidate-name {
+      font-size: 20px;
+      font-weight: 800;
+      letter-spacing: 0.8px;
+      color: var(--main-heading);
+      text-transform: uppercase;
+      line-height: 1.15;
+      margin-bottom: 3px;
+    }
+
+    .candidate-subtitle {
+      font-size: 10.2px;
+      font-weight: 600;
+      color: #475569;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    /* Header Kontak Kanan */
+    .header-right {
+      flex-shrink: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 2.5px;
+      text-align: right;
+    }
+
+    .contact-line {
+      font-size: 9.3px;
+      color: #334155;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 5px;
+      text-decoration: none;
+    }
+
+    .contact-line a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .contact-line a:hover {
+      text-decoration: underline;
+      color: #0284c7;
+    }
+
+    .contact-icon {
+      width: 12px;
+      height: 12px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: #475569;
+      flex-shrink: 0;
+    }
+
+    /* Section Styles */
+    .cv-section {
+      margin-bottom: 9px;
+    }
+
+    .cv-section:last-child {
+      margin-bottom: 0;
+    }
+
+    .sec-header {
+      font-size: 11.2px;
+      font-weight: 800;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      color: var(--main-heading);
+      margin-bottom: 5px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .sec-header::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: #e2e8f0;
+    }
+
+    /* Timeline Format */
+    .timeline-container {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .timeline-item {
+      display: flex;
+      position: relative;
+    }
+
+    /* Kolom Kiri Timeline: Perusahaan / Institusi & Tanggal */
+    .tl-meta {
+      width: 32%;
+      flex-shrink: 0;
+      padding-right: 10px;
+      text-align: left;
+    }
+
+    .tl-org {
+      font-size: 9.8px;
+      font-weight: 700;
+      color: var(--main-heading);
+      line-height: 1.25;
+      text-transform: uppercase;
+    }
+
+    .tl-loc {
+      font-size: 8.6px;
+      color: var(--main-muted);
+      margin-top: 1px;
+    }
+
+    .tl-date {
+      font-size: 8.6px;
+      color: #0369a1;
+      font-weight: 600;
+      margin-top: 1px;
+    }
+
+    /* Garis & Titik Timeline Tengah */
+    .tl-divider {
+      width: 14px;
+      position: relative;
+      flex-shrink: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    .tl-line {
+      position: absolute;
+      top: 3px;
+      bottom: -6px;
+      width: 1.5px;
+      background-color: var(--timeline-line);
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .timeline-item:last-child .tl-line {
+      display: none;
+    }
+
+    .tl-dot {
+      width: 6.5px;
+      height: 6.5px;
+      border-radius: 50%;
+      background-color: var(--timeline-dot);
+      position: relative;
+      top: 3px;
+      z-index: 2;
+      box-shadow: 0 0 0 2px #ffffff;
+    }
+
+    /* Kolom Kanan Timeline: Peran & Deskripsi Poin */
+    .tl-content {
+      flex: 1;
+      padding-left: 9px;
+    }
+
+    .tl-role {
+      font-size: 10.2px;
+      font-weight: 700;
+      color: var(--main-heading);
+      line-height: 1.2;
+      margin-bottom: 2px;
+    }
+
+    .tl-bullets {
+      list-style-type: disc;
+      margin-left: 13px;
+      margin-top: 2px;
+    }
+
+    .tl-bullets li {
+      font-size: 9.1px;
+      color: #334155;
+      line-height: 1.34;
+      margin-bottom: 1.5px;
+    }
+
+    .tl-bullets li:last-child {
+      margin-bottom: 0;
+    }
+
+    .tl-bullets strong {
+      color: #0f172a;
+    }
+
+    /* Pengalaman Organisasi Format Bullets Bersih (Sesuai CV ATS) */
+    .org-bullets {
+      list-style-type: disc;
+      margin-left: 14px;
+      margin-top: 1px;
+    }
+
+    .org-bullets li {
+      font-size: 9.1px;
+      color: #334155;
+      line-height: 1.36;
+      margin-bottom: 2px;
+    }
+
+    .org-bullets li:last-child {
+      margin-bottom: 0;
+    }
+
+    .org-bullets strong {
+      color: var(--main-heading);
+    }
+
+    .org-role {
+      color: #334155;
+    }
+
+    .org-date {
+      color: #0369a1;
+      font-weight: 600;
+    }
+
+    /* Sertifikasi Format Bullets Bersih 2-Kolom (Sesuai CV ATS) */
+    .cert-bullets {
+      list-style-type: disc;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2px 14px;
+      margin-left: 14px;
+      margin-top: 1px;
+    }
+
+    .cert-bullets li {
+      font-size: 8.8px;
+      color: #334155;
+      line-height: 1.34;
+    }
+
+    .cert-bullets strong {
+      color: var(--main-heading);
+      font-weight: 600;
+    }
+
+    /* ===================================================
+       MEDIA PRINT: TEPAT 1 HALAMAN A4 TANPA OVERFLOW
+       =================================================== */
+    @media print {
+      html, body {
+        background-color: #ffffff !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+      }
+
+      .action-bar {
+        display: none !important;
+      }
+
+      .cv-page {
+        width: 210mm !important;
+        height: 297mm !important;
+        max-height: 297mm !important;
+        box-shadow: none !important;
+        border-radius: 0 !important;
+        margin: 0 !important;
+        page-break-inside: avoid !important;
+        break-inside: avoid !important;
+        overflow: hidden !important;
+      }
+
+      @page {
+        size: A4 portrait;
+        margin: 0;
+      }
+
+      .cv-sidebar {
+        background-color: #272a30 !important;
+        -webkit-print-color-adjust: exact !important;
+      }
+
+      .photo-frame {
+        background: #475569 !important;
+        box-shadow: none !important;
+      }
+
+      .profile-photo {
+        -webkit-print-color-adjust: exact !important;
+      }
+
+      .sb-bar-bg {
+        background-color: #3f444e !important;
+      }
+
+      .sb-bar-fill {
+        background-color: #38bdf8 !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Screen Toolbar (Cetak & Bahasa) -->
+  <aside class="action-bar" aria-label="Toolbar CV">
+    <div class="action-title">
+      <span class="badge-1page">1 Halaman Pas (A4)</span>
+      <strong>Curriculum Vitae Formal dengan Foto</strong>
+    </div>
+    <div class="action-controls">
+      <button type="button" class="btn-lang active" id="btn-id" onclick="setLanguage('id')">🇮🇩 Indonesia</button>
+      <button type="button" class="btn-lang" id="btn-en" onclick="setLanguage('en')">🇬🇧 English</button>
+      <button type="button" class="btn-print" onclick="window.print()" title="Cetak atau Simpan PDF (A4 1 Halaman)">
+        🖨️ Cetak / Simpan PDF
+      </button>
+    </div>
+  </aside>
+
+  <!-- CV Single A4 Page Canvas -->
+  <main class="cv-page" id="cv-canvas">
+
+    <!-- ================= KOLOM KIRI (SIDEBAR GELAP) ================= -->
+    <aside class="cv-sidebar">
+      
+      <!-- FOTO PROFIL -->
+      <div class="sidebar-photo-container">
+        <div class="photo-frame">
+          <img src="images/profile_suit.jpg" alt="Foto Formal Alfaiz Rayhan Putra Adji" class="profile-photo">
+        </div>
+      </div>
+
+      <!-- TENTANG SAYA -->
+      <section>
+        <h2 class="sb-title" id="sb-title-about">TENTANG SAYA</h2>
+        <p class="sb-bio" id="sb-bio-text">
+          Lulusan Sarjana Teknik Komputer (S.T.) dari Telkom University dengan keahlian mendalam di bidang Keamanan Siber, Penilaian Kerentanan Aplikasi Web (OWASP Top 10), serta Forensik Digital dan Penanganan Insiden (DFIR). Memiliki pengalaman praktis investigasi di Direktorat Tindak Pidana Siber (Ditres Siber) Polda Metro Jaya dalam penanganan dan preservasi rantai bukti digital (Chain of Custody) serta analisis artefak sistem. Berpengalaman sebagai Asisten Praktikum dan Pembina Riset di Security Laboratory Telkom University serta Co-Author buku panduan resmi laboratorium. Terdaftar sebagai Anggota Resmi Asosiasi Forensik Digital Indonesia (AFDI), berorientasi analitis tinggi, dan siap memberikan kontribusi nyata dalam perlindungan infrastruktur digital dan penanganan insiden keamanan siber.
+        </p>
+      </section>
+
+      <!-- DATA PRIBADI -->
+      <section>
+        <h2 class="sb-title" id="sb-title-personal">DATA PRIBADI</h2>
+        <div class="sb-info-list">
+          <div class="sb-info-row">
+            <span class="sb-label" id="sb-lbl-nat">Kewarganegaraan</span>
+            <span class="sb-val" id="sb-val-nat">Indonesia (WNI)</span>
+          </div>
+          <div class="sb-info-row">
+            <span class="sb-label" id="sb-lbl-dom">Domisili</span>
+            <span class="sb-val" id="sb-val-dom">Bekasi, Indonesia</span>
+          </div>
+          <div class="sb-info-row">
+            <span class="sb-label" id="sb-lbl-edu">Pendidikan Terakhir</span>
+            <span class="sb-val" id="sb-val-edu">S1 Teknik Komputer (S.T.)</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- KEAHLIAN TEKNIS -->
+      <section>
+        <h2 class="sb-title" id="sb-title-skills">KEAHLIAN TEKNIS</h2>
+        
+        <div class="sb-skill-group">
+          <div class="sb-skill-cat" id="sb-cat-sec">Keamanan Siber &amp; Web</div>
+          <div class="sb-skill-items" id="sb-val-sec">OWASP Top 10, Vulnerability Assessment, Blue Team Remediation, MFA/OTP Security, HTTP Headers</div>
+        </div>
+
+        <div class="sb-skill-group">
+          <div class="sb-skill-cat" id="sb-cat-dfir">Forensik Digital (DFIR)</div>
+          <div class="sb-skill-items" id="sb-val-dfir">Evidence Acquisition, Chain of Custody, Windows Registry, EVTX Logs, Mobile &amp; DB Forensics</div>
+        </div>
+
+        <div class="sb-skill-group">
+          <div class="sb-skill-cat" id="sb-cat-tools">Tools &amp; Software</div>
+          <div class="sb-skill-items">FTK Imager, Autopsy, OSForensics, Magnet ACQUIRE, Burp Suite, Wireshark, Kali Linux</div>
+        </div>
+
+        <div class="sb-skill-group">
+          <div class="sb-skill-cat" id="sb-cat-dev">Pemrograman &amp; Data</div>
+          <div class="sb-skill-items" id="sb-val-dev">Laravel, PHP, Python, SQL</div>
+        </div>
+      </section>
+
+      <!-- BAHASA -->
+      <section>
+        <h2 class="sb-title" id="sb-title-lang">BAHASA</h2>
+        <div class="sb-lang-item">
+          <div class="sb-lang-header">
+            <span id="sb-lang1-name">Bahasa Indonesia</span>
+            <span class="sb-lang-level" id="sb-lang1-lvl">Penutur Asli (Native)</span>
+          </div>
+          <div class="sb-bar-bg"><div class="sb-bar-fill" style="width: 100%;"></div></div>
+        </div>
+        <div class="sb-lang-item">
+          <div class="sb-lang-header">
+            <span id="sb-lang2-name">Bahasa Inggris</span>
+            <span class="sb-lang-level" id="sb-lang2-lvl">Kerja Profesional</span>
+          </div>
+          <div class="sb-bar-bg"><div class="sb-bar-fill" style="width: 85%;"></div></div>
+        </div>
+      </section>
+
+      <!-- AFILIASI RESMI AFDI -->
+      <section>
+        <h2 class="sb-title" id="sb-title-assoc">AFILIASI RESMI</h2>
+        <div class="sb-badge">
+          <div class="sb-badge-title">AFDI - Anggota Resmi Terdaftar</div>
+          <div class="sb-badge-sub" id="sb-badge-desc">Asosiasi Forensik Digital Indonesia (2026 – Sekarang)</div>
+        </div>
+      </section>
+
+    </aside>
+
+    <!-- ================= KOLOM KANAN (KONTEN UTAMA PUTIH) ================= -->
+    <section class="cv-main">
+
+      <!-- HEADER UTAMA (NAMA & KONTAK) -->
+      <header class="main-header">
+        <div class="header-left">
+          <h1 class="candidate-name">Alfaiz Rayhan Putra Adji</h1>
+          <p class="candidate-subtitle" id="main-subtitle">
+            Sarjana Teknik Komputer (S.T.)
+          </p>
+        </div>
+        <div class="header-right">
+          <div class="contact-line">
+            <span id="header-loc">Bekasi, Indonesia</span>
+            <span class="contact-icon">📍</span>
+          </div>
+          <div class="contact-line">
+            <a href="tel:+6281284229768">+62 812-8422-9768</a>
+            <span class="contact-icon">📞</span>
+          </div>
+          <div class="contact-line">
+            <a href="mailto:alfaiz1002@gmail.com">alfaiz1002@gmail.com</a>
+            <span class="contact-icon">✉️</span>
+          </div>
+          <div class="contact-line">
+            <a href="https://www.linkedin.com/in/alfaiz-rayhan/" target="_blank" rel="noopener">linkedin.com/in/alfaiz-rayhan</a>
+            <span class="contact-icon">🔗</span>
+          </div>
+        </div>
+      </header>
+
+      <!-- 1. PENGALAMAN KERJA / MAGANG (Gaya Garis Waktu Timeline) -->
+      <section class="cv-section">
+        <h2 class="sec-header" id="sec-exp-title">PENGALAMAN KERJA &amp; PRAKTIK</h2>
+        
+        <div class="timeline-container">
+          
+          <!-- Ditres Siber Polda Metro Jaya -->
+          <article class="timeline-item">
+            <div class="tl-meta">
+              <div class="tl-org">Ditres Siber Polda Metro Jaya</div>
+              <div class="tl-loc">Jakarta, Indonesia</div>
+              <div class="tl-date" id="date-ditres">30 Juni – 9 Agustus 2025</div>
+            </div>
+            <div class="tl-divider">
+              <div class="tl-line"></div>
+              <div class="tl-dot"></div>
+            </div>
+            <div class="tl-content">
+              <div class="tl-role" id="role-ditres">Intern Forensik Digital</div>
+              <ul class="tl-bullets" id="bullets-ditres">
+                <li>Menjaga integritas <strong>Chain of Custody</strong> bukti digital menggunakan write blocker (<strong>Safe Block</strong>) pada SSD &amp; USB untuk menjamin keabsahan hukum (legal admissibility).</li>
+                <li>Melakukan akuisisi citra bit-by-bit (<strong>FTK Imager</strong>) dan ekstraksi artefak Windows Registry (NTUSER.DAT, SAM 2.900+ login, SYSTEM USBSTOR) via <strong>Registry Explorer</strong>.</li>
+                <li>Menjalankan forensik mobile Android (BFU/AFU) menggunakan <strong>Andriller CE</strong> dan <strong>ADB</strong>, serta menyusun draf Berita Acara Pemeriksaan (BAP) kepolisian.</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Security Laboratory Telkom University -->
+          <article class="timeline-item">
+            <div class="tl-meta">
+              <div class="tl-org">Security Laboratory Telkom University</div>
+              <div class="tl-loc">Bandung, Indonesia</div>
+              <div class="tl-date" id="date-seculab">Agustus 2025 – Juni 2026</div>
+            </div>
+            <div class="tl-divider">
+              <div class="tl-line"></div>
+              <div class="tl-dot"></div>
+            </div>
+            <div class="tl-content">
+              <div class="tl-role" id="role-seculab">Asisten Praktikum &amp; Pembina Riset (Divisi Digital Forensics)</div>
+              <ul class="tl-bullets" id="bullets-seculab">
+                <li>Mengampu praktikum Keamanan Sistem dan Sistem Operasi untuk puluhan mahasiswa S1, membimbing penyelesaian studi kasus praktis dan evaluasi teknis.</li>
+                <li>Bertindak sebagai Pembina Riset bagi adik tingkat di Divisi Riset Forensik Digital, merumuskan topik riset sesuai keahlian individu, serta membimbing studi komparasi tools analisis Windows Registry.</li>
+                <li>Menyusun dan mengembangkan modul resmi laboratorium <strong>CSE-410 Forensik Digital (101 Halaman)</strong> berkolaborasi dengan Dosen Pembina Seculab.</li>
+              </ul>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- 2. PENDIDIKAN (Tanpa Deskripsi Panjang Sesuai Arahan) -->
+      <section class="cv-section">
+        <h2 class="sec-header" id="sec-edu-title">PENDIDIKAN</h2>
+        
+        <div class="timeline-container">
+          
+          <article class="timeline-item">
+            <div class="tl-meta">
+              <div class="tl-org">Telkom University</div>
+              <div class="tl-loc">Bandung, Indonesia</div>
+              <div class="tl-date">2022 – 2026</div>
+            </div>
+            <div class="tl-divider">
+              <div class="tl-line"></div>
+              <div class="tl-dot"></div>
+            </div>
+            <div class="tl-content">
+              <div class="tl-role" id="role-telkom">Sarjana Teknik (S.T.) / S1 Teknik Komputer</div>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="tl-meta">
+              <div class="tl-org">SMA Negeri 2 Kota Bekasi</div>
+              <div class="tl-loc">Bekasi, Indonesia</div>
+              <div class="tl-date">2019 – 2022</div>
+            </div>
+            <div class="tl-divider">
+              <div class="tl-line"></div>
+              <div class="tl-dot"></div>
+            </div>
+            <div class="tl-content">
+              <div class="tl-role" id="role-sman">Jurusan MIPA (Matematika &amp; Ilmu Pengetahuan Alam)</div>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- 3. PROYEK UNGGULAN & PRESTASI (Tahun Buku Modul: 2026) -->
+      <section class="cv-section">
+        <h2 class="sec-header" id="sec-proj-title">PROYEK UNGGULAN &amp; PRESTASI</h2>
+        
+        <div class="timeline-container">
+          
+          <article class="timeline-item">
+            <div class="tl-meta">
+              <div class="tl-org">Tugas Akhir S1 (Capstone)</div>
+              <div class="tl-loc">Telkom University</div>
+              <div class="tl-date">2025 – 2026</div>
+            </div>
+            <div class="tl-divider">
+              <div class="tl-line"></div>
+              <div class="tl-dot"></div>
+            </div>
+            <div class="tl-content">
+              <div class="tl-role" id="role-capstone">Implementasi Keamanan Web Reservasi Pineus Tilu (OWASP Top 10)</div>
+              <ul class="tl-bullets" id="bullets-capstone">
+                <li>Merancang 13+ fitur keamanan backend (MFA/OTP, RBAC, WAF kustom, rate-limiting &gt;50 req/menit) dan mitigasi SQLi, XSS, dan IDOR.</li>
+                <li>Mengintegrasikan webhook payment gateway Midtrans dengan validasi tanda tangan SHA-512 dan audit logging berstandar ISO 27001.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="tl-meta">
+              <div class="tl-org">Publikasi Akademik</div>
+              <div class="tl-loc">Security Laboratory</div>
+              <div class="tl-date">2026</div>
+            </div>
+            <div class="tl-divider">
+              <div class="tl-line"></div>
+              <div class="tl-dot"></div>
+            </div>
+            <div class="tl-content">
+              <div class="tl-role" id="role-manual">Buku Modul CSE-410 Forensik Digital (101 Halaman)</div>
+              <ul class="tl-bullets" id="bullets-manual">
+                <li>Co-Author modul praktikum resmi mencakup Chain of Custody, YARA Rules, forensik Android ADB, dan analisis memori &amp; log EVTX.</li>
+              </ul>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- 4. PENGALAMAN ORGANISASI (Format Bullets Bersih Sesuai CV ATS) -->
+      <section class="cv-section">
+        <h2 class="sec-header" id="sec-org-title">PENGALAMAN ORGANISASI</h2>
+        <ul class="org-bullets">
+          <li>
+            <strong>Centurion HMTK Telkom University</strong> – <span id="role-centurion" class="org-role">PJ Divisi Esports (Tournament Lead)</span> <span class="org-date">| 2024</span>
+          </li>
+          <li>
+            <strong>Connection HMTK Telkom University</strong> – <span id="role-connection" class="org-role">Divisi Sponsorship &amp; Moderator Edukasi</span> <span class="org-date">| 2023</span>
+          </li>
+        </ul>
+      </section>
+
+      <!-- 5. SERTIFIKASI (Format Bullets Bersih Sesuai CV ATS) -->
+      <section class="cv-section">
+        <h2 class="sec-header" id="sec-cert-title">SERTIFIKASI</h2>
+        <ul class="cert-bullets" id="cert-bullets-content">
+          <li><strong>Blue Team Junior Analyst (BTJA)</strong> – Centri / Security Blue Team (2026)</li>
+          <li><strong>Anggota Resmi Terdaftar AFDI</strong> – Asosiasi Forensik Digital Indonesia (2026)</li>
+          <li><strong>PassMark OSForensics Triage (OSFTC)</strong> – PassMark Software (2025)</li>
+          <li><strong>Intro to DFIR: Divide &amp; Conquer</strong> – Cyber Triage &amp; Sleuth Kit Labs (2026)</li>
+          <li><strong>Forensic &amp; Integrity Services</strong> – EY via Forage (2026)</li>
+          <li><strong>Asisten Praktikum Keamanan Sistem</strong> – SecuLAB Telkom Univ (2026)</li>
+          <li><strong>Asisten Praktikum Sistem Operasi RTOS</strong> – SecuLAB Telkom Univ (2026)</li>
+          <li><strong>Introduction to Cybersecurity</strong> – Cisco Networking Academy (2026)</li>
+          <li><strong>Introduction to Digital Forensics</strong> – Security Blue Team (2025)</li>
+          <li><strong>IT Audit Fundamentals &amp; Standards</strong> – Codelamp Indonesia (2026)</li>
+          <li><strong>C5W-100 Intro to Digital Forensics</strong> – Cyber 5W (2026)</li>
+          <li><strong>Digital Forensics Basics</strong> – Cybrary (2026)</li>
+          <li><strong>DFIR Foundations &amp; Techniques</strong> – Blue Cape Security (2026)</li>
+          <li><strong>Digital Forensics</strong> – OpenLearn, The Open University (2025)</li>
+        </ul>
+      </section>
+
+    </section>
+
+  </main>
+
+  <!-- Script Pengatur Bahasa Interaktif & Print -->
+  <script>
+    const i18nData = {
+      id: {
+        docTitle: "CV - Alfaiz Rayhan Putra Adji, S.T.",
+        badge: "1 Halaman Pas (A4)",
+        sbAboutTitle: "TENTANG SAYA",
+        sbBio: "Lulusan Sarjana Teknik Komputer (S.T.) dari Telkom University dengan keahlian mendalam di bidang Keamanan Siber, Penilaian Kerentanan Aplikasi Web (OWASP Top 10), serta Forensik Digital dan Penanganan Insiden (DFIR). Memiliki pengalaman praktis investigasi di Direktorat Tindak Pidana Siber (Ditres Siber) Polda Metro Jaya dalam penanganan dan preservasi rantai bukti digital (Chain of Custody) serta analisis artefak sistem. Berpengalaman sebagai Asisten Praktikum dan Pembina Riset di Security Laboratory Telkom University serta Co-Author buku panduan resmi laboratorium. Terdaftar sebagai Anggota Resmi Asosiasi Forensik Digital Indonesia (AFDI), berorientasi analitis tinggi, dan siap memberikan kontribusi nyata dalam perlindungan infrastruktur digital dan penanganan insiden keamanan siber.",
+        sbPersonalTitle: "DATA PRIBADI",
+        sbLblNat: "Kewarganegaraan",
+        sbValNat: "Indonesia (WNI)",
+        sbLblDom: "Domisili",
+        sbValDom: "Bekasi, Indonesia",
+        sbLblEdu: "Pendidikan Terakhir",
+        sbValEdu: "S1 Teknik Komputer (S.T.)",
+        headerLoc: "Bekasi, Indonesia",
+        sbSkillsTitle: "KEAHLIAN TEKNIS",
+        sbCatSec: "Keamanan Siber & Web",
+        sbValSec: "OWASP Top 10, Vulnerability Assessment, Blue Team Remediation, MFA/OTP Security, HTTP Headers",
+        sbCatDfir: "Forensik Digital (DFIR)",
+        sbValDfir: "Evidence Acquisition, Chain of Custody, Windows Registry, EVTX Logs, Mobile & DB Forensics",
+        sbCatDev: "Pemrograman & Data",
+        sbValDev: "Laravel, PHP, Python, SQL",
+        sbLangTitle: "BAHASA",
+        sbLang1Name: "Bahasa Indonesia",
+        sbLang1Lvl: "Penutur Asli (Native)",
+        sbLang2Name: "Bahasa Inggris",
+        sbLang2Lvl: "Kerja Profesional",
+        sbAssocTitle: "AFILIASI RESMI",
+        sbBadgeDesc: "Asosiasi Forensik Digital Indonesia (2026 – Sekarang)",
+        mainSubtitle: "Sarjana Teknik Komputer (S.T.)",
+        secExpTitle: "PENGALAMAN KERJA & PRAKTIK",
+        roleDitres: "Intern Forensik Digital",
+        dateDitres: "30 Juni – 9 Agustus 2025",
+        bulletsDitres: [
+          "Menjaga integritas <strong>Chain of Custody</strong> bukti digital menggunakan write blocker (<strong>Safe Block</strong>) pada SSD &amp; USB untuk menjamin keabsahan hukum (legal admissibility).",
+          "Melakukan akuisisi citra bit-by-bit (<strong>FTK Imager</strong>) dan ekstraksi artefak Windows Registry (NTUSER.DAT, SAM 2.900+ login, SYSTEM USBSTOR) via <strong>Registry Explorer</strong>.",
+          "Menjalankan forensik mobile Android (BFU/AFU) menggunakan <strong>Andriller CE</strong> dan <strong>ADB</strong>, serta menyusun draf Berita Acara Pemeriksaan (BAP) kepolisian."
+        ],
+        roleSeculab: "Asisten Praktikum & Pembina Riset (Divisi Digital Forensics)",
+        dateSeculab: "Agustus 2025 – Juni 2026",
+        bulletsSeculab: [
+          "Mengampu praktikum Keamanan Sistem dan Sistem Operasi untuk puluhan mahasiswa S1, membimbing penyelesaian studi kasus praktis dan evaluasi teknis.",
+          "Bertindak sebagai Pembina Riset bagi adik tingkat di Divisi Riset Forensik Digital, merumuskan topik riset sesuai keahlian individu, serta membimbing studi komparasi tools analisis Windows Registry.",
+          "Menyusun dan mengembangkan modul resmi laboratorium <strong>CSE-410 Forensik Digital (101 Halaman)</strong> berkolaborasi dengan Dosen Pembina Seculab."
+        ],
+        secEduTitle: "PENDIDIKAN",
+        roleTelkom: "Sarjana Teknik (S.T.) / S1 Teknik Komputer",
+        roleSman: "Jurusan MIPA (Matematika & Ilmu Pengetahuan Alam)",
+        secProjTitle: "PROYEK UNGGULAN & PRESTASI",
+        roleCapstone: "Implementasi Keamanan Web Reservasi Pineus Tilu (OWASP Top 10)",
+        bulletsCapstone: [
+          "Merancang 13+ fitur keamanan backend (MFA/OTP, RBAC, WAF kustom, rate-limiting &gt;50 req/menit) dan mitigasi SQLi, XSS, dan IDOR.",
+          "Mengintegrasikan webhook payment gateway Midtrans dengan validasi tanda tangan SHA-512 dan audit logging berstandar ISO 27001."
+        ],
+        roleManual: "Buku Modul CSE-410 Forensik Digital (101 Halaman)",
+        bulletsManual: [
+          "Co-Author modul praktikum resmi mencakup Chain of Custody, YARA Rules, forensik Android ADB, dan analisis memori & log EVTX."
+        ],
+        secOrgTitle: "PENGALAMAN ORGANISASI",
+        roleCenturion: "PJ Divisi Esports (Tournament Lead)",
+        roleConnection: "Divisi Sponsorship & Moderator Edukasi",
+        secCertTitle: "SERTIFIKASI",
+        certs: [
+          "<strong>Blue Team Junior Analyst (BTJA)</strong> – Centri / Security Blue Team (2026)",
+          "<strong>Anggota Resmi Terdaftar AFDI</strong> – Asosiasi Forensik Digital Indonesia (2026)",
+          "<strong>PassMark OSForensics Triage (OSFTC)</strong> – PassMark Software (2025)",
+          "<strong>Intro to DFIR: Divide &amp; Conquer</strong> – Cyber Triage &amp; Sleuth Kit Labs (2026)",
+          "<strong>Forensic &amp; Integrity Services</strong> – EY via Forage (2026)",
+          "<strong>Asisten Praktikum Keamanan Sistem</strong> – SecuLAB Telkom Univ (2026)",
+          "<strong>Asisten Praktikum Sistem Operasi RTOS</strong> – SecuLAB Telkom Univ (2026)",
+          "<strong>Introduction to Cybersecurity</strong> – Cisco Networking Academy (2026)",
+          "<strong>Introduction to Digital Forensics</strong> – Security Blue Team (2025)",
+          "<strong>IT Audit Fundamentals &amp; Standards</strong> – Codelamp Indonesia (2026)",
+          "<strong>C5W-100 Intro to Digital Forensics</strong> – Cyber 5W (2026)",
+          "<strong>Digital Forensics Basics</strong> – Cybrary (2026)",
+          "<strong>DFIR Foundations &amp; Techniques</strong> – Blue Cape Security (2026)",
+          "<strong>Digital Forensics</strong> – OpenLearn, The Open University (2025)"
+        ]
+      },
+      en: {
+        docTitle: "Resume - Alfaiz Rayhan Putra Adji, B.Eng.",
+        badge: "Exact 1 Page (A4)",
+        sbAboutTitle: "ABOUT ME",
+        sbBio: "Bachelor of Computer Engineering (S.T.) graduate from Telkom University with specialized technical expertise in Cyber Security, Web Application Vulnerability Assessment (OWASP Top 10), and Digital Forensics & Incident Response (DFIR). Possesses direct field investigation experience at the Directorate of Cyber Crime Investigation (Ditres Siber), Jakarta Metropolitan Police, in digital evidence acquisition, Chain of Custody preservation, and system artifact analysis. Proven track record as Practicum Assistant and Research Advisor at the Security Laboratory Telkom University and co-author of the official lab manual. Official Registered Member of the Indonesian Digital Forensics Association (AFDI), highly analytical, and prepared to deliver impactful contributions to digital infrastructure defense and incident response.",
+        sbPersonalTitle: "PERSONAL DETAILS",
+        sbLblNat: "Nationality",
+        sbValNat: "Indonesian",
+        sbLblDom: "Location",
+        sbValDom: "Bekasi, Indonesia",
+        sbLblEdu: "Highest Education",
+        sbValEdu: "Bachelor of Computer Engineering",
+        headerLoc: "Bekasi, Indonesia",
+        sbSkillsTitle: "TECHNICAL SKILLS",
+        sbCatSec: "Cyber & Web Security",
+        sbValSec: "OWASP Top 10, Vulnerability Assessment, Blue Team Remediation, MFA/OTP Security, HTTP Headers",
+        sbCatDfir: "Digital Forensics (DFIR)",
+        sbValDfir: "Evidence Acquisition, Chain of Custody, Windows Registry, EVTX Logs, Mobile & DB Forensics",
+        sbCatDev: "Programming & Databases",
+        sbValDev: "Laravel, PHP, Python, SQL",
+        sbLangTitle: "LANGUAGES",
+        sbLang1Name: "Indonesian",
+        sbLang1Lvl: "Native Speaker",
+        sbLang2Name: "English",
+        sbLang2Lvl: "Professional Working",
+        sbAssocTitle: "PROFESSIONAL BODY",
+        sbBadgeDesc: "Indonesian Digital Forensics Association (2026 – Present)",
+        mainSubtitle: "Bachelor of Computer Engineering (S.T.)",
+        secExpTitle: "WORK & PRACTICUM EXPERIENCE",
+        roleDitres: "Digital Forensics Intern",
+        dateDitres: "June 30 – August 9, 2025",
+        bulletsDitres: [
+          "Preserved digital evidence <strong>Chain of Custody</strong> using write blockers (<strong>Safe Block</strong>) on SSDs &amp; USB storage to ensure courtroom legal admissibility.",
+          "Conducted bit-by-bit imaging (<strong>FTK Imager</strong>) and parsed Windows Registry artifacts (NTUSER.DAT, SAM 2,900+ logins, SYSTEM USBSTOR) via <strong>Registry Explorer</strong>.",
+          "Executed Android mobile forensics (BFU/AFU) using <strong>Andriller CE</strong> &amp; <strong>ADB</strong>, and authored formal Digital Forensics Examination Reports."
+        ],
+        roleSeculab: "Teaching Assistant & Research Advisor (Digital Forensics Division)",
+        dateSeculab: "August 2025 – June 2026",
+        bulletsSeculab: [
+          "Instructed System Security and Operating System laboratory practicums for undergraduate engineering students, overseeing technical case studies and evaluations.",
+          "Served as Research Advisor for junior students in the Digital Forensics Research Division, formulating research topics aligned with individual skills, and supervising a comparative study of Windows Registry analysis tools.",
+          "Co-authored and developed the official <strong>CSE-410 Digital Forensics laboratory manual (101 pages)</strong> in collaboration with the Seculab Advisor Lecturer."
+        ],
+        secEduTitle: "EDUCATION",
+        roleTelkom: "Bachelor of Computer Engineering (S.T.)",
+        roleSman: "Science Major (MIPA)",
+        secProjTitle: "KEY PROJECTS & ACHIEVEMENTS",
+        roleCapstone: "Pineus Tilu Reservation Web Security Implementation (OWASP Top 10)",
+        bulletsCapstone: [
+          "Architected 13+ backend security controls (MFA/OTP, RBAC, custom WAF, rate-limiting &gt;50 req/min) mitigating SQLi, XSS, and IDOR.",
+          "Secured Midtrans payment webhooks using SHA-512 signatures and implemented ISO 27001 compliant audit log retention policies."
+        ],
+        roleManual: "CSE-410 Digital Forensics Course Manual (101 Pages)",
+        bulletsManual: [
+          "Co-authored the official university lab curriculum covering Chain of Custody, YARA Rules, Android ADB, and EVTX log triage."
+        ],
+        secOrgTitle: "ORGANIZATION & LEADERSHIP",
+        roleCenturion: "Esports Division Lead (Tournament Lead)",
+        roleConnection: "Sponsorship Division & Educational Mentor",
+        secCertTitle: "CERTIFICATIONS",
+        certs: [
+          "<strong>Blue Team Junior Analyst (BTJA)</strong> – Centri / Security Blue Team (2026)",
+          "<strong>AFDI Official Registered Member</strong> – Indonesian Digital Forensics Association (2026)",
+          "<strong>PassMark OSForensics Triage (OSFTC)</strong> – PassMark Software (2025)",
+          "<strong>Intro to DFIR: Divide &amp; Conquer</strong> – Cyber Triage &amp; Sleuth Kit Labs (2026)",
+          "<strong>Forensic &amp; Integrity Services</strong> – EY via Forage (2026)",
+          "<strong>Practicum Assistant: System Security</strong> – SecuLAB Telkom Univ (2026)",
+          "<strong>Practicum Assistant: Real-Time OS</strong> – SecuLAB Telkom Univ (2026)",
+          "<strong>Introduction to Cybersecurity</strong> – Cisco Networking Academy (2026)",
+          "<strong>Introduction to Digital Forensics</strong> – Security Blue Team (2025)",
+          "<strong>IT Audit Fundamentals &amp; Standards</strong> – Codelamp Indonesia (2026)",
+          "<strong>C5W-100 Intro to Digital Forensics</strong> – Cyber 5W (2026)",
+          "<strong>Digital Forensics Basics</strong> – Cybrary (2026)",
+          "<strong>DFIR Foundations &amp; Techniques</strong> – Blue Cape Security (2026)",
+          "<strong>Digital Forensics</strong> – OpenLearn, The Open University (2025)"
+        ]
+      }
+    };
+
+    function setLanguage(lang) {
+      const data = i18nData[lang];
+      if (!data) return;
+
+      document.title = data.docTitle;
+      document.documentElement.lang = lang;
+
+      // Toggle buttons
+      document.getElementById('btn-id').classList.toggle('active', lang === 'id');
+      document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+
+      // Sidebar
+      document.getElementById('sb-title-about').textContent = data.sbAboutTitle;
+      document.getElementById('sb-bio-text').textContent = data.sbBio;
+      document.getElementById('sb-title-personal').textContent = data.sbPersonalTitle;
+      document.getElementById('sb-lbl-nat').textContent = data.sbLblNat;
+      document.getElementById('sb-val-nat').textContent = data.sbValNat;
+      document.getElementById('sb-lbl-dom').textContent = data.sbLblDom;
+      document.getElementById('sb-val-dom').textContent = data.sbValDom;
+      document.getElementById('sb-lbl-edu').textContent = data.sbLblEdu;
+      document.getElementById('sb-val-edu').textContent = data.sbValEdu;
+      document.getElementById('sb-title-skills').textContent = data.sbSkillsTitle;
+      document.getElementById('sb-cat-sec').textContent = data.sbCatSec;
+      document.getElementById('sb-val-sec').textContent = data.sbValSec;
+      document.getElementById('sb-cat-dfir').textContent = data.sbCatDfir;
+      document.getElementById('sb-val-dfir').textContent = data.sbValDfir;
+      document.getElementById('sb-cat-dev').textContent = data.sbCatDev;
+      document.getElementById('sb-val-dev').textContent = data.sbValDev;
+      document.getElementById('sb-title-lang').textContent = data.sbLangTitle;
+      document.getElementById('sb-lang1-name').textContent = data.sbLang1Name;
+      document.getElementById('sb-lang1-lvl').textContent = data.sbLang1Lvl;
+      document.getElementById('sb-lang2-name').textContent = data.sbLang2Name;
+      document.getElementById('sb-lang2-lvl').textContent = data.sbLang2Lvl;
+      document.getElementById('sb-title-assoc').textContent = data.sbAssocTitle;
+      document.getElementById('sb-badge-desc').textContent = data.sbBadgeDesc;
+
+      // Main header
+      document.getElementById('main-subtitle').innerHTML = data.mainSubtitle;
+      document.getElementById('header-loc').textContent = data.headerLoc;
+
+      // Experience
+      document.getElementById('sec-exp-title').textContent = data.secExpTitle;
+      document.getElementById('role-ditres').textContent = data.roleDitres;
+      document.getElementById('date-ditres').textContent = data.dateDitres;
+      document.getElementById('bullets-ditres').innerHTML = data.bulletsDitres.map(b => `<li>${b}</li>`).join('');
+      document.getElementById('role-seculab').textContent = data.roleSeculab;
+      document.getElementById('date-seculab').textContent = data.dateSeculab;
+      document.getElementById('bullets-seculab').innerHTML = data.bulletsSeculab.map(b => `<li>${b}</li>`).join('');
+
+      // Education
+      document.getElementById('sec-edu-title').textContent = data.secEduTitle;
+      document.getElementById('role-telkom').textContent = data.roleTelkom;
+      document.getElementById('role-sman').textContent = data.roleSman;
+
+      // Projects
+      document.getElementById('sec-proj-title').textContent = data.secProjTitle;
+      document.getElementById('role-capstone').textContent = data.roleCapstone;
+      document.getElementById('bullets-capstone').innerHTML = data.bulletsCapstone.map(b => `<li>${b}</li>`).join('');
+      document.getElementById('role-manual').textContent = data.roleManual;
+      document.getElementById('bullets-manual').innerHTML = data.bulletsManual.map(b => `<li>${b}</li>`).join('');
+
+      // Organization
+      document.getElementById('sec-org-title').textContent = data.secOrgTitle;
+      document.getElementById('role-centurion').textContent = data.roleCenturion;
+      document.getElementById('role-connection').textContent = data.roleConnection;
+
+      // Certs
+      document.getElementById('sec-cert-title').textContent = data.secCertTitle;
+      document.getElementById('cert-bullets-content').innerHTML = data.certs.map(c => `<li>${c}</li>`).join('');
+    }
+  </script>
+</body>
+</html>

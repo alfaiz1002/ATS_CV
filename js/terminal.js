@@ -4,7 +4,7 @@
 
 (function initTerminalModule() {
   function escapeHTML(str) {
-    return str.replace(/[&<>'"]/g, 
+    return str.replace(/[&<>'"]/g,
       tag => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' }[tag] || tag)
     );
   }
@@ -71,14 +71,15 @@ Peran: Asisten Praktikum, Pembina Riset Divisi DFIR, &amp; Speaker Study Group W
 <span style="color: var(--accent-emerald); font-weight: bold;">[+] DIGITAL FORENSICS:</span> FTK Imager, Autopsy, OSForensics, Magnet ACQUIRE, Registry Explorer, Andriller, Chain of Custody
 <span style="color: var(--accent-emerald); font-weight: bold;">[+] BAHASA &amp; DB:</span> PHP, JavaScript, Laravel, MySQL, Linux Shell`,
 
-      pengalaman: `1. Digital Forensics Intern - Ditres Siber Polda Metro Jaya (Juni - Agus 2025)
-   • Akuisisi bukti digital &amp; kepatuhan Chain of Custody.
-   • Analisis artefak (Windows Registry, SQL DB, Storage, Mobile).
-2. Teaching Assistant &amp; Pembina Riset - Security Lab, Telkom University (Semester 7-8)
+      pengalaman: `1. Digital Forensics Intern - Ditres Siber Polda Metro Jaya (30 Juni – 9 Agustus 2025)
+   • Preservasi Chain of Custody &amp; Write Blocker (Safe Block) pada SSD &amp; USB.
+   • Ekstraksi citra bit-by-bit (FTK Imager) &amp; analisis Registry (SAM, SYSTEM, NTUSER.DAT).
+   • Forensik mobile Android (Andriller &amp; ADB) serta penyusunan draf laporan BAP.
+2. Teaching Assistant &amp; Pembina Riset - Security Lab, Telkom University (Agustus 2025 – Juni 2026)
    • Mengampu praktikum Keamanan Sistem &amp; OS. Merumuskan topik riset &amp; membimbing mahasiswa.
-3. PJ Divisi Esports (FIFA Tournament Lead) - Centurion HMTK (2024)
+3. PJ Divisi Esports (FIFA Tournament Lead) - Centurion HMTK (25 April – Mei 2025)
    • Manajemen turnamen end-to-end, rulebook fair-play, koordinasi puluhan peserta.
-4. Divisi Sponsorship &amp; Moderator Edukasi - Connection HMTK (2023)
+4. Divisi Sponsorship &amp; Staf Pengabdian Masyarakat - Connection HMTK (Desember 2023 – Oktober 2024)
    • Kemitraan sponsor, koordinasi lintas divisi, &amp; mentor logika game interaktif anak SD.`,
 
       proyek: `1. Arsitektur Keamanan Reservasi Pineus Tilu (Tugas Akhir S1):
@@ -87,7 +88,10 @@ Peran: Asisten Praktikum, Pembina Riset Divisi DFIR, &amp; Speaker Study Group W
 2. Modul Praktikum Forensik Digital:
    • Penulis kurikulum &amp; modul praktikum utama Security Laboratory Telkom University.`,
 
-      sertifikasi: `• IT Audit Fundamentals & Professional Standards - Codelamp Indonesia (2026)
+      sertifikasi: `• Blue Team Junior Analyst (BTJA) - Centri / Security Blue Team (2026) [ID: 167081331]
+• Sertifikat Asisten Praktikum Keamanan Sistem - Laboratorium Security Telkom University (2026)
+• Sertifikat Asisten Praktikum Sistem Operasi Waktu Nyata - Laboratorium Security Telkom University (2026)
+• IT Audit Fundamentals & Professional Standards - Codelamp Indonesia (2026)
 • C5W-100 Introduction to Digital Forensics - Cyber 5W (2026)
 • DFIR Foundations &amp; Techniques - Blue Cape Security (2026)
 • OSForensics Triage Certification - PassMark Software (2025)
@@ -100,7 +104,7 @@ Peran: Asisten Praktikum, Pembina Riset Divisi DFIR, &amp; Speaker Study Group W
 • Anggota AFDI - Asosiasi Forensik Digital Indonesia (Anggota Resmi Terdaftar)`,
 
       kontak: `Email    : alfaiz1002@gmail.com
-Telepon  : +62 8128429768
+Telepon  : +62 81284229768
 LinkedIn : linkedin.com/in/alfaiz-rayhan
 GitHub   : github.com/alfaiz1002`,
 
@@ -156,14 +160,15 @@ Roles: Teaching Assistant, DFIR Research Lead, &amp; Speaker for Study Group Wee
 <span style="color: var(--accent-emerald); font-weight: bold;">[+] DIGITAL FORENSICS:</span> FTK Imager, Autopsy, OSForensics, Magnet ACQUIRE, Registry Explorer, Andriller, Chain of Custody
 <span style="color: var(--accent-emerald); font-weight: bold;">[+] LANGUAGES &amp; DB:</span> PHP, JavaScript, Laravel, MySQL, Linux Shell`,
 
-      pengalaman: `1. Digital Forensics Intern - Ditres Siber Metro Police (June - Aug 2025)
-   • Digital evidence acquisition &amp; Chain of Custody compliance.
-   • Artifact analysis (Windows Registry, SQL DB, Storage, Mobile).
-2. Teaching Assistant &amp; Research Lead - Security Lab, Telkom University (Semesters 7-8)
+      pengalaman: `1. Digital Forensics Intern - Ditres Siber Metro Police (June 30 – August 9, 2025)
+   • Chain of Custody preservation &amp; Write Blocker (Safe Block) on SSD &amp; USB storage.
+   • Bit-by-bit disk imaging (FTK Imager) &amp; Windows Registry triage (SAM, SYSTEM, NTUSER.DAT).
+   • Android mobile forensics (Andriller &amp; ADB Platform-Tools) &amp; formal police BAP reports.
+2. Teaching Assistant &amp; Research Lead - Security Lab, Telkom University (August 2025 – June 2026)
    • Instructed System Security &amp; OS labs. Formulated research topics &amp; mentored students.
-3. Esports Division Lead (FIFA Tournament Lead) - Centurion HMTK (2024)
+3. Esports Division Lead (FIFA Tournament Lead) - Centurion HMTK (April 25 – May 2025)
    • End-to-end tournament management, fair-play rulebook, coordinated dozens of players.
-4. Sponsorship &amp; Education Moderator - Connection HMTK (2023)
+4. Sponsorship &amp; Community Outreach Staff - Connection HMTK (December 2023 – October 2024)
    • Sponsor partnerships, cross-divisional coordination, &amp; interactive game logic mentor.`,
 
       proyek: `1. Pineus Tilu Reservation Security Architecture (Capstone Design):
@@ -172,7 +177,10 @@ Roles: Teaching Assistant, DFIR Research Lead, &amp; Speaker for Study Group Wee
 2. Digital Forensics Lab Practicum Modules:
    • Author of main curriculum &amp; practicum modules at Security Laboratory Telkom University.`,
 
-      sertifikasi: `• IT Audit Fundamentals & Professional Standards - Codelamp Indonesia (2026)
+      sertifikasi: `• Blue Team Junior Analyst (BTJA) - Centri / Security Blue Team (2026) [ID: 167081331]
+• Practicum Assistant Certificate: System Security - Security Laboratory Telkom University (2026)
+• Practicum Assistant Certificate: Real-Time Operating Systems - Security Laboratory Telkom University (2026)
+• IT Audit Fundamentals & Professional Standards - Codelamp Indonesia (2026)
 • C5W-100 Introduction to Digital Forensics - Cyber 5W (2026)
 • DFIR Foundations &amp; Techniques - Blue Cape Security (2026)
 • OSForensics Triage Certification - PassMark Software (2025)
@@ -185,7 +193,7 @@ Roles: Teaching Assistant, DFIR Research Lead, &amp; Speaker for Study Group Wee
 • AFDI Member - Indonesian Digital Forensics Association (Official Registered Member)`,
 
       kontak: `Email    : alfaiz1002@gmail.com
-Phone    : +62 8128429768
+Phone    : +62 81284229768
 LinkedIn : linkedin.com/in/alfaiz-rayhan
 GitHub   : github.com/alfaiz1002`,
 
@@ -244,7 +252,7 @@ OSセキュリティ、ネットセック、DFIRの研究・実習専用ラボ�
 • Security Blue Team, Cisco, Cyber Academy, AFDI正式会員`,
 
       kontak: `Email    : alfaiz1002@gmail.com
-Phone    : +62 8128429768
+Phone    : +62 81284229768
 LinkedIn : linkedin.com/in/alfaiz-rayhan
 GitHub   : github.com/alfaiz1002`,
 
@@ -301,7 +309,7 @@ OS 보안, NetSec, DFIR 전용 연구 및 실습 연구소.
 • Security Blue Team, Cisco, Cyber Academy, AFDI 정회원`,
 
       kontak: `Email    : alfaiz1002@gmail.com
-Phone    : +62 8128429768
+Phone    : +62 81284229768
 LinkedIn : linkedin.com/in/alfaiz-rayhan
 GitHub   : github.com/alfaiz1002`,
 
@@ -358,7 +366,7 @@ Roles: Asistente de Laboratorio y Asesor de Investigación en DFIR.`,
 • Security Blue Team, Cisco, Cyber Academy, Miembro Registrado AFDI`,
 
       kontak: `Email    : alfaiz1002@gmail.com
-Teléfono : +62 8128429768
+Teléfono : +62 81284229768
 LinkedIn : linkedin.com/in/alfaiz-rayhan
 GitHub   : github.com/alfaiz1002`,
 
@@ -415,7 +423,7 @@ Rôles: Assistant d'Enseignement, Chef de Recherche DFIR &amp; Conférencier.`,
 • Security Blue Team, Cisco, Cyber Academy, Membre Officiel AFDI`,
 
       kontak: `Email    : alfaiz1002@gmail.com
-Téléphone: +62 8128429768
+Téléphone: +62 81284229768
 LinkedIn : linkedin.com/in/alfaiz-rayhan
 GitHub   : github.com/alfaiz1002`,
 
@@ -435,7 +443,7 @@ GitHub   : github.com/alfaiz1002`,
     const inputLine = document.createElement('div');
     inputLine.className = 'terminal-output';
     inputLine.innerHTML = `<span style="color: var(--accent-emerald); font-weight: bold;">alfaiz@sec-ops:~$</span> ${escapeHTML(rawInput)}`;
-    
+
     if (terminalInput && terminalInput.parentElement) {
       terminalBody.insertBefore(inputLine, terminalInput.parentElement);
       terminalInput.value = '';
@@ -451,10 +459,10 @@ GitHub   : github.com/alfaiz1002`,
     const activeLang = (typeof window.currentLang !== 'undefined' && termi18n[window.currentLang]) ? window.currentLang : (localStorage.getItem('pref-lang') || 'id');
     const langDict = termi18n[activeLang] || termi18n.id;
 
-    const pseudoHash = Array.from({length: 16}, () => Math.floor(Math.random()*16).toString(16)).join('');
+    const pseudoHash = Array.from({ length: 16 }, () => Math.floor(Math.random() * 16).toString(16)).join('');
     let response = `<span style="color: #64748b; font-size: 0.76rem; font-family: var(--font-mono); display: block; margin-bottom: 6px;">🔒 [TELEMETRY_SHA256: e3b0c442...${pseudoHash} | COMPUTE_TIME: 0.42ms | VERIFIED ✓]</span>`;
 
-    switch(cmd) {
+    switch (cmd) {
       case 'help':
       case 'bantuan':
         response += langDict.help;
@@ -568,12 +576,12 @@ GitHub   : github.com/alfaiz1002`,
   }
 
   // GLOBAL EXPORTS FOR QUICK BUTTONS & AUTO-DEMO
-  window.execQuickCmd = function(cmd) {
+  window.execQuickCmd = function (cmd) {
     processCommand(cmd);
   };
 
   let isDemoRunning = false;
-  window.startAutoDemo = function() {
+  window.startAutoDemo = function () {
     if (isDemoRunning) return;
     isDemoRunning = true;
 
@@ -596,7 +604,7 @@ GitHub   : github.com/alfaiz1002`,
     const { terminalInput } = getElements();
     if (!terminalInput) return;
 
-    terminalInput.addEventListener('keydown', function(e) {
+    terminalInput.addEventListener('keydown', function (e) {
       if (e.key === 'Enter') {
         processCommand(terminalInput.value);
       }

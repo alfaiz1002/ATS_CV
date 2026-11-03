@@ -509,7 +509,7 @@ const modalData = {
         <button onclick="copyContactText('alfaiz1002@gmail.com', 'Email', event)" class="btn-secondary" style="padding: 6px 12px; font-size: 0.8rem;">
           📧 Salin Email
         </button>
-        <button onclick="copyContactText('08128429768', 'Nomor WhatsApp', event)" class="btn-secondary" style="padding: 6px 12px; font-size: 0.8rem;">
+        <button onclick="copyContactText('081284229768', 'Nomor WhatsApp', event)" class="btn-secondary" style="padding: 6px 12px; font-size: 0.8rem;">
           💬 Salin WhatsApp
         </button>
         <a href="https://www.linkedin.com/in/alfaiz-rayhan/" target="_blank" class="btn-secondary" style="padding: 6px 12px; font-size: 0.8rem;">
