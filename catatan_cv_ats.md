@@ -115,6 +115,13 @@ CV ATS 1 Halaman ini dirancang presisi sesuai **Standar Emas (*Gold Standard*) I
 - **Pemeriksaan:** Memasukkan informasi lokasi domisili resmi (*Bekasi, Indonesia*) pada baris kontak header utama di berkas CV ATS Bahasa Indonesia (`cv_alfaiz_rayhan_id.html`) dan Bahasa Inggris (`cv_alfaiz_rayhan.html`).
 - **Hasil:** Baris kontak kini menyajikan format standar emas rekrutmen: `Bekasi, Indonesia | Telepon: +62 812-8422-9768 | Email: alfaiz1002@gmail.com | LinkedIn: linkedin.com/in/alfaiz-rayhan`. Berkas PDF master `CV_ATS_Alfaiz_Rayhan_Putra_Adji_CyberSecurity.pdf` dan `Resume_ATS_Alfaiz_Rayhan_Putra_Adji_CyberSecurity_DFIR.pdf` telah dikompilasi ulang ke versi terbaru dengan tata letak cetak A4 yang presisi dan seimbang.
 
+### 17. Penyelarasan Passion Keahlian Teknis (Web AppSec) & Format Bullets pada Soft Skills
+- **Pemeriksaan:** Menghapus istilah *Cloud Security* dan menyelaraskan kategori keahlian teknis agar 100% fokus pada spesialisasi dan passion utama: **Web Application Security & AppSec** (OWASP Top 10, WAF, OTP RFC, HTTP Security Headers, Bcrypt/SHA-512, Payment Gateway Midtrans, RBAC, Rate Limiting, ISO 27001). Mengubah format paragraf *Soft Skills* menjadi daftar **Bullet Points Profesional**.
+- **Hasil:** 
+  - Kategori *Web Application Security & AppSec* kini menonjolkan kata kunci bernilai tinggi yang langsung dicari HR dan Lead Cyber Security.
+  - Bagian *Soft Skills* kini berformat bullet terstruktur: *Analytical & Problem Solving*, *Investigative Mindset & Detail Orientation*, *Technical Reporting & Documentation (BAP)*, serta *Leadership, Mentorship & Adaptability*.
+  - Berkas master PDF Bahasa Indonesia dan Bahasa Inggris telah dikompilasi ulang dengan presisi tata letak 3 halaman seimbang (49 baris/halaman).
+
 ---
 
 ## 🌟 Keunggulan Struktur Gabungan Full-Stack Security
