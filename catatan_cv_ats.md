@@ -120,7 +120,13 @@ CV ATS 1 Halaman ini dirancang presisi sesuai **Standar Emas (*Gold Standard*) I
 - **Hasil:** 
   - Kategori *Web Application Security & AppSec* kini menonjolkan kata kunci bernilai tinggi yang langsung dicari HR dan Lead Cyber Security.
   - Bagian *Soft Skills* kini berformat bullet terstruktur: *Analytical & Problem Solving*, *Investigative Mindset & Detail Orientation*, *Technical Reporting & Documentation (BAP)*, serta *Leadership, Mentorship & Adaptability*.
-  - Berkas master PDF Bahasa Indonesia dan Bahasa Inggris telah dikompilasi ulang dengan presisi tata letak 3 halaman seimbang (49 baris/halaman).
+
+### 18. Transformasi Resume ATS Menjadi Format Emas Maksimal 2 Halaman Pas (The 2-Page Standard)
+- **Pemeriksaan:** Mengoptimalkan seluruh substansi Master CV agar selaras dengan 4 evaluasi rekomendasi ATS modern (*Restructure skills section, Improve ATS compatibility, Add missing keywords, Use strong action verbs*) ke dalam format **tepat 2 halaman A4**.
+- **Hasil:**
+  - **Halaman 1:** Header lengkap (+ Domisili Bekasi), Ringkasan Profesional (fokus dual competency), Keahlian Teknis terstruktur (*Web Application Security & AppSec*, DFIR, Tools, Pemrograman), Pengalaman Kerja (*Ditres Siber Polda Metro Jaya* 4 butir berbobot tinggi + *SecuLAB Telkom University* 3 butir kunci), dan Pendidikan (*S1 Teknik Komputer Telkom University*).
+  - **Halaman 2:** Proyek Utama (*Pineus Tilu OWASP Top 10* & *Buku Modul CSE-410 101 Halaman*), Sertifikasi Terkurasi (12 Kredensial industri & akademik dalam grid 2-kolom rapi), Keahlian Non-Teknis (*Soft Skills* berformat bullet points aktif), dan Pengalaman Organisasi (*HMTK Centurion, HMTK Connection, AFDI*).
+  - Berkas master PDF Bahasa Indonesia (`CV_ATS_Alfaiz_Rayhan_Putra_Adji_CyberSecurity.pdf`) dan Bahasa Inggris (`Resume_ATS_Alfaiz_Rayhan_Putra_Adji_CyberSecurity_DFIR.pdf`) telah terverifikasi tepat **2 Halaman Pas A4** (Halaman 1: 49 baris, Halaman 2: 54-55 baris) tanpa baris gantung, siap unduh dan berkonversi tinggi untuk screening HR.
 
 ---
 

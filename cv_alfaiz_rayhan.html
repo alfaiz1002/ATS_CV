@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Resume ATS of Alfaiz Rayhan Putra Adji - Cyber Security, Digital Forensics & Incident Response Specialist">
+  <meta name="description" content="Resume ATS Alfaiz Rayhan Putra Adji - Cyber Security Specialist, Digital Forensics (DFIR) & Incident Response">
   <meta name="author" content="Alfaiz Rayhan Putra Adji">
   <title>Resume ATS - Alfaiz Rayhan Putra Adji</title>
   <style>
@@ -15,14 +15,14 @@
     }
 
     html {
-      font-size: 14px;
+      font-size: 13.5px;
       background-color: #f1f3f5;
     }
 
     body {
       font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
       color: #000000;
-      line-height: 1.45;
+      line-height: 1.4;
       background-color: #f1f3f5;
       padding: 24px 0 40px;
     }
@@ -31,7 +31,7 @@
       max-width: 820px;
       margin: 0 auto;
       background-color: #ffffff;
-      padding: 38px 46px;
+      padding: 28px 36px;
       box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
       border-radius: 4px;
     }
@@ -39,23 +39,32 @@
     /* Header Section */
     header {
       text-align: center;
-      margin-bottom: 14px;
+      margin-bottom: 10px;
       border-bottom: 1.5px solid #000000;
-      padding-bottom: 10px;
+      padding-bottom: 7px;
     }
 
     h1 {
       font-family: Georgia, "Times New Roman", Times, serif;
-      font-size: 24px;
+      font-size: 21px;
       font-weight: bold;
       color: #000000;
       letter-spacing: 1.2px;
       text-transform: uppercase;
-      margin-bottom: 5px;
+      margin-bottom: 3px;
+    }
+
+    .subtitle {
+      font-size: 11px;
+      font-weight: bold;
+      color: #222222;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      margin-bottom: 3px;
     }
 
     .contact-info {
-      font-size: 12.5px;
+      font-size: 10.5px;
       color: #222222;
       line-height: 1.4;
       text-align: center !important;
@@ -64,6 +73,7 @@
       align-items: center;
       flex-wrap: wrap;
       margin: 0 auto;
+      gap: 2px;
     }
 
     .contact-info span {
@@ -80,96 +90,105 @@
     }
 
     .contact-info .separator {
-      margin: 0 6px;
+      margin: 0 5px;
       color: #333333;
       font-weight: bold;
     }
 
     /* Section Styles */
     section {
-      margin-bottom: 14px;
+      margin-bottom: 10px;
     }
 
     h2 {
-      font-size: 13.5px;
+      font-size: 12px;
       font-weight: bold;
       text-transform: uppercase;
       letter-spacing: 0.8px;
       color: #000000;
-      border-bottom: 1.2px solid #333333;
+      border-bottom: 1.2px solid #000000;
       padding-bottom: 2px;
-      margin-bottom: 8px;
+      margin-bottom: 5px;
+      page-break-after: avoid !important;
+      break-after: avoid !important;
     }
 
-    h3 {
-      font-size: 13px;
+    /* Item Block */
+    .exp-item {
+      margin-bottom: 7px;
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+
+    .exp-header {
+      display: flex;
+      justify-content: space-between;
+      font-size: 11.2px;
       font-weight: bold;
       color: #000000;
-      margin-bottom: 2px;
+      margin-bottom: 1px;
+    }
+
+    .exp-sub {
+      display: flex;
+      justify-content: space-between;
+      font-size: 10.2px;
+      color: #333333;
+      font-weight: 500;
+      margin-bottom: 2.5px;
     }
 
     p {
-      font-size: 12.5px;
-      color: #1a1a1a;
-      line-height: 1.42;
+      font-size: 10.2px;
       text-align: justify;
-    }
-
-    .sub-head {
-      font-size: 12px;
-      font-style: italic;
-      color: #444444;
-      margin-bottom: 4px;
-    }
-
-    /* Lists */
-    ul {
-      list-style-type: disc;
-      margin-left: 18px;
-      margin-top: 3px;
-      margin-bottom: 6px;
-    }
-
-    li {
-      font-size: 12.4px;
-      color: #1a1a1a;
-      line-height: 1.4;
-      margin-bottom: 3px;
-      text-align: justify;
-    }
-
-    /* Item Containers */
-    .experience-item,
-    .project-item,
-    .education-item {
-      margin-bottom: 11px;
-    }
-
-    .experience-item:last-child,
-    .project-item:last-child,
-    .education-item:last-child {
-      margin-bottom: 0;
-    }
-
-    /* Skills List */
-    .skills-list p {
-      margin-bottom: 4px;
-      font-size: 12.4px;
-      line-height: 1.42;
-      text-align: justify;
-    }
-
-    .skills-list strong {
+      line-height: 1.38;
       color: #000000;
     }
 
-    /* Print Styles for ATS & PDF Export */
+    ul {
+      margin-left: 15px;
+      margin-top: 2px;
+    }
+
+    li {
+      font-size: 10.2px;
+      line-height: 1.36;
+      margin-bottom: 2.5px;
+      color: #000000;
+      text-align: justify;
+    }
+
+    li strong {
+      color: #000000;
+    }
+
+    /* Grid Certifications 2 Columns */
+    .cert-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2.5px 14px;
+      margin-left: 15px;
+    }
+
+    .cert-grid li {
+      margin-bottom: 2px;
+      font-size: 9.8px;
+    }
+
+    .skills-list p {
+      font-size: 10.2px;
+      line-height: 1.38;
+      margin-bottom: 3.5px;
+      text-align: justify;
+    }
+
+    /* Print Styles for ATS & PDF Export (Exactly 2 A4 Pages) */
     @media print {
       html, body {
         background-color: #ffffff;
         padding: 0;
         margin: 0;
-        font-size: 11pt;
+        font-size: 10.5pt;
         -webkit-print-color-adjust: exact;
         print-color-adjust: exact;
       }
@@ -185,80 +204,12 @@
 
       @page {
         size: A4 portrait;
-        margin: 12mm 15mm 12mm 15mm;
+        margin: 11mm 13mm 11mm 13mm;
       }
 
-      header {
-        margin-bottom: 10px;
-        padding-bottom: 6px;
-      }
-
-      h1 {
-        font-size: 19pt;
-        margin-bottom: 3px;
-      }
-
-      .contact-info {
-        font-size: 9.8pt;
-        text-align: center !important;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        margin: 0 auto;
-      }
-
-      section {
-        margin-bottom: 8px;
-      }
-
-      h2 {
-        font-size: 11.5pt;
-        margin-bottom: 5px;
-        padding-bottom: 1.5px;
-        page-break-after: avoid !important;
-        break-after: avoid !important;
-      }
-
-      h3 {
-        font-size: 10.5pt;
-        margin-bottom: 1.5px;
-      }
-
-      .sub-head {
-        font-size: 9.8pt;
-        margin-bottom: 3px;
-      }
-
-      p {
-        font-size: 10pt;
-        line-height: 1.36;
-      }
-
-      .experience-item,
-      .project-item,
-      .education-item {
-        margin-bottom: 8px;
-        page-break-inside: avoid;
-        break-inside: avoid;
-      }
-
-      ul {
-        margin-left: 16px;
-        margin-top: 2px;
-        margin-bottom: 4px;
-      }
-
-      li {
-        font-size: 9.8pt;
-        line-height: 1.35;
-        margin-bottom: 2px;
-      }
-
-      .skills-list p {
-        font-size: 9.8pt;
-        line-height: 1.36;
-        margin-bottom: 3px;
+      .page-break {
+        page-break-before: always;
+        break-before: always;
       }
     }
   </style>
@@ -267,17 +218,18 @@
 
   <main class="cv-container">
     
-    <!-- HEADER / CONTACT INFORMATION -->
+    <!-- ================= PAGE 1 ================= -->
     <header>
       <h1>ALFAIZ RAYHAN PUTRA ADJI</h1>
+      <div class="subtitle">Cyber Security Specialist (Web AppSec / Blue Team) &amp; Digital Forensics (DFIR)</div>
       <p class="contact-info">
         <span>Bekasi, Indonesia</span>
         <span class="separator">|</span>
-        <span>Phone: +62 812-8422-9768</span>
+        <span>+62 812-8422-9768</span>
         <span class="separator">|</span>
-        <span>Email: <a href="mailto:alfaiz1002@gmail.com">alfaiz1002@gmail.com</a></span>
+        <span><a href="mailto:alfaiz1002@gmail.com">alfaiz1002@gmail.com</a></span>
         <span class="separator">|</span>
-        <span>LinkedIn: <a href="https://www.linkedin.com/in/alfaiz-rayhan/" target="_blank" rel="noopener">linkedin.com/in/alfaiz-rayhan</a></span>
+        <span><a href="https://www.linkedin.com/in/alfaiz-rayhan/" target="_blank" rel="noopener">linkedin.com/in/alfaiz-rayhan</a></span>
       </p>
     </header>
 
@@ -285,39 +237,55 @@
     <section>
       <h2>PROFESSIONAL SUMMARY</h2>
       <p>
-        Bachelor of Computer Engineering (S.T.) graduate from Telkom University with technical expertise and practical experience in Cyber Security, Digital Forensics (DFIR), and Web Application Security (OWASP Top 10). Experienced as a Digital Forensics Intern at the Directorate of Cyber Crime Investigation (Ditres Siber), Jakarta Metropolitan Police (Polda Metro Jaya), and a Practicum Assistant and Research Advisor at the Security Laboratory, Telkom University. Experienced in security assessment, vulnerability remediation (Blue Team), and digital forensic incident investigation, and registered as an Official Member of the Indonesian Digital Forensics Association (AFDI).
+        Bachelor of Computer Engineering (S.T.) graduate from Telkom University possessing dual technical competencies in <strong>Web Application Security (OWASP Top 10 / Blue Team Defense)</strong> and <strong>Digital Forensics &amp; Incident Response (DFIR)</strong>. Proven field investigation experience at the Directorate of Cyber Crime Investigation (Ditres Siber), Jakarta Metropolitan Police (Polda Metro Jaya), in digital evidence acquisition, Chain of Custody preservation, and system/mobile forensic analysis. Demonstrated leadership instructing university lab practicums, mentoring student researchers, and co-authoring the official 101-page CSE-410 course manual at Security Laboratory (SecuLAB). Official Active Member of the Indonesian Digital Forensics Association (AFDI) and holder of Blue Team Junior Analyst (BTJA) and PassMark OSFTC certifications.
       </p>
     </section>
 
-    <!-- WORK EXPERIENCE -->
+    <!-- TECHNICAL SKILLS -->
     <section>
-      <h2>WORK EXPERIENCE</h2>
+      <h2>TECHNICAL SKILLS</h2>
+      <div class="skills-list">
+        <p><strong>Web Application Security &amp; AppSec:</strong> OWASP Top 10 (SQLi, XSS, CSRF, IDOR, SSRF), Vulnerability Assessment &amp; Remediation, Web Application Firewall (WAF), Multi-Factor Authentication (OTP/2FA RFC Compliant), HTTP Security Headers (HSTS, CSP, X-Frame), Cryptography &amp; Hashing (Bcrypt, HMAC SHA-512), Payment Gateway API Security (Midtrans), Role-Based Access Control (RBAC), Rate Limiting &amp; Anti-Brute Force, Audit Logging &amp; Anti-Repudiation (ISO 27001 Standard).</p>
+        <p><strong>Digital Forensics &amp; Incident Response (DFIR):</strong> Digital Evidence Acquisition &amp; Preservation, Chain of Custody, Windows Forensics (Registry NTUSER/SAM/SYSTEM, EVTX Logs), Mobile Device Forensics (Android BFU/AFU), Database Triage, Packet Analysis, Police Forensic Examination Reports (BAP).</p>
+        <p><strong>Tools &amp; Software:</strong> FTK Imager, Autopsy, OSForensics, Magnet ACQUIRE, Registry Explorer, Andriller, ExifTool, SQLite Browser, Burp Suite, Wireshark, Git, Kali Linux, WSL.</p>
+        <p><strong>Programming &amp; Databases:</strong> PHP, Laravel, JavaScript, MySQL, HTML5/CSS3, Python Basics, Bash/Shell Scripting.</p>
+      </div>
+    </section>
 
-      <article class="experience-item">
-        <h3>Digital Forensics Intern – Directorate of Cyber Crime Investigation (Ditres Siber), Jakarta Metropolitan Police</h3>
-        <p class="sub-head">Jakarta, Indonesia | June 30 – August 9, 2025</p>
+    <!-- WORK & PRACTICAL EXPERIENCE -->
+    <section>
+      <h2>WORK &amp; PRACTICAL EXPERIENCE</h2>
+
+      <article class="exp-item">
+        <div class="exp-header">
+          <span>Directorate of Cyber Crime Investigation (Ditres Siber), Polda Metro Jaya</span>
+          <span>Jakarta, Indonesia</span>
+        </div>
+        <div class="exp-sub">
+          <span>Digital Forensics Intern (Cyber Investigation Sub-Directorate)</span>
+          <span>June 30 – August 9, 2025</span>
+        </div>
         <ul>
-          <li>Enforced strict digital evidence handling and Chain of Custody protocols, deploying Write Blockers (Safe Block) on internal SSDs and USB media to guarantee 0-byte data modification and courtroom legal admissibility.</li>
-          <li>Executed bit-by-bit physical and logical acquisition using FTK Imager, extracting core Windows Registry hives (NTUSER.DAT, SAM, SOFTWARE, SYSTEM) and verifying forensic image integrity via SHA-256 and MD5 hashes.</li>
-          <li>Dissected Windows Registry artifacts using Registry Explorer to uncover user activity: mapped application execution via UserAssist, recent documents via RecentDocs, and historical Wi-Fi SSID access points via SOFTWARE.</li>
-          <li>Investigated user authentication and account anomalies from the SAM hive, analyzing user RID 1001, 2,900+ login events, account creation timestamps, last password change, and failed authentication attempts.</li>
-          <li>Conducted USB forensics on SYSTEM\USBSTOR keys, identifying external storage devices (SanDisk 3.2 Gen1), extracting unique hardware serial numbers, and reconstructing first-installed and last connect/disconnect timelines.</li>
-          <li>Utilized ExifTool (CLI) to analyze hidden document and image metadata (author identity, creation/modification timestamps, application source) to verify document authenticity and detect data tampering.</li>
-          <li>Performed mobile forensics on Android devices following strict triage protocols (airplane mode, stay-awake, USB debugging), analyzing BFU (Before First Unlock) and AFU (After First Unlock) states.</li>
-          <li>Operated Andriller CE 3.6.3 and Android Debug Bridge (ADB Platform-Tools) to extract device telemetry (getprop profiling), linked messaging accounts (WhatsApp, Telegram, Google), and DCIM media evidence without rooting.</li>
-          <li>Drafted official Digital Forensics Examination Reports compliant with police documentation standards and engineered a custom File Hash Generator script for rapid multi-file cryptographic integrity verification.</li>
+          <li>Preserved digital evidence <strong>Chain of Custody</strong> across physical storage media (SSDs, USB flash drives) using hardware write blockers (<strong>Safe Block</strong>) and verified cryptographic bit-stream hashes (<strong>MD5 &amp; SHA-256</strong>) to ensure 100% courtroom legal admissibility.</li>
+          <li>Conducted physical bit-by-bit forensic image acquisitions (<strong>FTK Imager</strong>) and parsed deep <strong>Windows Registry</strong> artifacts (NTUSER.DAT user activity, SAM 2,900+ user logins, SYSTEM USBSTOR) via <strong>Registry Explorer</strong> to reconstruct suspect timelines.</li>
+          <li>Executed forensic extractions on Android mobile devices (BFU/AFU states) utilizing <strong>Andriller CE</strong> and <strong>ADB</strong> to recover chat histories and application databases, complemented by digital media metadata triage via <strong>ExifTool</strong>.</li>
+          <li>Authored formal <strong>Digital Forensics Examination Reports (Draf BAP)</strong> adhering to Indonesian criminal procedural law (KUHAP) and police investigative documentation standards.</li>
         </ul>
       </article>
 
-      <article class="experience-item">
-        <h3>Practicum Assistant &amp; Research Advisor, Security Laboratory – Telkom University</h3>
-        <p class="sub-head">Bandung, Indonesia | August 2025 – June 2026</p>
+      <article class="exp-item">
+        <div class="exp-header">
+          <span>Security Laboratory (SecuLAB), Telkom University</span>
+          <span>Bandung, Indonesia</span>
+        </div>
+        <div class="exp-sub">
+          <span>Teaching Assistant &amp; Research Advisor (Digital Forensics Division)</span>
+          <span>August 2025 – June 2026</span>
+        </div>
         <ul>
-          <li>Instructed System Security and Operating System practicums for undergraduate Computer Engineering students.</li>
-          <li>Explained technical course materials and guided students through practical hands-on case studies.</li>
-          <li>Assisted in practicum execution, assignment grading, and student academic performance evaluation.</li>
-          <li>Mentored and guided junior students during research execution, supervising a comparative study of three Windows Registry analysis tools in digital forensic investigations.</li>
-          <li>Co-authored and developed the official 101-page CSE-410 Digital Forensics laboratory manual (12 practicum modules) in direct collaboration with the Seculab Advisor Lecturer for the Telkom University curriculum.</li>
+          <li>Instructed and supervised laboratory practicums in <strong>System Security</strong> and <strong>Real-Time Operating Systems (RTOS)</strong> for undergraduate engineering students, overseeing technical defense scenarios and practical evaluations.</li>
+          <li>Served as <strong>Research Advisor</strong> within the Digital Forensics Research Division, formulating targeted research topics and coaching junior researchers on Windows Registry analysis tool benchmarking.</li>
+          <li>Co-authored the official 101-page university curriculum manual <strong>CSE-410 Digital Forensics (12 Practicum Modules)</strong> covering Chain of Custody, YARA Rules, Android ADB, EVTX logs, Plaso timeline analysis, and Wireshark in collaboration with the Lead Lab Advisor.</li>
         </ul>
       </article>
     </section>
@@ -325,140 +293,121 @@
     <!-- EDUCATION -->
     <section>
       <h2>EDUCATION</h2>
-      <article class="education-item">
-        <h3>Telkom University</h3>
-        <p class="sub-head">Bachelor of Engineering (S.T.) in Computer Engineering | 2022 – 2026</p>
+      <article class="exp-item" style="margin-bottom: 2px;">
+        <div class="exp-header">
+          <span>Telkom University</span>
+          <span>Bandung, Indonesia</span>
+        </div>
+        <div class="exp-sub">
+          <span>Bachelor of Computer Engineering (S.T.) | Focus: Cyber Security &amp; Digital Forensics</span>
+          <span>2022 – 2026</span>
+        </div>
       </article>
-      <article class="education-item">
-        <h3>SMA Negeri 2 Kota Bekasi</h3>
-        <p class="sub-head">Science Major (MIPA) | 2019 – 2022</p>
+    </section>
+
+    <!-- PAGE BREAK EXPLICIT TO PAGE 2 -->
+    <div class="page-break"></div>
+
+    <!-- ================= PAGE 2 ================= -->
+    <!-- KEY PROJECTS & SECURITY IMPLEMENTATIONS -->
+    <section style="margin-top: 4px;">
+      <h2>KEY PROJECTS &amp; SECURITY IMPLEMENTATIONS</h2>
+
+      <article class="exp-item">
+        <div class="exp-header">
+          <span>Pineus Tilu Reservation Web Security Implementation Based on OWASP Top 10 (Capstone Design)</span>
+          <span>Telkom University</span>
+        </div>
+        <div class="exp-sub">
+          <span>Role: Blue Team – Lead Security Implementation &amp; Remediation</span>
+          <span>2025 – 2026</span>
+        </div>
+        <ul>
+          <li>Architected and implemented <strong>13+ backend security controls</strong> including custom Web Application Firewall (WAF), rate-limiting anomaly detection (&gt;50 req/min), and HTTP Security Headers (HSTS, CSP, X-Frame) mitigating OWASP Top 10 vulnerabilities (SQLi, XSS, CSRF, IDOR).</li>
+          <li>Engineered an enterprise Multi-Factor Authentication (MFA/OTP) engine with CSPRNG and Bcrypt achieving 100% compliance across <strong>RFC 4226 (HOTP) and RFC 6238 (TOTP)</strong> standards, featuring multi-tier password validation and k-Anonymity breach detection.</li>
+          <li>Secured Midtrans payment gateway integrations via <strong>HMAC SHA-512</strong> signature validation and constant-time comparison to prevent Webhook Spoofing, integrated with Telegram bot instant alert notifications and <strong>ISO 27001</strong> audit log retention.</li>
+        </ul>
+      </article>
+
+      <article class="exp-item">
+        <div class="exp-header">
+          <span>CSE-410 Digital Forensics Laboratory Courseware Development (101 Pages)</span>
+          <span>Security Laboratory</span>
+        </div>
+        <div class="exp-sub">
+          <span>Role: Co-Author &amp; Lead Technical Developer</span>
+          <span>2026</span>
+        </div>
+        <ul>
+          <li>Authored 12 investigative laboratory modules covering Chain of Custody (SHA-256), YARA Rules, Android ADB/SQLite forensics, EVTX log analysis, Plaso super-timelines, and validated 100% technical reproducibility across forensic toolchains (Autopsy, FTK Imager, ExifTool, Chainsaw).</li>
+        </ul>
       </article>
     </section>
 
     <!-- CERTIFICATIONS & PROFESSIONAL CREDENTIALS -->
     <section>
       <h2>CERTIFICATIONS &amp; PROFESSIONAL CREDENTIALS</h2>
-      <div class="skills-list">
-        <p><strong>Professional &amp; Industry Credentials:</strong></p>
-        <ul>
-          <li>Blue Team Junior Analyst (BTJA) – Centri / Security Blue Team (2026)</li>
-          <li>AFDI Official Registered Member – Indonesian Digital Forensics Association (2026)</li>
-          <li>Intro to DFIR: The Divide and Conquer Process – Cyber Triage &amp; Sleuth Kit Labs (2026)</li>
-          <li>Forensic and Integrity Services Job Simulation – EY (Ernst &amp; Young) via Forage (2026)</li>
-          <li>OSForensics Triage Certification (OSFTC) – PassMark Software (2025)</li>
-          <li>Introduction to Digital Forensics – Security Blue Team (2025)</li>
-          <li>Introduction to Cybersecurity – Cisco Networking Academy (2026)</li>
-        </ul>
-        <p style="margin-top: 6px;"><strong>Technical Training, Academic &amp; Laboratory Appointments:</strong></p>
-        <ul>
-          <li>Practicum Assistant Certificate: System Security – Security Laboratory (SecuLAB), Telkom University (2026)</li>
-          <li>Practicum Assistant Certificate: Real-Time Operating Systems – Security Laboratory (SecuLAB), Telkom University (2026)</li>
-          <li>IT Audit Fundamentals &amp; Professional Standards – Codelamp Indonesia (2026)</li>
-          <li>C5W-100 Introduction to Digital Forensics – Cyber 5W (2026)</li>
-          <li>Digital Forensics Basics – Cybrary (2026)</li>
-          <li>DFIR Foundations &amp; Techniques – Blue Cape Security (2026)</li>
-          <li>Digital Forensics – OpenLearn, The Open University (2025)</li>
-          <li>Information Security &amp; Cryptography – Cyber Academy (2026)</li>
-        </ul>
-      </div>
+      <ul class="cert-grid">
+        <li><strong>Blue Team Junior Analyst (BTJA)</strong> – Centri / Security Blue Team (2026)</li>
+        <li><strong>AFDI Official Registered Member</strong> – Indonesian Digital Forensics Association (2026)</li>
+        <li><strong>OSForensics Triage Certification (OSFTC)</strong> – PassMark Software (2025)</li>
+        <li><strong>Intro to DFIR: Divide &amp; Conquer</strong> – Cyber Triage &amp; Sleuth Kit Labs (2026)</li>
+        <li><strong>Forensic &amp; Integrity Services</strong> – EY (Ernst &amp; Young) via Forage (2026)</li>
+        <li><strong>Introduction to Cybersecurity</strong> – Cisco Networking Academy (2026)</li>
+        <li><strong>System Security Practicum Assistant</strong> – SecuLAB Telkom University (2026)</li>
+        <li><strong>RTOS Practicum Assistant</strong> – SecuLAB Telkom University (2026)</li>
+        <li><strong>IT Audit Fundamentals &amp; Standards</strong> – Codelamp Indonesia (2026)</li>
+        <li><strong>C5W-100 Intro to Digital Forensics</strong> – Cyber 5W (2026)</li>
+        <li><strong>Digital Forensics Basics</strong> – Cybrary (2026)</li>
+        <li><strong>DFIR Foundations &amp; Techniques</strong> – Blue Cape Security (2026)</li>
+      </ul>
     </section>
 
-    <!-- KEY PROJECTS & ACHIEVEMENTS -->
+    <!-- SOFT SKILLS & CORE COMPETENCIES -->
     <section>
-      <h2>KEY PROJECTS &amp; ACHIEVEMENTS</h2>
-
-      <article class="project-item">
-        <h3>Security Analysis and Implementation for Pineus Tilu Reservation Website Based on OWASP Top 10 (Undergraduate Capstone Design)</h3>
-        <p class="sub-head">Role: Blue Team – Lead Security Implementation &amp; Remediation | Telkom University</p>
-        <ul>
-          <li>Architected and implemented 13+ backend security features including Multi-Factor Authentication (OTP), Role-Based Access Control, Web Application Firewall, and Audit Logging aligned with OWASP Top 10 standards.</li>
-          <li>Implemented 5 HTTP Security Headers (HSTS, X-Frame-Options, X-Content-Type-Options, Referrer-Policy, Permissions-Policy) to mitigate Man-in-the-Middle, Clickjacking, and MIME Sniffing attacks.</li>
-          <li>Built an automated threat detection system for SQL Injection, XSS, IDOR, and Web Scraping vulnerabilities using custom middleware with rate-limit anomaly detection (&gt;50 requests/min).</li>
-          <li>Developed dual-layer password security (backend validation + real-time frontend strength indicator) with k-Anonymity breach detection to prevent compromised password usage.</li>
-          <li>Designed an OTP authentication system utilizing CSPRNG, Bcrypt hashing, 15-minute expiry time, and comparative testing against RFC 4226 (HOTP), RFC 6238 (TOTP), and RFC 6287 (OCRA) standards - achieving 100% compliance with RFC Test Vectors.</li>
-          <li>Conducted performance benchmarking of OTP algorithms (50 iterations + statistical analysis: Mean, Standard Deviation, CV%) as the basis for production deployment decisions.</li>
-          <li>Secured Midtrans payment gateway integration using SHA-512 signature validation, constant-time comparison, and API crossverification to prevent Webhook Spoofing.</li>
-          <li>Built a real-time security alerting system integrated with Telegram Bot for CRITICAL/WARNING incident notifications (Brute Force, SQL Injection, IDOR) equipped with attacker GeoIP tracking.</li>
-          <li>Implemented audit log retention policies compliant with ISO 27001 standards and anti-repudiation principles, protecting active 1–89 day forensic evidence from tampering while restricting pruning only to logs &gt;90 days old via 3-layer automated and manual mechanisms.</li>
-        </ul>
-      </article>
-
-      <article class="project-item">
-        <h3>CSE-410 Digital Forensics Course Curriculum &amp; Laboratory Manual Development (101 Pages)</h3>
-        <p class="sub-head">Role: Co-Author &amp; Lead Technical Developer | Security Laboratory, Telkom University</p>
-        <ul>
-          <li>Co-authored and developed the official 101-page CSE-410 Digital Forensics laboratory manual in direct collaboration with the Seculab Advisor Lecturer for the Telkom University curriculum.</li>
-          <li>Designed 12 practicum modules covering Chain of Custody (SHA-256), YARA Rules, Android ADB/SQLite forensics, EVTX/Linux log analysis, Plaso super-timelines, and Wireshark/Zeek packet analysis.</li>
-          <li>Conducted technical validation on all forensic toolchains (Autopsy, FTK Imager, ExifTool, Chainsaw) to guarantee 100% case study reproducibility.</li>
-        </ul>
-      </article>
-    </section>
-
-    <!-- TECHNICAL SKILLS -->
-    <section>
-      <h2>TECHNICAL SKILLS</h2>
-      <div class="skills-list">
-        <p><strong>Web Application Security &amp; AppSec:</strong> OWASP Top 10 (SQLi, XSS, CSRF, IDOR, SSRF), Vulnerability Assessment &amp; Remediation, Web Application Firewall (WAF), Multi-Factor Authentication (OTP/2FA RFC Compliant), HTTP Security Headers (HSTS, CSP, X-Frame), Cryptography &amp; Hashing (Bcrypt, HMAC SHA-512), Payment Gateway API Security (Midtrans), Role-Based Access Control (RBAC), Rate Limiting &amp; Anti-Brute Force, Audit Logging (ISO 27001 Standard)</p>
-        <p><strong>Digital Forensics &amp; IR:</strong> Digital Evidence Acquisition &amp; Preservation, Chain of Custody, Windows Forensics, Mobile Device Forensics, Registry &amp; Event Log Analysis, Browser Artifact Analysis, SQL Database Forensics, File System Analysis, Forensic Reporting</p>
-        <p><strong>Tools &amp; Software:</strong> FTK Imager, Autopsy, OSForensics, Magnet ACQUIRE, Registry Explorer, Andriller, SQLite Browser, Burp Suite, Wireshark, Git, Kali Linux, WSL</p>
-        <p><strong>Programming &amp; Databases:</strong> PHP, JavaScript, Laravel, MySQL, HTML5/CSS3, Python Basics</p>
-      </div>
-    </section>
-
-    <!-- SOFT SKILLS -->
-    <section>
-      <h2>SOFT SKILLS</h2>
-      <div class="skills-list">
-        <ul>
-          <li><strong>Analytical &amp; Problem Solving:</strong> In-depth root-cause analysis of security anomalies and precise technical remediation of web vulnerabilities.</li>
-          <li><strong>Investigative Mindset &amp; Detail Orientation:</strong> High rigor in digital artifact extraction and preserving Chain of Custody legal evidence integrity.</li>
-          <li><strong>Technical Reporting &amp; Documentation:</strong> Proficient in drafting formal police-standard examination reports, case documentation, and university lab courseware.</li>
-          <li><strong>Leadership, Mentorship &amp; Adaptability:</strong> Experienced in leading campus event operations, mentoring junior lab researchers, and thriving under incident pressure.</li>
-        </ul>
-      </div>
+      <h2>SOFT SKILLS &amp; CORE COMPETENCIES</h2>
+      <ul>
+        <li><strong>Analytical &amp; Problem Solving:</strong> In-depth root-cause analysis of security anomalies and precise technical remediation of web vulnerabilities.</li>
+        <li><strong>Investigative Mindset &amp; Detail Orientation:</strong> High rigor in digital artifact extraction and preserving Chain of Custody legal evidence integrity.</li>
+        <li><strong>Technical Reporting &amp; Documentation:</strong> Proficient in drafting formal police-standard examination reports, case documentation, and university lab courseware.</li>
+        <li><strong>Leadership, Mentorship &amp; Adaptability:</strong> Experienced in leading campus event operations, mentoring junior lab researchers, and thriving under incident pressure.</li>
+      </ul>
     </section>
 
     <!-- ORGANIZATION & LEADERSHIP -->
     <section>
       <h2>ORGANIZATION &amp; LEADERSHIP</h2>
-
-      <article class="experience-item">
-        <h3>Centurion HMTK – Esports Division Lead (FIFA Tournament)</h3>
-        <p class="sub-head">Computer Engineering Student Association (HMTK), Telkom University | April 25 – May 2025</p>
+      <article class="exp-item">
+        <div class="exp-header">
+          <span>Computer Engineering Student Association (HMTK), Telkom University</span>
+          <span>Bandung, Indonesia</span>
+        </div>
+        <div class="exp-sub">
+          <span>Esports Division Lead Centurion (2025) &amp; Sponsorship Staff Connection (2024)</span>
+          <span>2023 – 2025</span>
+        </div>
         <ul>
-          <li>Spearheaded end-to-end tournament operations for the FIFA esports competition, overseeing match bracket structure, scheduling, and participant polling systems.</li>
-          <li>Formulated competition guidelines, fair-play rulebooks, and technical dispute resolution protocols to maintain competitive integrity.</li>
-          <li>Managed multi-stage match schedules and coordinated dozens of participants, achieving 100% on-time and incident-free tournament execution.</li>
+          <li>Spearheaded end-to-end tournament operations for the FIFA esports competition, overseeing match bracket structure, scheduling, rulebook fair-play, and technical dispute resolutions for dozens of participants with 100% on-time execution.</li>
+          <li>Secured external sponsorships and served as Educational Mentor facilitating interactive technology logic and basic game-building workshops for elementary school students.</li>
         </ul>
       </article>
 
-      <article class="experience-item">
-        <h3>Connection HMTK – Sponsorship &amp; Community Outreach Staff</h3>
-        <p class="sub-head">Computer Engineering Student Association (HMTK), Telkom University | December 2023 – October 2024</p>
+      <article class="exp-item">
+        <div class="exp-header">
+          <span>Indonesian Digital Forensics Association (AFDI)</span>
+          <span>Indonesia</span>
+        </div>
+        <div class="exp-sub">
+          <span>Official Registered Active Member</span>
+          <span>May 2026 – Present</span>
+        </div>
         <ul>
-          <li>Conducted partnership prospecting and sponsor fundraising for the department's main annual event.</li>
-          <li>Acted as a responsive cross-divisional coordinator supporting event logistics, operational workflow, and execution across multiple committees.</li>
-          <li>Served as Educational Moderator &amp; Interactive Mentor for 3rd-grade elementary students, facilitating basic technology logic learning sessions and educational game creation.</li>
-        </ul>
-      </article>
-
-      <article class="experience-item">
-        <h3>Indonesian Digital Forensics Association (AFDI)</h3>
-        <p class="sub-head">Official Registered Member | May 2026 – Present</p>
-        <ul>
-          <li>Active registered member participating in professional seminars, webinars, and competency development activities in Digital Forensics.</li>
+          <li>Actively participating in technical knowledge-exchange forums, professional webinars, and national digital forensics competency development programs.</li>
         </ul>
       </article>
     </section>
 
   </main>
 
-  <script>
-    if (window.location.search.includes('print=true') || window.location.search.includes('download=true')) {
-      window.addEventListener('load', () => {
-        setTimeout(() => { window.print(); }, 300);
-      });
-    }
-  </script>
 </body>
 </html>
