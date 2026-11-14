@@ -231,4 +231,22 @@ Berdasarkan optimasi keterbacaan recruiter dan standarisasi resume:
    - *AFDI*: Anggota Resmi Terdaftar Aktif.
 4. **Verifikasi Cetak PDF**: Keduanya terbukti terkompilasi **tepat 2 halaman A4 (100% pas)** tanpa tumpah ke halaman ke-3.
 
+---
+
+## 7. Integrasi Audit Keamanan E-Commerce & Pengayaan Butir Teknis (November 2026)
+
+Untuk memanfaatkan ruang kosong pada format 2 halaman secara optimal dan berbobot:
+1. **Pengalaman Ditres Siber**: Ditambahkan 1 butir teknis otentik mengenai ekstraksi dan analisis metadata multimedia (*ExifTool*, GPS coordinates, profil kamera, timestamp, dan validasi integritas bukti digital).
+2. **Proyek Baru (Audit Keamanan Sistem Informasi E-Commerce)**:
+   - Mengintegrasikan hasil laporan audit keamanan komprehensif pada platform e-commerce (PT Nusantara Digital Niaga).
+   - Mengacu standar internasional **ISO/IEC 27001:2022** dan **NIST Cybersecurity Framework**.
+   - Melakukan pengujian teknis via **Nmap, OWASP ZAP, dan Wireshark** (menemukan 7 celah keamanan, 3 *Critical* termasuk kredensial *plaintext* dan *broken access control*).
+   - Pemetaan mandat **UU Perlindungan Data Pribadi (UU PDP No. 27/2022)** serta perumusan *Security Governance Roadmap*.
+3. **Pemekaran Organisasi HMTK**:
+   - *Centurion HMTK*: Dimekarkan menjadi 3 butir terstruktur (*bracket operations, rulebook fair-play, multi-stage scheduling*).
+   - *Connection HMTK*: Dimekarkan menjadi 3 butir terstruktur (*sponsor fundraising, cross-divisional coordination, educational mentoring*).
+4. **Hasil Verifikasi PDF**:
+   - Kedua halaman terisi proporsional (~75% – 83%), nyaman dibaca, dan tetap **tepat 2 halaman A4 (100% pas)**.
+
+
 

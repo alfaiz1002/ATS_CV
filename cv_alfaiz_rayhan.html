@@ -23,7 +23,7 @@
     }
     header {
       text-align: center;
-      margin-bottom: 9px;
+      margin-bottom: 10px;
       border-bottom: 1.5px solid #000000;
       padding-bottom: 6px;
     }
@@ -52,7 +52,7 @@
     .contact-info a { color: inherit; text-decoration: none; }
     .contact-info .separator { margin: 0 5px; color: #333333; font-weight: bold; }
     
-    section { margin-bottom: 9px; }
+    section { margin-bottom: 8.5px; }
     h2 {
       font-size: 11.8px;
       font-weight: bold;
@@ -65,7 +65,7 @@
       page-break-after: avoid !important;
       break-after: avoid !important;
     }
-    .exp-item { margin-bottom: 6px; page-break-inside: avoid; break-inside: avoid; }
+    .exp-item { margin-bottom: 5.5px; page-break-inside: avoid; break-inside: avoid; }
     .exp-header {
       display: flex;
       justify-content: space-between;
@@ -82,23 +82,23 @@
       font-weight: 500;
       margin-bottom: 2px;
     }
-    p { font-size: 10.2px; text-align: justify; line-height: 1.36; color: #000000; }
+    p { font-size: 10.2px; text-align: justify; line-height: 1.38; color: #000000; }
     ul { margin-left: 15px; margin-top: 1.5px; }
-    li { font-size: 10.2px; line-height: 1.35; margin-bottom: 2px; color: #000000; text-align: justify; }
+    li { font-size: 10.1px; line-height: 1.34; margin-bottom: 2px; color: #000000; text-align: justify; }
     li strong { color: #000000; }
     
     .cert-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 2px 14px;
+      gap: 1.5px 14px;
       margin-left: 15px;
     }
-    .cert-grid li { margin-bottom: 1.5px; font-size: 9.8px; }
+    .cert-grid li { margin-bottom: 1.5px; font-size: 9.6px; }
 
     .skills-list p {
       font-size: 10.2px;
-      line-height: 1.36;
-      margin-bottom: 3px;
+      line-height: 1.37;
+      margin-bottom: 3.5px;
       text-align: justify;
     }
 
@@ -114,7 +114,7 @@
       .cv-container { max-width: 100%; width: 100%; padding: 0; margin: 0; }
       @page {
         size: A4 portrait;
-        margin: 10.5mm 12.5mm 10.5mm 12.5mm;
+        margin: 9.5mm 12mm 9.5mm 12mm;
       }
       .page-break { page-break-before: always; break-before: always; }
     }
@@ -140,7 +140,7 @@
     <section>
       <h2>PROFESSIONAL SUMMARY</h2>
       <p>
-        Computer Engineering Graduate (Bachelor of Engineering - S.T.) from Telkom University with dual specialization in <strong>Web Application Security (OWASP Top 10 / Blue Team)</strong> and <strong>Digital Forensics &amp; Incident Response (DFIR)</strong>. Proven track record in law enforcement digital forensics at Polda Metro Jaya Cyber Crime Investigation Directorate, executing bit-by-bit physical acquisitions, chain of custody preservation, and Windows Registry/mobile extraction. Experienced Laboratory Instructor &amp; Research Advisor at SecuLAB Telkom University, co-authoring the official CSE-410 Digital Forensics laboratory manual (101 Pages). Official registered member of AFDI, holder of Blue Team Junior Analyst (BTJA) and PassMark OSFTC certifications.
+        Computer Engineering Graduate (Bachelor of Engineering - S.T.) from Telkom University with multi-disciplinary competence in <strong>Web Application Security (OWASP Top 10 / Blue Team)</strong>, <strong>Digital Forensics &amp; Incident Response (DFIR)</strong>, and <strong>Information Security Auditing (ISO 27001 &amp; NIST CSF)</strong>. Proven track record in law enforcement digital forensics at Polda Metro Jaya Cyber Crime Investigation Directorate, executing bit-by-bit physical acquisitions, chain of custody preservation, and Windows Registry/mobile extraction. Experienced Laboratory Instructor &amp; Research Advisor at SecuLAB Telkom University, co-authoring the official CSE-410 Digital Forensics laboratory manual (101 Pages). Official registered member of AFDI, holder of Blue Team Junior Analyst (BTJA) and PassMark OSFTC certifications.
       </p>
     </section>
 
@@ -150,7 +150,7 @@
       <div class="skills-list">
         <p><strong>Web Application Security &amp; AppSec:</strong> OWASP Top 10 (SQLi, XSS, CSRF, IDOR, SSRF), Vulnerability Assessment &amp; Remediation, Web Application Firewall (WAF), Multi-Factor Authentication (OTP RFC 4226 &amp; 6238 Compliant), HTTP Security Headers (HSTS, CSP, X-Frame), Cryptography &amp; Hashing (Bcrypt, HMAC SHA-512), Payment Gateway Integration Security (Midtrans API), Role-Based Access Control (RBAC), Rate Limiting &amp; Anti-Brute Force, Audit Logging &amp; Anti-Repudiation (ISO 27001).</p>
         <p><strong>Digital Forensics &amp; Incident Response (DFIR):</strong> Digital Evidence Acquisition, Chain of Custody, Windows Forensics (Registry NTUSER/SAM/SYSTEM, EVTX Logs), Mobile Device Forensics (Android BFU/AFU), SQL Database Triage, File System Analysis, Wireshark Packet Analysis, Forensic Report &amp; Court BAP Drafting.</p>
-        <p><strong>Tools &amp; Software:</strong> FTK Imager, Autopsy, OSForensics, Magnet ACQUIRE, Registry Explorer, Andriller, ExifTool, SQLite Browser, Burp Suite, Wireshark, Git, Kali Linux, WSL.</p>
+        <p><strong>Tools &amp; Software:</strong> FTK Imager, Autopsy, OSForensics, Magnet ACQUIRE, Registry Explorer, Andriller, ExifTool, SQLite Browser, Burp Suite, Wireshark, OWASP ZAP, Nmap, Git, Kali Linux, WSL.</p>
         <p><strong>Programming &amp; Databases:</strong> PHP, Laravel, JavaScript, MySQL, HTML5/CSS3, Python Fundamentals, Bash/Shell Scripting.</p>
       </div>
     </section>
@@ -172,6 +172,7 @@
           <li>Maintained strict <strong>Chain of Custody</strong> for physical digital evidence (SSDs, USB Flash Drives) using hardware write blockers (<strong>Safe Block</strong>) and cryptographic verification (<strong>MD5 &amp; SHA-256</strong>), ensuring legal admissibility under criminal procedure standards.</li>
           <li>Conducted bit-by-bit physical disk imaging (<strong>FTK Imager</strong>) and analyzed critical <strong>Windows Registry</strong> hives (NTUSER.DAT user activity, SAM 2,900+ login accounts, SYSTEM USBSTOR) via <strong>Registry Explorer</strong> to reconstruct suspect activity.</li>
           <li>Executed mobile forensics extractions on Android devices (BFU/AFU states) utilizing <strong>Andriller CE</strong> and <strong>ADB</strong> for message timeline extraction and app SQLite database triage, supplemented with automated metadata extraction via <strong>ExifTool</strong>.</li>
+          <li>Extracted and analyzed multimedia digital evidence metadata (images &amp; documents) utilizing <strong>ExifTool</strong> to validate geolocation (GPS coordinates), device profiles, creation timestamps, and verify investigative artifact authenticity.</li>
           <li>Drafted official police-standard <strong>Digital Forensic Examination Reports (BAP)</strong> complying with statutory investigative documentation requirements and anti-repudiation principles.</li>
         </ul>
       </article>
@@ -223,7 +224,7 @@
 
     <!-- ================= PAGE 2 ================= -->
     <!-- KEY PROJECTS & SECURITY IMPLEMENTATIONS -->
-    <section style="margin-top: 3px;">
+    <section style="margin-top: 2px;">
       <h2>KEY PROJECTS &amp; SECURITY IMPLEMENTATIONS</h2>
 
       <article class="exp-item">
@@ -239,6 +240,22 @@
           <li>Architected and implemented <strong>13+ backend security controls</strong> including custom Web Application Firewall (WAF), rate-limiting anomaly detection (&gt;50 req/min), and HTTP Security Headers (HSTS, CSP, X-Frame) mitigating OWASP Top 10 vulnerabilities (SQLi, XSS, CSRF, IDOR).</li>
           <li>Engineered an enterprise Multi-Factor Authentication (MFA/OTP) engine with CSPRNG and Bcrypt achieving 100% compliance across <strong>RFC 4226 (HOTP) and RFC 6238 (TOTP)</strong> standards, featuring multi-tier password validation and k-Anonymity breach detection.</li>
           <li>Secured Midtrans payment gateway integrations via <strong>HMAC SHA-512</strong> signature validation and constant-time comparison to prevent Webhook Spoofing, integrated with Telegram bot instant alert notifications and <strong>ISO 27001</strong> audit log retention.</li>
+        </ul>
+      </article>
+
+      <article class="exp-item">
+        <div class="exp-header">
+          <span>E-Commerce Information Security Audit Based on ISO 27001 &amp; NIST CSF</span>
+          <span>Telkom University</span>
+        </div>
+        <div class="exp-sub">
+          <span>Role: Lead Information Security Auditor &amp; Risk Assessor</span>
+          <span>2026</span>
+        </div>
+        <ul>
+          <li>Conducted a comprehensive information security audit on an enterprise e-commerce platform applying <strong>ISO/IEC 27001:2022</strong> and <strong>NIST Cybersecurity Framework</strong> standards, evaluating ISMS controls across Identify, Protect, Detect, Respond, and Recover domains.</li>
+          <li>Executed vulnerability assessments and targeted penetration tests using <strong>Nmap, OWASP ZAP, and Wireshark</strong>, identifying 7 security control findings (3 Critical) including plaintext credential storage without cryptographic hashing, lack of MFA, and broken access control (RBAC).</li>
+          <li>Formulated comprehensive Risk Impact Analyses, evaluated statutory compliance with <strong>Indonesian Personal Data Protection Law (UU PDP No. 27/2022)</strong>, quantified financial loss exposure, and delivered an actionable security remediation and governance roadmap.</li>
         </ul>
       </article>
 
@@ -300,13 +317,15 @@
           <span>April 25 – May 2025</span>
         </div>
         <ul>
-          <li>Spearheaded end-to-end tournament operations for the FIFA esports competition, overseeing match bracket structure, scheduling, rulebook fair-play, and technical dispute resolutions for dozens of participants with 100% on-time execution.</li>
+          <li>Spearheaded end-to-end tournament operations for the FIFA esports competition, overseeing match bracket structure, scheduling, and participant polling systems.</li>
+          <li>Formulated competition guidelines, fair-play rulebooks, and technical dispute resolution protocols to maintain competitive integrity.</li>
+          <li>Managed multi-stage match schedules and coordinated dozens of participants, achieving 100% on-time and incident-free tournament execution.</li>
         </ul>
       </article>
 
       <article class="exp-item">
         <div class="exp-header">
-          <span>Connection HMTK – Sponsorship Staff &amp; Community Service</span>
+          <span>Connection HMTK – Sponsorship &amp; Community Outreach Staff</span>
           <span>Telkom University</span>
         </div>
         <div class="exp-sub">
@@ -314,7 +333,9 @@
           <span>December 2023 – October 2024</span>
         </div>
         <ul>
-          <li>Secured external sponsorships for event funding and served as Educational Moderator &amp; Mentor facilitating interactive technology logic and basic game-building workshops for elementary school students.</li>
+          <li>Conducted partnership prospecting and sponsor fundraising for the department's main annual event.</li>
+          <li>Acted as a responsive cross-divisional coordinator supporting event logistics, operational workflow, and execution across multiple committees.</li>
+          <li>Served as Educational Moderator &amp; Interactive Mentor for 3rd-grade elementary students, facilitating basic technology logic learning sessions and educational game creation.</li>
         </ul>
       </article>
 
