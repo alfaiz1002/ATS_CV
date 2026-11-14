@@ -216,3 +216,19 @@ Gunakan format penamaan berkas PDF yang bersih dan profesional saat mengunggah k
 - **Versi Bahasa Indonesia:** `CV_ATS_Alfaiz_Rayhan_Putra_Adji_CyberSecurity.pdf`
 - **Versi Bahasa Inggris:** `Resume_ATS_Alfaiz_Rayhan_Putra_Adji_CyberSecurity_DFIR.pdf`
 
+---
+
+## 6. Pembaruan Struktur Resume ATS Tepat 2 Halaman (November 2026)
+
+Berdasarkan optimasi keterbacaan recruiter dan standarisasi resume:
+1. **Header Minimalis & Elegan**: Subtitle panjang di header dihapus sehingga nama kandidat langsung diikuti oleh baris kontak terpadu (*Bekasi, Indonesia | Telepon | Email | LinkedIn*).
+2. **Pendidikan (Education)**:
+   - *Telkom University*: Disederhanakan menjadi `Sarjana Teknik Komputer (S.T.)` / `Bachelor of Computer Engineering (S.T.)`.
+   - *SMA Negeri 2 Kota Bekasi*: Ditambahkan kembali (`Jurusan MIPA (Matematika & Ilmu Pengetahuan Alam) | 2019 – 2022` / `Science Major (MIPA) | 2019 – 2022`).
+3. **Pengalaman Organisasi (HMTK Dipisah)**:
+   - *Centurion HMTK*: Entri terpisah sebagai PJ Divisi Esports (FIFA Tournament).
+   - *Connection HMTK*: Entri terpisah sebagai Staf Sponsorship & Pengabdian Masyarakat / Moderator Edukasi.
+   - *AFDI*: Anggota Resmi Terdaftar Aktif.
+4. **Verifikasi Cetak PDF**: Keduanya terbukti terkompilasi **tepat 2 halaman A4 (100% pas)** tanpa tumpah ke halaman ke-3.
+
+
