@@ -6,11 +6,11 @@
   <title>Resume ATS - Alfaiz Rayhan Putra Adji</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
-    html { font-size: 13.5px; background: #ffffff; }
+    html { font-size: 14px; background: #ffffff; }
     body {
       font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
       color: #000000;
-      line-height: 1.38;
+      line-height: 1.42;
       background: #ffffff;
       padding: 0;
       margin: 0;
@@ -23,23 +23,23 @@
     }
     header {
       text-align: center;
-      margin-bottom: 10px;
+      margin-bottom: 12px;
       border-bottom: 1.5px solid #000000;
-      padding-bottom: 6px;
+      padding-bottom: 8px;
     }
     h1 {
       font-family: Georgia, "Times New Roman", Times, serif;
-      font-size: 21px;
+      font-size: 22px;
       font-weight: bold;
       color: #000000;
       letter-spacing: 1.2px;
       text-transform: uppercase;
-      margin-bottom: 4px;
+      margin-bottom: 5px;
     }
     .contact-info {
-      font-size: 10.5px;
+      font-size: 10.8px;
       color: #222222;
-      line-height: 1.4;
+      line-height: 1.45;
       text-align: center !important;
       display: flex;
       justify-content: center;
@@ -50,41 +50,43 @@
     }
     .contact-info span { display: inline-block; }
     .contact-info a { color: inherit; text-decoration: none; }
-    .contact-info .separator { margin: 0 5px; color: #333333; font-weight: bold; }
+    .contact-info .separator { margin: 0 6px; color: #333333; font-weight: bold; }
     
-    section { margin-bottom: 8.5px; }
+    .p1-section { margin-bottom: 14px; }
+    .p2-section { margin-bottom: 8px; }
+    
     h2 {
-      font-size: 11.8px;
+      font-size: 12px;
       font-weight: bold;
       text-transform: uppercase;
       letter-spacing: 0.8px;
       color: #000000;
       border-bottom: 1.2px solid #000000;
-      padding-bottom: 2px;
-      margin-bottom: 4.5px;
+      padding-bottom: 2.5px;
+      margin-bottom: 6px;
       page-break-after: avoid !important;
       break-after: avoid !important;
     }
-    .exp-item { margin-bottom: 5.5px; page-break-inside: avoid; break-inside: avoid; }
+    .exp-item { margin-bottom: 8px; page-break-inside: avoid; break-inside: avoid; }
     .exp-header {
       display: flex;
       justify-content: space-between;
-      font-size: 11px;
+      font-size: 11.2px;
       font-weight: bold;
       color: #000000;
-      margin-bottom: 1px;
+      margin-bottom: 1.5px;
     }
     .exp-sub {
       display: flex;
       justify-content: space-between;
-      font-size: 10px;
+      font-size: 10.2px;
       color: #333333;
       font-weight: 500;
-      margin-bottom: 2px;
+      margin-bottom: 3px;
     }
-    p { font-size: 10.2px; text-align: justify; line-height: 1.38; color: #000000; }
-    ul { margin-left: 15px; margin-top: 1.5px; }
-    li { font-size: 10.1px; line-height: 1.34; margin-bottom: 2px; color: #000000; text-align: justify; }
+    p { font-size: 10.4px; text-align: justify; line-height: 1.44; color: #000000; }
+    ul { margin-left: 16px; margin-top: 2px; }
+    li { font-size: 10.3px; line-height: 1.42; margin-bottom: 3px; color: #000000; text-align: justify; }
     li strong { color: #000000; }
     
     .cert-grid {
@@ -93,12 +95,12 @@
       gap: 1.5px 14px;
       margin-left: 15px;
     }
-    .cert-grid li { margin-bottom: 1.5px; font-size: 9.6px; }
+    .cert-grid li { margin-bottom: 1.5px; font-size: 9.6px; line-height: 1.34; }
 
     .skills-list p {
-      font-size: 10.2px;
-      line-height: 1.37;
-      margin-bottom: 3.5px;
+      font-size: 10.4px;
+      line-height: 1.43;
+      margin-bottom: 4.5px;
       text-align: justify;
     }
 
@@ -117,6 +119,9 @@
         margin: 9.5mm 12mm 9.5mm 12mm;
       }
       .page-break { page-break-before: always; break-before: always; }
+      .p2-item { margin-bottom: 5px; }
+      .p2-item li { font-size: 10.1px; line-height: 1.34; margin-bottom: 2px; }
+      .p2-item p { font-size: 10.1px; line-height: 1.34; }
     }
   </style>
 </head>
@@ -137,7 +142,7 @@
     </header>
 
     <!-- PROFESSIONAL SUMMARY -->
-    <section>
+    <section class="p1-section">
       <h2>PROFESSIONAL SUMMARY</h2>
       <p>
         Computer Engineering Graduate (Bachelor of Engineering - S.T.) from Telkom University with multi-disciplinary competence in <strong>Web Application Security (OWASP Top 10 / Blue Team)</strong>, <strong>Digital Forensics &amp; Incident Response (DFIR)</strong>, and <strong>Information Security Auditing (ISO 27001 &amp; NIST CSF)</strong>. Proven track record in law enforcement digital forensics at Polda Metro Jaya Cyber Crime Investigation Directorate, executing bit-by-bit physical acquisitions, chain of custody preservation, and Windows Registry/mobile extraction. Experienced Laboratory Instructor &amp; Research Advisor at SecuLAB Telkom University, co-authoring the official CSE-410 Digital Forensics laboratory manual (101 Pages). Official registered member of AFDI, holder of Blue Team Junior Analyst (BTJA) and PassMark OSFTC certifications.
@@ -145,7 +150,7 @@
     </section>
 
     <!-- TECHNICAL SKILLS -->
-    <section>
+    <section class="p1-section">
       <h2>TECHNICAL SKILLS</h2>
       <div class="skills-list">
         <p><strong>Web Application Security &amp; AppSec:</strong> OWASP Top 10 (SQLi, XSS, CSRF, IDOR, SSRF), Vulnerability Assessment &amp; Remediation, Web Application Firewall (WAF), Multi-Factor Authentication (OTP RFC 4226 &amp; 6238 Compliant), HTTP Security Headers (HSTS, CSP, X-Frame), Cryptography &amp; Hashing (Bcrypt, HMAC SHA-512), Payment Gateway Integration Security (Midtrans API), Role-Based Access Control (RBAC), Rate Limiting &amp; Anti-Brute Force, Audit Logging &amp; Anti-Repudiation (ISO 27001).</p>
@@ -156,7 +161,7 @@
     </section>
 
     <!-- WORK & PRACTICAL EXPERIENCE -->
-    <section>
+    <section class="p1-section">
       <h2>WORK &amp; PRACTICAL EXPERIENCE</h2>
 
       <article class="exp-item">
@@ -195,9 +200,9 @@
     </section>
 
     <!-- EDUCATION -->
-    <section>
+    <section class="p1-section" style="margin-bottom: 0;">
       <h2>EDUCATION</h2>
-      <article class="exp-item" style="margin-bottom: 3.5px;">
+      <article class="exp-item" style="margin-bottom: 5px;">
         <div class="exp-header">
           <span>Telkom University</span>
           <span>Bandung, Indonesia</span>
@@ -224,10 +229,10 @@
 
     <!-- ================= PAGE 2 ================= -->
     <!-- KEY PROJECTS & SECURITY IMPLEMENTATIONS -->
-    <section style="margin-top: 2px;">
+    <section class="p2-section" style="margin-top: 2px;">
       <h2>KEY PROJECTS &amp; SECURITY IMPLEMENTATIONS</h2>
 
-      <article class="exp-item">
+      <article class="exp-item p2-item">
         <div class="exp-header">
           <span>Pineus Tilu Reservation Web Security Implementation Based on OWASP Top 10 (Capstone Design)</span>
           <span>Telkom University</span>
@@ -243,7 +248,7 @@
         </ul>
       </article>
 
-      <article class="exp-item">
+      <article class="exp-item p2-item">
         <div class="exp-header">
           <span>E-Commerce Information Security Audit Based on ISO 27001 &amp; NIST CSF</span>
           <span>Telkom University</span>
@@ -259,7 +264,7 @@
         </ul>
       </article>
 
-      <article class="exp-item">
+      <article class="exp-item p2-item">
         <div class="exp-header">
           <span>CSE-410 Digital Forensics Laboratory Courseware Development (101 Pages)</span>
           <span>Security Laboratory</span>
@@ -275,7 +280,7 @@
     </section>
 
     <!-- CERTIFICATIONS & PROFESSIONAL CREDENTIALS -->
-    <section>
+    <section class="p2-section">
       <h2>CERTIFICATIONS &amp; PROFESSIONAL CREDENTIALS</h2>
       <ul class="cert-grid">
         <li><strong>Blue Team Junior Analyst (BTJA)</strong> – Centri / Security Blue Team (2026)</li>
@@ -294,7 +299,7 @@
     </section>
 
     <!-- SOFT SKILLS & CORE COMPETENCIES -->
-    <section>
+    <section class="p2-section">
       <h2>SOFT SKILLS &amp; CORE COMPETENCIES</h2>
       <ul>
         <li><strong>Analytical &amp; Problem Solving:</strong> In-depth root-cause analysis of security anomalies and precise technical remediation of web vulnerabilities.</li>
@@ -305,9 +310,9 @@
     </section>
 
     <!-- ORGANIZATION & LEADERSHIP -->
-    <section>
+    <section class="p2-section">
       <h2>ORGANIZATION &amp; LEADERSHIP</h2>
-      <article class="exp-item">
+      <article class="exp-item p2-item">
         <div class="exp-header">
           <span>Centurion HMTK – Esports Division Lead (FIFA Tournament)</span>
           <span>Telkom University</span>
@@ -323,7 +328,7 @@
         </ul>
       </article>
 
-      <article class="exp-item">
+      <article class="exp-item p2-item">
         <div class="exp-header">
           <span>Connection HMTK – Sponsorship &amp; Community Outreach Staff</span>
           <span>Telkom University</span>
@@ -339,7 +344,7 @@
         </ul>
       </article>
 
-      <article class="exp-item">
+      <article class="exp-item p2-item">
         <div class="exp-header">
           <span>Indonesian Digital Forensics Association (AFDI)</span>
           <span>Indonesia</span>
